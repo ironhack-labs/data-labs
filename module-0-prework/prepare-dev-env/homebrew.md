@@ -51,9 +51,20 @@ You should already have Brew Cask after installing the latest Homebrew. To test,
 $ brew cask install google-chrome
 ```
 
-You may be prompted to enter the admin password in a pop-up window. Simply enter the admin password and click "Always Allow" to continue installation.
+You may be prompted to enter the admin password in a pop-up window. Enter the admin password and click "Always Allow" to continue installation.
 
-If you don't have Google Chrome yet, Brew Cask will install it for you. If you already have Google Chrome, you will see an error message which you can safely ignore:
+If you don't have Google Chrome yet, Brew Cask will install it for you:
+
+```
+==> Satisfying dependencies
+==> Downloading https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg
+==> Verifying checksum for Cask google-chrome
+==> Installing Cask google-chrome
+==> Moving App 'Google Chrome.app' to '/Applications/Google Chrome.app'.
+🍺  google-chrome was successfully installed!
+```
+
+If you already have Google Chrome, you will see an error message which you can safely ignore:
 
 ```
 Error: It seems there is already an App at '/Applications/Google Chrome.app'.
