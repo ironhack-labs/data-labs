@@ -70,23 +70,6 @@ If you already have Google Chrome, you will see an error message which you can s
 Error: It seems there is already an App at '/Applications/Google Chrome.app'.
 ```
 
-#### Search for Brew Cask packages
-
-To find out if a desired non-open source software package is available in Brew Cask, use the following command:
-
-```
-$ brew cask search chrome
-  ==> Matches
-  chrome-devtools      chromedriver      epichrome      google-chrome-beta
-  google-chrome-dev    chrome-remote-desktop-host    dmm-player-for-chrome
-  google-chrome-canary    google-chrome-canary    mkchromecast
-  ==> Remote Matches
-  homebrew/cask-versions/google-chrome-beta    homebrew/cask/chrome-devtools
-  homebrew/cask/google-chrome    homebrew/cask-versions/google-chrome-canary
-  homebrew/cask/chrome-remote-desktop-host    homebrew/cask-versions/
-  google-chrome-dev    homebrew/cask/dmm-player-for-chrome
-```
-
 ## Summary
 
 In this challenge we installed Homebrew and Brew Cask, which can be used to install hundreds of open source software packages (e.g. Git, Python, and MySQL) and non-open source packages (e.g. PyCharm and Sequel Pro). In the following challenges you will use them to install the software packages required for this course.

@@ -142,3 +142,7 @@ To install using the official installation package, check out the [Sequel Pro of
     ![Sequel Pro Connect](/static/images/install-sequel-pro-04.png)
 
 Nice work! Now you have installed Sequel Pro and can use it to interact with your MySQL database!
+
+## Summary
+
+TBD

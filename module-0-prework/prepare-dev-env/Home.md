@@ -22,4 +22,4 @@ In this lesson, you will:
 
 ### [Install MySQL and Sequel Pro](mysql.md)
 
-### [Install Jupyter](jupyter.md)
+### [Install Jupyter Notebook](jupyter.md)
