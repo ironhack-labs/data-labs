@@ -6,8 +6,8 @@
 
 In this lesson, you will:
 
-TBD
+- Learn how to checkout code from GitHub
 
 ## Learning Content
 
-TBD
+- Guided Lesson - Checking out Code From GitHub
