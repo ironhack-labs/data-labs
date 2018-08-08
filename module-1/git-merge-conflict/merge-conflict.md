@@ -35,6 +35,8 @@ Now we commit and push the repository using the following commands:
 
 ```
 $ git commit -am "adding git-fu file"
+[conflict fdbdb3c] adding git-fu file
+ 1 file changed, 24 insertions(+), 1 deletion(-)
 $ git push
 Enumerating objects: 18, done.
 Counting objects: 100% (17/17), done.
