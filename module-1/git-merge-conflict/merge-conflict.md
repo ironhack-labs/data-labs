@@ -67,5 +67,28 @@ We now commit and push this change:
 
 ```
 $ git commit -am "altering git-fu file"
-$ git push
+[conflict 775ed66] altering git-fu file
+ 2 files changed, 35 insertions(+), 3 deletions(-)
+$ git push --set-upstream origin conflict
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 1.08 KiB | 1.08 MiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/ironhack/data-labs.git
+ * [new branch]      conflict -> conflict
+Branch 'conflict' set up to track remote branch 'conflict' from 'origin'.
+```
+
+### Merging the Branches
+
+Now that we have set up the conflict, let's resolve it.
+
+We start by navigating to the master branch and merge the conflict branch into the master branch.
+
+```
+$ git checkout master
+$ git 
 ```
