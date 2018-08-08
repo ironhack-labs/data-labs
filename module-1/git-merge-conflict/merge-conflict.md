@@ -34,6 +34,38 @@ print("this is the original message")
 Now we commit and push the repository using the following commands:
 
 ```
-git commit -am "adding git-fu file"
-git push
+$ git commit -am "adding git-fu file"
+$ git push
+Enumerating objects: 18, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (12/12), 31.53 KiB | 10.51 MiB/s, done.
+Total 12 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+To https://github.com/ironhack/data-labs.git
+   7f7f613..8b37c4f  master -> master
+```
+
+Now we will create a new branch and switch to this branch. We do this using the following command:
+
+```
+$ git checkout -b conflict
+```
+
+We can also create a new branch in the git menu on the bottom right in PyCharm.
+
+![git menu](../images/git-menu.PNG)
+
+In the conflict branch we now alter the line of code in the `git-fu.py` file to this:
+
+```
+print("this is the altered message")
+```
+
+We now commit and push this change:
+
+```
+$ git commit -am "altering git-fu file"
+$ git push
 ```
