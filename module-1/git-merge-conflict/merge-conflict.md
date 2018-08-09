@@ -105,6 +105,8 @@ We alter the text to:
 print("this is the master message")
 ```
 
+We then commit and push this change to the master branch.
+
 Now we head back to the terminal and type:
 
 ```
