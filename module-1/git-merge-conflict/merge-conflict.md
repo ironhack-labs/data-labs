@@ -92,7 +92,7 @@ We start by navigating to the master branch and merge the conflict branch into t
 
 ```
 $ git checkout master
-$ git 
+$ git merge conflict
 ```
 
 Now we go back to the master branch and change the text again and commit and push it.
