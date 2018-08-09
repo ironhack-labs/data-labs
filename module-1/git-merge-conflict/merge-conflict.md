@@ -145,6 +145,37 @@ To https://github.com/ironhack/data-labs.git
 
 Now the conflict is resolved and the branches are merged.
 
+### Aborting the Merge
+
+Perhaps you didn't realize there was a conflict. Now there are hundreds of lines of code that you have to resolve. Maybe it would be better to use a different strategy. If you'd like to abort the merge, first we can check the status:
+
+```
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+```
+
+The `git status` command gives you the correct command to abort the merge. Now we will type it to go back to the pre-merged state
+
+```
+$ git merge --abort
+```
+
+As you can see, the branch name changed back from master|MERGING to master, so everything is back to normal.
+
 ### Resolving the Conflict Using Ours and Theirs
 
-Instead of resolving the conflict line by line, we can making a sweeping decision to 
+Instead of resolving the conflict line by line, we can making a sweeping decision to accept a file from our branch as is (so from the master branch) or from their branch as is.
+To do this, we use the commands `ours` and `theirs`.
+
+In this example, before merging, we would navigate to the master branch. If we wanted to keep the master branch's version of `git-fu.py` we would type the following command before merging:
+
+```
+$ git checkout --ours -- ./module-1/git-fu.py
+```
+
+### Conflicts with Pull Requests 
