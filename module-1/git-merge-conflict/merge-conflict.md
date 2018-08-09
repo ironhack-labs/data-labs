@@ -179,3 +179,5 @@ $ git checkout --ours -- ./module-1/git-fu.py
 ```
 
 ### Conflicts with Pull Requests 
+
+Pull requests are essentially a request to merge to branches on GitHub. 
