@@ -114,7 +114,7 @@ CONFLICT (content): Merge conflict in module-1/git-fu.py
 Automatic merge failed; fix conflicts and then commit the result.
 ```
 
-Oh no! Our merge failed. PyCharm wants us to fix this. We can head back to PyCharm and find that our `git-fu.py` file now looks like this:
+Oh no! Our merge failed. Git wants us to fix this. We can head back to PyCharm and find that our `git-fu.py` file now looks like this:
 
 ![git conflict](../images/git-conflict.PNG)
 
@@ -181,3 +181,32 @@ $ git checkout --ours -- ./module-1/git-fu.py
 ### Conflicts with Pull Requests 
 
 Pull requests are essentially a request to merge to branches on GitHub. 
+
+We first push both branches and then create the pull request through the UI.
+
+![create pull request](../images/create-request.PNG)
+
+As we can see in the screen shot above, the pull request will not automatically merge after approval. We still go ahead with creating the request, but we will have to resolve the conflicts after the request is created.
+
+After creating the request, we see the screen below. We click the Resolve conflicts button.
+
+![resolve-conflict](../images/resolve-conflicts.PNG)
+
+After clicking this button, we get taken to a UI that is very similar to what we see in PyCharm. 
+
+![ui merge](../images/ui-merge.PNG)
+
+We resolve the conflict in the same way we resolved the conflict in PyCharm. The end result should be only the line of code that we want to keep. At this point, we are able to click the Resolve conflict button.
+
+![ui resolve](../images/ui-resolved.PNG)
+
+At this point, we go back to the main pull request page and see that the pull request is ready to merge.
+
+![merge resolved](../images/conflict-resolved.PNG)
+
+We are now able to safely merge the pull request
+
+
+## Conclusion
+
+In this lesson we learned how to resolve pull requests. We learned how to resolve them line by line and also force resolve them using `ours` or `theirs`. We also learned how to abort merges. Finally, we learned about resolving conflicts in pull requests on GitHub. Hopefully, you have reached a high level of git-fu.
