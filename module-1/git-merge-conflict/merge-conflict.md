@@ -120,7 +120,7 @@ Oh no! Our merge failed. Git wants us to fix this. We can head back to PyCharm a
 
 ![git conflict](../images/git-conflict.PNG)
 
-You will also notice that our master branch is now called Merging master. 
+You will also notice that our master branch is now called master|MERGING. 
 
 In order to fix the conflict, we need to select the code we want to keep and erase the conflict boundaries.
 
