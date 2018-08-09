@@ -94,3 +94,90 @@ We start by navigating to the master branch and merge the conflict branch into t
 $ git checkout master
 $ git 
 ```
+
+Now we go back to the master branch and change the text again and commit and push it.
+
+The idea behind doing this is that the original text was determined in the master branch initially. In order to create a conflict, we must make sure both branches diverged from the original text.
+
+We alter the text to:
+
+```
+print("this is the master message")
+```
+
+Now we head back to the terminal and type:
+
+```
+$ git merge conflict
+Auto-merging module-1/git-fu.py
+CONFLICT (content): Merge conflict in module-1/git-fu.py
+Automatic merge failed; fix conflicts and then commit the result.
+```
+
+Oh no! Our merge failed. PyCharm wants us to fix this. We can head back to PyCharm and find that our `git-fu.py` file now looks like this:
+
+![git conflict](../images/git-conflict.PNG)
+
+You will also notice that our master branch is now called Merging master. 
+
+In order to fix the conflict, we need to select the code we want to keep and erase the conflict boundaries.
+
+In this case, we want to keep the code in the master branch and so what we are left with is this:
+
+![master merging](../images/master-merging.PNG)
+
+We now commit the merged change. We should commit using an informative message and then push our code again.
+
+```
+$ git commit -am "resolving merge conflict"
+[master f360c5e] resolving merge conflict
+$ git push
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (8/8), 721 bytes | 721.00 KiB/s, done.
+Total 8 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 3 local objects.
+To https://github.com/ironhack/data-labs.git
+   8b37c4f..f360c5e  master -> master
+```
+
+Now the conflict is resolved and the branches are merged.
+
+### Aborting the Merge
+
+Perhaps you didn't realize there was a conflict. Now there are hundreds of lines of code that you have to resolve. Maybe it would be better to use a different strategy. If you'd like to abort the merge, first we can check the status:
+
+```
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+```
+
+The `git status` command gives you the correct command to abort the merge. Now we will type it to go back to the pre-merged state
+
+```
+$ git merge --abort
+```
+
+As you can see, the branch name changed back from master|MERGING to master, so everything is back to normal.
+
+### Resolving the Conflict Using Ours and Theirs
+
+Instead of resolving the conflict line by line, we can making a sweeping decision to accept a file from our branch as is (so from the master branch) or from their branch as is.
+To do this, we use the commands `ours` and `theirs`.
+
+In this example, before merging, we would navigate to the master branch. If we wanted to keep the master branch's version of `git-fu.py` we would type the following command before merging:
+
+```
+$ git checkout --ours -- ./module-1/git-fu.py
+```
+
+### Conflicts with Pull Requests 
+
+Pull requests are essentially a request to merge to branches on GitHub. 
