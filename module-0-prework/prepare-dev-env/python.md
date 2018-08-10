@@ -8,7 +8,7 @@ This course will be taught using the Python Programming Language. Therefore, in 
 
 ## Python
 
-![Python](/static/images/python.png)
+![Python](../../images/python.png)
 
 Python is a general-purpose programming language that is gaining popularity in data analytics and data science.
 
@@ -42,7 +42,7 @@ If you see that, then you have correctly installed Python!
 
 ## PyCharm
 
-<img src="/static/images/pycharm.png" alt="PyCharm" width="300px"/>
+![PyCharm](../../images/pycharm.png)
 
 PyCharm is an Integrated Development Environment (IDE) made primarily for Python. An IDE is essentially like a word processor for code. PyCharm allows us to write code more effectively with features like auto-completion and debugging. We can also easily integrate PyCharm with Git.
 

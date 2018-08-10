@@ -11,3 +11,7 @@ In this lesson, you will:
 ## Learning Content
 
 - Guided Lesson - Checking out Code From GitHub
+
+## Project
+
+### [Checking Out Code From GitHub](github.md)

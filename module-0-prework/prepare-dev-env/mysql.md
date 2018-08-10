@@ -12,7 +12,7 @@ In this challenge, you will install MySQL and a data management application for 
 
 ## MySQL
 
-![MySQL](/static/images/mysql.svg)
+![MySQL](../../images/mysql.svg)
 
 ### Install MySQL
 
@@ -99,11 +99,11 @@ $ brew services start mysql
 
 :bulb: If your MySQL was installed using the MySQL installation package instead of Homebrew, the best way to manage it is using the MySQL Launch Daemon which you can find in your System Preferences:
 
-![MySQL Launch Daemon](/static/images/mysql-daemon.png)
+![MySQL Launch Daemon](../../images/mysql-daemon.png)
 
 In the daemon, select the MySQL instance you installed and click Start MySQL Server.
 
-![MySQL Launch Daemon](/static/images/mysql-daemon2.png)
+![MySQL Launch Daemon](../../images/mysql-daemon2.png)
 
 Read the [official documentation](https://dev.mysql.com/doc/refman/8.0/en/osx-installation-launchd.html) on MySQL Launch Daemon for more information.
 
@@ -111,7 +111,7 @@ Read the [official documentation](https://dev.mysql.com/doc/refman/8.0/en/osx-in
 
 It is inconvenient to use MySQL command line to interact with the database. Therefore, we will install [Sequel Pro](https://www.sequelpro.com/) - a database management software allowing you to complete database operations conveniently.
 
-![Sequel Pro](/static/images/sequel-pro.png)
+![Sequel Pro](../../images/sequel-pro.png)
 
 ### Install Sequel Pro
 
@@ -127,19 +127,19 @@ To install using the official installation package, check out the [Sequel Pro of
 
 1. Locate Sequel Pro in your Applications and launch the software. You will see the following connection window:
 
-    ![Sequel Pro Connection Window](/static/images/install-sequel-pro-01.png)
+    ![Sequel Pro Connection Window](../../images/install-sequel-pro-01.png)
 
 1. Enter the Name, Host, Username, and Password as shown in the following screenshot. Use the password you set for your MySQL in previous steps. Click "Test connection". You should see a message that says `Connection succeeded`.
 
-    ![Sequel Pro Connection Configuration](/static/images/install-sequel-pro-02.png)
+    ![Sequel Pro Connection Configuration](../../images/install-sequel-pro-02.png)
 
 1. Click "Add to Favorites" so that you can reuse this MySQL connection in the future.
 
-    ![Sequel Pro Connection Add Favorite](/static/images/install-sequel-pro-03.png)
+    ![Sequel Pro Connection Add Favorite](../../images/install-sequel-pro-03.png)
 
 1. Now click "Connect" to connect to your MySQL database:
 
-    ![Sequel Pro Connect](/static/images/install-sequel-pro-04.png)
+    ![Sequel Pro Connect](../../images/install-sequel-pro-04.png)
 
 Nice work! Now you have installed Sequel Pro and can use it to interact with your MySQL database!
 

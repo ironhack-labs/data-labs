@@ -8,7 +8,7 @@
 
 ## Homebrew
 
-![Homebrew](/static/images/homebrew.png)
+![Homebrew](../../images/homebrew.png)
 
 ### Install Homebrew
 

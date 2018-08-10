@@ -8,7 +8,7 @@ For this course, you will need to install Git and also create an account on Gith
 
 ## Git
 
-![Git](/static/images/git.png)
+![Git](../../images/git.png)
 
 ### Install Git
 
@@ -64,7 +64,7 @@ To learn more about setting up Git configurations, you can read this article on 
 
 First things first: if you haven’t done so already, go to [Github](https://github.com) and create an account.
 
-![Github](/static/images/github.png)
+![Github](../../images/github.png)
 
 :bangbang: **Alert: Please, save your *username* and *password* in a safe place. Lots of students forget their Github account information :)**
 
