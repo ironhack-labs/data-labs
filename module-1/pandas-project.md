@@ -4,7 +4,7 @@
 
 ## Overview
 
-The goal of this project is to combine everything you have learned about relational databases and SQL so you can see how it all works together. For this project, you will be creating a MySQL database from scratch, populating it with data, and constructing an analytical workflow to explore a data set using various types of joins and queries.
+The goal of this project is to combine everything you have learned about data wrangling, cleaning, and manipulation with Pandas so you can see how it all works together. For this project, you will start with a messy data set and you will need to import it, use your data wrangling skills to clean it up, prepare it to be analyzed, and then export it as a clean data CSV file.
 
 **You will be working individually for this project**, but we'll be guiding you along the process and helping you as you go. Show us what you've got!
 
@@ -24,9 +24,9 @@ The technical requirements for this project are as follows:
 
 The following deliverables should be pushed to your Github repo for this chapter.
 
-* **A .PNG and single-page PDF file** containing the entity relationship diagram for your database.
-* **A project.sql file** containing all SQL code and commands used in the construction of your database and analytical workflow.
-* **A ``README.md`` file** containing an explanation of the process followed in the construction of your database and analytical workflow, results obtained, obstacles encountered, and lessons learned.
+* **A cleaned CSV data file** containing the results of your data wrangling work.
+* **A Jupyter Notebook (data-wrangling.ipynb)** containing all Python code and commands used in the importing, cleaning, manipulation, and exporting of your data set.
+* **A ``README.md`` file** containing an explanation of the process followed in the importing, cleaning, manipulation, and exporting of your data as well as the resulting data set, obstacles encountered, and lessons learned.
 
 ## Suggested Ways to Get Started
 
@@ -110,8 +110,8 @@ This will be useful as an overall gauge of whether you met the project goals, bu
   * Show and explain code snippets in your presentation slides.
 * Git:
   * Display an screenshot of your GitHub graphs to show your commit frequency and how much work you did.
-* Database & SQL Walkthrough:
-  * Walk the audience through your entity relationship diagram, the entities that exist in your database, the attributes for each entity, and the relationships between entities.
-  * Walk the audience through you analytical workflow including what initial questions you posed, what your findings were, what avenues you decided to pursue and why, what your conclusions are, and what lessons you learned.
+* Pandas Data Wrangling Walkthrough:
+  * Walk the audience through the data set you chose, providing an overview of some of the fields and other information contained in the data.
+  * Walk the audience through your data wrangling workflow including what initial problems you identified in the data, what cleaning and manipulation techniques you employed, what avenues you decided to pursue and why, and what lessons you learned.
 * One important mistake you made:
-  * Did you made a mistake planning your time? Maybe scoping your analysis? Coding?
+  * Did you made a mistake planning your time? Maybe wrangling a variable that wasn't useful? Coding?
