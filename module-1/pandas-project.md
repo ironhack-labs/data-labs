@@ -4,7 +4,7 @@
 
 ## Overview
 
-The goal of this project is to combine everything you have learned about data wrangling, cleaning, and manipulation with Pandas so you can see how it all works together. For this project, you will start with a messy data set and you will need to import it, use your data wrangling skills to clean it up, prepare it to be analyzed, and then export it as a clean data CSV file.
+The goal of this project is to combine everything you have learned about data wrangling, cleaning, and manipulation with Pandas so you can see how it all works together. For this project, you will start with a messy data set of your choice. You will need to import it, use your data wrangling skills to clean it up, prepare it to be analyzed, and then export it as a clean CSV data file.
 
 **You will be working individually for this project**, but we'll be guiding you along the process and helping you as you go. Show us what you've got!
 
@@ -17,9 +17,9 @@ The technical requirements for this project are as follows:
 * You must start out with a significantly messy data set so that you can apply the different cleaning and manipulation techniques you have learned.
 * Import the data using Pandas.
 * Examine the data for potential issues.
-* Use several of the methods you have learned to address missing values, incorrect values, special characters, low variance columns, outliers, duplicate records, etc.
+* Use at least 8 of the cleaning and manipulation methods you have learned on the data.
 * Produce a Jupyter Notebook that shows the steps you took and the code you used to clean and transform your data set.
-* Export a clean version of your data set using Pandas.
+* Export a clean CSV version of your data using Pandas.
 
 ## Necessary Deliverables
 
@@ -27,31 +27,17 @@ The following deliverables should be pushed to your Github repo for this chapter
 
 * **A cleaned CSV data file** containing the results of your data wrangling work.
 * **A Jupyter Notebook (data-wrangling.ipynb)** containing all Python code and commands used in the importing, cleaning, manipulation, and exporting of your data set.
-* **A ``README.md`` file** containing an explanation of the process followed in the importing, cleaning, manipulation, and exporting of your data as well as the resulting data set, obstacles encountered, and lessons learned.
+* **A ``README.md`` file** containing a detailed explanation of the process followed in the importing, cleaning, manipulation, and exporting of your data as well as your results, obstacles encountered, and lessons learned.
 
 ## Suggested Ways to Get Started
 
-* **Find a messy data set** - a great place to start looking would be [here](https://github.com/awesomedata/awesome-public-datasets) and [here](https://www.kaggle.com/datasets).
+* **Find a messy data set** - a great place to start looking would be [Awesome Public Data Sets](https://github.com/awesomedata/awesome-public-datasets) and [Kaggle Data Sets](https://www.kaggle.com/datasets).
 * **Examine the data and try to understand what the fields mean** before diving into data cleaning and manipulation methods.
 * **Break the project down into different steps** - use the topics covered in the lessons to form a check list, add anything else you can think of that may be wrong with your data set, and then work through the check list.
 * **Use the tools in your tool kit** - your knowledge of Python, data structures, Pandas, and data wrangling.
 * **Work through the lessons in class** & ask questions when you need to! Think about adding relevant code to your project each night, instead of, you know... _procrastinating_.
 * **Commit early, commit often**, don’t be afraid of doing something incorrectly because you can always roll back to a previous version.
 * **Consult documentation and resources provided** to better understand the tools you are using and how to accomplish what you want.
-
-## Potential Project Ideas
-
-### Basketball Database Analysis
-
-You are a data analyst for a professional basketball league. The league has data about teams, players, coaches, playoff game results, etc. but they need the data organized, analyzed, and summarized. Any interesting insights found should be reported to the league's senior executives.
-
-### Credit Database Analysis
-
-You are a data analyst working for a credit card company. The company has data about cardholders, statements, charges, payment statuses, etc. and they need help putting together reporting around payment statuses, age of payments past due, and likely defaults.
-
-### Hardware Retail Database Analysis
-
-You work as a data analyst for a small hardware retailer. The company has data about products, customers, sales, and employees. They have less than 25 employees, so they would like to figure out where they should focus their sales and marketing efforts given their limited resources.
 
 ## Useful Resources
 
