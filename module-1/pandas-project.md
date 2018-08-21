@@ -14,11 +14,12 @@ The goal of this project is to combine everything you have learned about data wr
 
 The technical requirements for this project are as follows:
 
-* Data must be normalized into at least 5 tables.
-* Produce an entity relationship diagram that visually displays the tables in your database, the fields in your tables, and the existence and types of relationships between your tables.
-* Use at least two different types of joins.
-* Use at least three different types of queries (SELECT plus two types of action queries).
-* Use subqueries and/or temp tables in your workflow.
+* You must start out with a significantly messy data set so that you can apply the different cleaning and manipulation techniques you have learned.
+* Import the data using Pandas.
+* Examine the data for potential issues.
+* Use several of the methods you have learned to address missing values, incorrect values, special characters, low variance columns, outliers, duplicate records, etc.
+* Produce a Jupyter Notebook that shows the steps you took and the code you used to clean and transform your data set.
+* Export a clean version of your data set using Pandas.
 
 ## Necessary Deliverables
 
@@ -30,9 +31,10 @@ The following deliverables should be pushed to your Github repo for this chapter
 
 ## Suggested Ways to Get Started
 
-* **Use a data set that is already normalized** - a great place to start looking would be [here](https://relational.fit.cvut.cz/search?tableCount%5B%5D=0-10&tableCount%5B%5D=10-30&dataType%5B%5D=Numeric&databaseSize%5B%5D=KB&databaseSize%5B%5D=MB).
-* **Break the project down into different steps** - creating the database, importing the data set and schema, generating the entity relationship diagram, examining the schema, coming up with a plan for your analysis, following through with that plan, and making adjustments where necessary.
-* **Use the tools in your tool kit** - your knowledge of entities and relationships, all the SQL commands you've learned, different types of joins, different types of queries, etc.
+* **Find a messy data set** - a great place to start looking would be [here](https://github.com/awesomedata/awesome-public-datasets) and [here](https://www.kaggle.com/datasets).
+* **Examine the data and try to understand what the fields mean** before diving into data cleaning and manipulation methods.
+* **Break the project down into different steps** - use the topics covered in the lessons to form a check list, add anything else you can think of that may be wrong with your data set, and then work through the check list.
+* **Use the tools in your tool kit** - your knowledge of Python, data structures, Pandas, and data wrangling.
 * **Work through the lessons in class** & ask questions when you need to! Think about adding relevant code to your project each night, instead of, you know... _procrastinating_.
 * **Commit early, commit often**, don’t be afraid of doing something incorrectly because you can always roll back to a previous version.
 * **Consult documentation and resources provided** to better understand the tools you are using and how to accomplish what you want.
@@ -53,9 +55,9 @@ You work as a data analyst for a small hardware retailer. The company has data a
 
 ## Useful Resources
 
-* [MySQL Documentation](https://dev.mysql.com/doc/)
-* [W3 Schools SQL Tutorials](https://www.w3schools.com/sql/default.asp)
-* [StackOverflow MySQL Questions](https://stackoverflow.com/questions/tagged/mysql)
+* [Pandas Documentation](https://pandas.pydata.org/pandas-docs/stable/)
+* [Pandas Tutorials](https://pandas.pydata.org/pandas-docs/stable/tutorials.html)
+* [StackOverflow Pandas Questions](https://stackoverflow.com/questions/tagged/pandas)
 
 ## Project Feedback + Evaluation
 
@@ -114,4 +116,4 @@ This will be useful as an overall gauge of whether you met the project goals, bu
   * Walk the audience through the data set you chose, providing an overview of some of the fields and other information contained in the data.
   * Walk the audience through your data wrangling workflow including what initial problems you identified in the data, what cleaning and manipulation techniques you employed, what avenues you decided to pursue and why, and what lessons you learned.
 * One important mistake you made:
-  * Did you made a mistake planning your time? Maybe wrangling a variable that wasn't useful? Coding?
+  * Did you made a mistake planning your time? Maybe transforming a variable that wasn't useful? Accidentally dropping one that was?
