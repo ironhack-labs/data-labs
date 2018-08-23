@@ -14,7 +14,7 @@ Python is a general-purpose programming language that is gaining popularity in d
 
 ### Install Python
 
-Python has come pre-installed on Macs for many years. However, we are going to install Python ourselves for a few reasons:
+Python has come pre-installed on Mac for many years. However, we are going to install Python ourselves for a few reasons:
 
 * Currently MacOS High Sierra or older versions have Python 2.7 pre-installed. However, this course will use Python 3 because Python 2.7 will be deprecated in the near future and some packages already only support Python 3.
 * Using the pre-installed Python version means that updating your MacOS will wipe out your Python packages, forcing you to re-install them.

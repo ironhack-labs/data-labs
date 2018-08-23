@@ -12,6 +12,8 @@ For this course, you will need to install Git and also create an account on Gith
 
 ### Install Git
 
+:exclamation: **Windows users: You can skip Git installation because you already have it when you installed [Git for Windows](https://gitforwindows.org/) in the previous lesson Command Line Basics. Scroll down and proceed to Basic Configuration.**
+
 Git is part of the [Xcode](https://developer.apple.com/xcode/) Command Line Tools, so if you have already installed them, you already have git!
 
 If you’re using OSX Maverick or higher, just type `git` into the terminal. If you don’t have the Xcode Command Line Tools already installed, you will be prompted to do so.
@@ -32,7 +34,7 @@ $ brew install git
 $ brew upgrade git
 ```
 
-#### Is it Working?
+#### Is It Working?
 
 Now, type the following in the terminal:
 
@@ -45,7 +47,7 @@ If you can see that, you have git installed!
 
 If you’re still having problems, or if you prefer to install Git from source, here’s more information: [Getting Started Installing Git](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-### Basic configuration
+### Basic Configuration
 
 The first thing you should do is to set your [identity](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup#Your-Identity) (name and email) for your account. This is important because as git takes snapshots (commits) on our code, it will also store who made the change.
 
