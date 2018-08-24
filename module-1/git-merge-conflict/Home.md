@@ -10,4 +10,4 @@ In this lesson, you will:
 
 ## Learning Content
 
-- Guided Lesson - Resolving Git Merge Conflicts
+- [Guided Lesson - Resolving Git Merge Conflicts](merge-conflict.md)
