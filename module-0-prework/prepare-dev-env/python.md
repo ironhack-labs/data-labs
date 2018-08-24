@@ -14,19 +14,25 @@ Python is a general-purpose programming language that is gaining popularity in d
 
 ### Install Python
 
+#### Install on Mac
+
 Python has come pre-installed on Mac for many years. However, we are going to install Python ourselves for a few reasons:
 
 * Currently MacOS High Sierra or older versions have Python 2.7 pre-installed. However, this course will use Python 3 because Python 2.7 will be deprecated in the near future and some packages already only support Python 3.
 * Using the pre-installed Python version means that updating your MacOS will wipe out your Python packages, forcing you to re-install them.
 * The pre-installed version might not be the most up-to-date.
 
-#### Install Using Homebrew
-
 To install the latest version of Python 3, enter in the terminal:
 
 ```
 $ brew install python3
 ```
+
+#### Install on Windows
+
+To install Python on Windows, first download the latest release of Python 3 (at the time this lesson was written, v3.7.0 was the latest release) from [python.org](https://www.python.org/downloads/). Click the EXE file to install. When the installation dialogue is open, make sure to check "Add Python 3.7 to PATH". Adding the Python 3.7 excutable to the Windows path will allow other applications such as Git Bash to know where the Python program is. Then follow the installation dialogue to finish installing Python.
+
+![Install Python](../../images/install-python.png)
 
 #### Is it Working?
 
@@ -48,13 +54,21 @@ PyCharm is an Integrated Development Environment (IDE) made primarily for Python
 
 ### Install PyCharm
 
-1. To install PhCharm using Brew Cask (recommended), simply run the following command in the terminal:
+#### Install with Brew Cask (Mac)
+
+To install PyCharm using Brew Cask, simply run the following command in the terminal:
 
 ```
 $ brew cask install pycharm
 ```
 
-2. You can also download the PyCharm installer from the [following webpage](https://www.jetbrains.com/pycharm/download/#section=mac) and follow the directions. Make sure to download the community edition rather than the professional edition.
+#### Install with Official Installer (Mac & Windows)
+
+For this course, you can download PyCharm Edu installer from the [following webpage](https://www.jetbrains.com/pycharm-edu/download/). Alternatively, you can also download the non-education PyCharm installer from the [following webpage](https://www.jetbrains.com/pycharm/download/). If you choose to download the non-education version, make sure to download the community edition rather than the professional edition.
+
+In the PyCharm installation dialogue, make sure to check Python 3.7 instead of 2.7.
+
+![Install PyCharm](../../images/install-pycharm.png)
 
 :bulb: Tip: Many of the current software vendors offer the Community Edition of their software for free. Often times, the Community Edition is open-source, has a restrictive license, or has a limited feature set in comparison with the paid editions such as the Professional Edition, Enterprise Edition, etc.
 

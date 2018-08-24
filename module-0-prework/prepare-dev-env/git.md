@@ -12,7 +12,7 @@ For this course, you will need to install Git and also create an account on Gith
 
 ### Install Git
 
-:exclamation: **Windows users: You can skip Git installation because you already have it when you installed [Git for Windows](https://gitforwindows.org/) in the previous lesson Command Line Basics. Scroll down and proceed to Basic Configuration.**
+:exclamation: **Windows users: You can skip Git installation because you already have it when you installed [Git for Windows](https://gitforwindows.org/) in the previous lesson Command Line Basics. Simply launch Git Bash then scroll down and proceed to Basic Configuration.**
 
 Git is part of the [Xcode](https://developer.apple.com/xcode/) Command Line Tools, so if you have already installed them, you already have git!
 
