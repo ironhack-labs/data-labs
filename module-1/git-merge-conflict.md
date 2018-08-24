@@ -1,6 +1,6 @@
 ![IronHack Logo](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_d5c5793015fec3be28a63c4fa3dd4d55.png)
 
-# Guided Lesson - Resolving Merge Conflicts in Git
+# Guided Project - Resolving Merge Conflicts in Git
 
 ## Introduction
 When working collaboratively, sometimes we tend to step on each other's toes. What this means is that sometimes we and other developers happen to edit the same code at the same time. While we might try to keep our changes isolated with branching, this does not prevent editing the same lines of code by two different people.
@@ -17,7 +17,7 @@ We open PyCharm and open the `data-labs` folder.
 
 In our `data-labs` repo, we will add a python file to this current module (module 1) and name the file `git-fu.py`. We right click the `module-1` folder and select Python file.
 
-![python file](../images/new-file.PNG) 
+![python file](../images/new-file.png) 
 
 When PyCharm prompts you to add the file to Git, make sure to choose yes. You can also add it manually by typing this in the terminal:
 
@@ -57,7 +57,7 @@ $ git checkout -b conflict
 
 We can also create a new branch in the git menu on the bottom right in PyCharm.
 
-![git menu](../images/git-menu.PNG)
+![git menu](../images/git-menu.png)
 
 In the conflict branch we now alter the line of code in the `git-fu.py` file to this:
 
@@ -118,7 +118,7 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 Oh no! Our merge failed. Git wants us to fix this. We can head back to PyCharm and find that our `git-fu.py` file now looks like this:
 
-![git conflict](../images/git-conflict.PNG)
+![git conflict](../images/git-conflict.png)
 
 You will also notice that our master branch is now called master|MERGING. 
 
@@ -126,7 +126,7 @@ In order to fix the conflict, we need to select the code we want to keep and era
 
 In this case, we want to keep the code in the master branch and so what we are left with is this:
 
-![master merging](../images/master-merging.PNG)
+![master merging](../images/master-merging.png)
 
 We now commit the merged change. We should commit using an informative message and then push our code again.
 
@@ -186,25 +186,25 @@ Pull requests are essentially a request to merge to branches on GitHub.
 
 We first push both branches and then create the pull request through the UI.
 
-![create pull request](../images/create-request.PNG)
+![create pull request](../images/create-request.png)
 
 As we can see in the screen shot above, the pull request will not automatically merge after approval. We still go ahead with creating the request, but we will have to resolve the conflicts after the request is created.
 
 After creating the request, we see the screen below. We click the Resolve conflicts button.
 
-![resolve-conflict](../images/resolve-conflicts.PNG)
+![resolve-conflict](../images/resolve-conflicts.png)
 
 After clicking this button, we get taken to a UI that is very similar to what we see in PyCharm. 
 
-![ui merge](../images/ui-merge.PNG)
+![ui merge](../images/ui-merge.png)
 
 We resolve the conflict in the same way we resolved the conflict in PyCharm. The end result should be only the line of code that we want to keep. At this point, we are able to click the Resolve conflict button.
 
-![ui resolve](../images/ui-resolved.PNG)
+![ui resolve](../images/ui-resolved.png)
 
 At this point, we go back to the main pull request page and see that the pull request is ready to merge.
 
-![merge resolved](../images/conflict-resolved.PNG)
+![merge resolved](../images/conflict-resolved.png)
 
 We are now able to safely merge the pull request
 

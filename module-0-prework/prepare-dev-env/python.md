@@ -8,13 +8,13 @@ This course will be taught using the Python Programming Language. Therefore, in 
 
 ## Python
 
-![Python](/static/images/python.png)
+![Python](../../images/python.png)
 
 Python is a general-purpose programming language that is gaining popularity in data analytics and data science.
 
 ### Install Python
 
-Python has come pre-installed on Macs for many years. However, we are going to install Python ourselves for a few reasons:
+Python has come pre-installed on Mac for many years. However, we are going to install Python ourselves for a few reasons:
 
 * Currently MacOS High Sierra or older versions have Python 2.7 pre-installed. However, this course will use Python 3 because Python 2.7 will be deprecated in the near future and some packages already only support Python 3.
 * Using the pre-installed Python version means that updating your MacOS will wipe out your Python packages, forcing you to re-install them.
@@ -42,7 +42,7 @@ If you see that, then you have correctly installed Python!
 
 ## PyCharm
 
-<img src="/static/images/pycharm.png" alt="PyCharm" width="300px"/>
+![PyCharm](../../images/pycharm.png)
 
 PyCharm is an Integrated Development Environment (IDE) made primarily for Python. An IDE is essentially like a word processor for code. PyCharm allows us to write code more effectively with features like auto-completion and debugging. We can also easily integrate PyCharm with Git.
 

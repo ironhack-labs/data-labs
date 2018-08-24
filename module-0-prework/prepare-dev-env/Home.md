@@ -4,7 +4,7 @@
 
 ## Lesson Goals
 
-In this lesson, you will:
+This lesson contains a series of challenges in which you will:
 
 - Install Homebrew
 - Install Git and create a GitHub account

@@ -2,17 +2,19 @@
 
 # Challenge: Install Homebrew and Brew Cask
 
+:exclamation: **This challenge is for Mac users only. Skip this challenge if you are a Windows user.**
+
 ## Introduction
 
 [Homebrew](https://brew.sh/), "the missing package manager for OS X", is a convenient utility for Mac OS X that allows you to easily install and upgrade hundreds of open-source tools via simple commands. Brew Cask is an extension of Homebrew that allows you to install OS X apps, fonts and plugins and other non-open source software.
 
 ## Homebrew
 
-![Homebrew](/static/images/homebrew.png)
+![Homebrew](../../images/homebrew.png)
 
 ### Install Homebrew
 
-To install Homebrew, you can find the full instructions on the [Homebrew Installation Doc](https://docs.brew.sh/Installation). However, you simply need to run the following command in the terminal as seen at the Homebrew site:
+To install Homebrew, you can follow the full instructions on the [Homebrew Installation Doc](https://docs.brew.sh/Installation). However, typically all you need to do is to simply run the following command in the terminal as seen at the Homebrew site:
 
 ```
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"

@@ -2,7 +2,7 @@
 
 # Challenge: Install Jupyter Notebook
 
-![Jupyter](/static/images/jupyter.svg)
+![Jupyter](../../images/jupyter.svg)
 
 ## Introduction
 
@@ -46,7 +46,7 @@ $ jupyter notebook
 
 A new browser tab should be automatically opened which looks like the following (depending on where you launched Jupyter Notebook):
 
-![Jupyter Notebook](/static/images/jupyter-notebook.png)
+![Jupyter Notebook](../../images/jupyter-notebook.png)
 
 If you encounter any problem in installing or using Jupyter Notebook, refer to the official [installation instructions](http://jupyter.org/install) and [documentation](http://jupyter.org/documentation).
 

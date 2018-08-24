@@ -8,9 +8,11 @@ For this course, you will need to install Git and also create an account on Gith
 
 ## Git
 
-![Git](/static/images/git.png)
+![Git](../../images/git.png)
 
 ### Install Git
+
+:exclamation: **Windows users: You can skip Git installation because you already have it when you installed [Git for Windows](https://gitforwindows.org/) in the previous lesson Command Line Basics. Scroll down and proceed to Basic Configuration.**
 
 Git is part of the [Xcode](https://developer.apple.com/xcode/) Command Line Tools, so if you have already installed them, you already have git!
 
@@ -32,7 +34,7 @@ $ brew install git
 $ brew upgrade git
 ```
 
-#### Is it Working?
+#### Is It Working?
 
 Now, type the following in the terminal:
 
@@ -45,7 +47,7 @@ If you can see that, you have git installed!
 
 If you’re still having problems, or if you prefer to install Git from source, here’s more information: [Getting Started Installing Git](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-### Basic configuration
+### Basic Configuration
 
 The first thing you should do is to set your [identity](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup#Your-Identity) (name and email) for your account. This is important because as git takes snapshots (commits) on our code, it will also store who made the change.
 
@@ -64,7 +66,7 @@ To learn more about setting up Git configurations, you can read this article on 
 
 First things first: if you haven’t done so already, go to [Github](https://github.com) and create an account.
 
-![Github](/static/images/github.png)
+![Github](../../images/github.png)
 
 :bangbang: **Alert: Please, save your *username* and *password* in a safe place. Lots of students forget their Github account information :)**
 
