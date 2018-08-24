@@ -28,13 +28,7 @@ To install the latest version of Python 3, enter in the terminal:
 $ brew install python3
 ```
 
-#### Install on Windows
-
-To install Python on Windows, first download the latest release of Python 3 (at the time this lesson was written, v3.7.0 was the latest release) from [python.org](https://www.python.org/downloads/). Click the EXE file to install. When the installation dialogue is open, make sure to check "Add Python 3.7 to PATH". Adding the Python 3.7 excutable to the Windows path will allow other applications such as Git Bash to know where the Python program is. Then follow the installation dialogue to finish installing Python.
-
-![Install Python](../../images/install-python.png)
-
-#### Is it Working?
+##### Is it Working?
 
 To check if the installation was successful, type the following in the terminal:
 
@@ -45,6 +39,27 @@ Python 3.7.0
 
 If you see that, then you have correctly installed Python!
 
+#### Install on Windows
+
+To install Python on Windows, first download the latest release of Python 3 (at the time this lesson was written, v3.7.0 was the latest release) from [python.org](https://www.python.org/downloads/). Click the installation file to install. When the installation dialogue is open, make sure to check "Add Python 3.7 to PATH". Adding the Python 3.7 excutable to the Windows path will allow other applications such as Git Bash to know where the Python program is. Then follow the installation dialogue to finish installation.
+
+![Install Python](../../images/install-python.png)
+
+If you have looked at the instructions for Mac, you'll know Mac users install Python 3 which is referred to as `python3` instead of `python`. But on Windows we use `python` to refer to Python 3. To make things consistent between Windows and Mac in this course, we will create an alias in the `.bash_profile` file so that we can also use `python3` to refer to Python 3 on Windows. To achieve this goal, type the following command in your Git Bash:
+
+```
+$ cd ~
+$ echo "alias python3=python" >> .bash_profile
+```
+
+Then quit your Git Bash and relaunch it. Check if the `python3` alias is picked up now:
+
+```
+$ python3 --version
+Python 3.7.0
+```
+
+:bulb: Tip: Remeber, in Windows `python` and `python3` are equivalent in this course because the latter is actually an alias of the former.
 
 ## PyCharm
 
