@@ -52,4 +52,4 @@ If you encounter any problem in installing or using Jupyter Notebook, refer to t
 
 ## Summary
 
-TBD
+In this challenge we installed Jupyter Notebook, which will be the main workspace of your hands-on work with Python and data analysis in this course. There is a multi-user version of Jupyter called the [JupyterHub](http://jupyter.org/hub). A lot of companies host JupyterHub for their data analysts, data scientists, and software engineers to collaborate on data projects. 
