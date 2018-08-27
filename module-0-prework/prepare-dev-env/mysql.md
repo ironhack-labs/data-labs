@@ -123,6 +123,8 @@ $ brew cask install sequel-pro
 
 To install using the official installation package, check out the [Sequel Pro official download page](https://sequelpro.com/download).
 
+:exclamation: Note: At the time this lesson was written, the latest release of Sequel Pro has some bugs. If your Sequel Pro keeps crashing similar to what [this post](https://github.com/sequelpro/sequelpro/issues/2699) describes, uninstall `sequel-pro` then install `sequel-pro-nightly` with Homebrew. `sequel-pro-nightly` contains the latest work of the Sequel Pro development team where those bugs have been fixed. But those fixes haven't been integrated in `sequel-pro` or the official installation package.
+
 ### Connecting Sequel Pro to Database
 
 1. Locate Sequel Pro in your Applications and launch the software. You will see the following connection window:
@@ -145,4 +147,8 @@ Nice work! Now you have installed Sequel Pro and can use it to interact with you
 
 ## Summary
 
-TBD
+In this challenge we installed MySQL, a popular database technology used to store, retrieve, and manipulate data. We also installed Sequel Pro, a database management software used to interact with MySQL databases.
+
+Databases are extremely important for data analysts because they allow them to work with data in an efficient, reliable, and consistent way.
+
+Seqeul Pro is not the only database management tool. A good alternative is [MySQL Workbench](https://www.mysql.com/products/workbench/). Sequel Pro and MySQL Workbench provide very similar sets of functionalities. But some people may feel MySQL Workbench allows them to accomplish certain tasks more efficiently.
