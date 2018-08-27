@@ -28,7 +28,6 @@ Cloning into 'super-duper-robot'...
 remote: Counting objects: 3, done.
 remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 Unpacking objects: 100% (3/3), done.
-
 ```
 
 ## Adding New Files to the Repo
@@ -36,7 +35,7 @@ Unpacking objects: 100% (3/3), done.
 We now navigate to the folder where we cloned the repository using the `cd` command:
 
 ```
-cd super-duper-robot
+$ cd super-duper-robot
 ```
 
 We can add a new file. In this case, to simplify things, we will add another `.md` file. This file will contain more documentation. Let's name this file `robot.md` and place it beside the `README` file.
@@ -44,7 +43,7 @@ We can add a new file. In this case, to simplify things, we will add another `.m
 To ensure that the new file has been added to the repo, type the command:
 
 ```
-git add .
+$ git add .
 ```
 
 This command will ensure that all new files in the folder will be added to the repo. If we want to add only specific files and not all files, then we can type `git add` followed by the file path.
@@ -95,9 +94,8 @@ Writing objects: 100% (3/3), 349 bytes | 349.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
 To https://github.com/<username>/super-duper-robot.git
    c67eacf..50dce7f  master -> master
-
 ```
 
 If you see the output above then your code should now be in the GitHub repository!
 
-Note: If you created the repository locally, you will have to define your remote upstream location. Also, if you are committing to a different branch, you will have to specify that in your push message.
+:information_source: If you created the repository locally rather than cloning it from Github, you will have to define your remote repository location before you can push your source code to Github. Refer to [this tutorial on Git remote syncing](https://www.atlassian.com/git/tutorials/syncing).
