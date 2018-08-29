@@ -4,9 +4,9 @@
 
 ## Introduction
 
-Structured Query Language (SQL) is the most prevalent database technology in the world allowing one to perform database operations such as storing, retrieving, updating, and deleting data. In this course you will learn [MySQL](https://www.mysql.com/), a popular genre of SQL which is free. After mastering MySQL, you should have no problem in picking up other SQL genres such as MS SQL (by Microsoft), PostgreSQL, and SQLite because these languages are similar in a large part.
+Structured Query Language (SQL) is the most prevalent database language in the world allowing one to perform database operations such as storing, retrieving, updating, and deleting data. In this course you will learn [MySQL](https://www.mysql.com/), a popular genre of SQL which is free. After mastering MySQL, you should have no problem in picking up other SQL genres such as MS SQL (by Microsoft), PostgreSQL, and SQLite because these languages are similar in a large part.
 
-:bulb: SQL is also known as the Relational Databases because they are based on the relational algebra theory. The opposite of SQL is NoSQL also known as the Non-Relational Databases. The main difference between SQL and NoSQL is how they store data - the latter does not require a specific structure of the data in order to store them. An example of the NoSQL database is [MongoDB](https://www.mongodb.com/).
+:bulb: SQL Databases are also known as the Relational Databases because they are based on the relational algebra theory. The opposite of SQL is NoSQL a.k.a. the Non-Relational Databases. The main difference between SQL and NoSQL is how they store data - the latter does not require a specific structure of the data in order to store them. An example of the NoSQL databases is [MongoDB](https://www.mongodb.com/).
 
 In this challenge, you will install MySQL and a data management application for Mac called Sequel Pro.
 
@@ -30,7 +30,7 @@ Homebrew will install the MySQL Community Edition for you. Alternatively, you ca
 
 Type `mysql -u root -p` in the terminal to test your MySQL installation, where `-u root` means your MySQL username is `root` and `-p` means a password is required.
 
-While being prompted to enter password, simply hit the ENTER key because your password is empty at this point.
+When being prompted to enter password, simply hit the ENTER key because your password is empty at this point.
 
 ```
 $ mysql -u root -p
@@ -56,12 +56,16 @@ You should configure MySQL immediately after installation. Follow the steps belo
 
 ### Changing default password
 
-Homebrew installs MySQL with the username `root` and an empty password. It is a good practice to add a password to the `root` user in order to protect your database. In MySQL command line, type the following command (**remember to change `new_password` to your desired password**):
+Homebrew installs MySQL with the username `root` and an empty password. It is a good practice to add a password to the `root` user in order to protect your database. In MySQL command line, type the following command:
 
 ```
-mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'new_password';
+mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY '<new-password>';
 Query OK, 0 rows affected (0.07 sec)
 ```
+
+:exclamation: Note: Remember to change `<new-password>` to your desired password.
+
+:exclamation: Note: Every MySQL command must end with a semicolon (`;`). 
 
 After changing the password, exit MySQL command line and re-enter:
 
@@ -74,15 +78,15 @@ Enter password:
 mysql>
 ```
 
-Note that every MySQL command should end with a semicolon (`;`). While being prompted to enter the password, enter your new password then hit ENTER.
-
-:bulb: You can choose to continue using the default empty MySQL password if you are sure your database will be safe without a password. In that case, skip the step of changing the password. But in production, every database must be protected by a complex password.
+When being prompted to enter the password, enter your new password then hit ENTER.
 
 :bangbang: **Alert: Please save your MySQL username and password in a safe place where you know where to find.**
 
+:bulb: You can choose to continue using the default empty MySQL password for this course. But in your real-scenario projects in the future, every database must be protected by a complex password.
+
 ### Starting `mysql` service
 
-After installing MySQL with Homebrew, the `mysql` service should automatically start every time your computer starts. However, if MySQL is not running for any reason and you try to access MySQL command line, you will see the following error:
+After installing MySQL with Homebrew, the `mysql` service should automatically start every time your computer starts. However, if MySQL is not running for any reason when you try to access MySQL command line, you will see the following error:
 
 ```
 $ mysql -u root -p
