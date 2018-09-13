@@ -1,10 +1,10 @@
 ![IronHack Logo](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_d5c5793015fec3be28a63c4fa3dd4d55.png)
 
-# Guided Project: Tell Your Story with Data
+# Guided Project: Calculating Odds 
 
 ## Overview
 
-The goal of this project is for you to practice creating beautiful and concise visualizations that tell us something interesting and insightful about your choice of dataset.
+The goal of this project is for you to explore a game of chance and compute the odds of three different scenarios in this game.
 
 <b>You will be working individually for this project</b>, but we'll be guiding you along the process and helping you as you go. 
 
@@ -13,23 +13,26 @@ The goal of this project is for you to practice creating beautiful and concise v
 ## Technical Requirements
 
 The technical requirements for this project are as follows:
- - You will select a dataset from a public source.
- - You will create a jupyter notebook to analyze the data
- - You will create at least 3 different data visualizations that are clear and concise. Graphs should contain the proper labeling of the x and y axis when appropriate as well as a title for the graph.
- - You will explain what insight or information is inferred from these visualizations. The explanation should be in the notebook in markdown cells.
+ - You will select a game of chance
+ - You will create a jupyter notebook to perform your analysis of this game.
+ - You will compute the probability of at least 2 different potential outcomes in this game.
+ - You will discuss how likely (or unlikely) these outcomes are to the player.
 ## Necessary Deliverables
 
 The following deliverables should be pushed to your Github repo for this chapter.
 
 - <b>A jupyter notebook</b> containing your analysis and the code you used to obtain this analysis.
-- <b>A data folder</b> containing your data set.
 
 ## Suggested Ways to Get Started
 
-* **Find a data set to process** - a great place to start looking would be [Awesome Public Data Sets](https://github.com/awesomedata/awesome-public-datasets) and [Kaggle Data Sets](https://www.kaggle.com/datasets). Another source would be the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php).
-* **Perform Preliminary Analysis** - use functions like `describe` to help guide you to the correct insight and data visualization. 
-* **Use the tools in your tool kit** - your knowledge of the different types of visualizations and when to use them should come in handy with this assignment.
-* **Consult documentation and resources provided** to better understand the tools you are using and how to accomplish what you want.
+* Here are a few options of games of chance:
+    * [Blackjack](https://en.wikipedia.org/wiki/Blackjack#Basic_strategy)
+    * [Roulette](https://en.wikipedia.org/wiki/Roulette#Bet_odds_table)
+    * [Craps](https://en.wikipedia.org/wiki/Craps#Bet_odds_and_summary)
+* Compute the number of possible ways to get any outcome
+* Compute the number of ways to obtain a particular outcome
+* Divide the two and find the probability of each outcome
+* Explain how likely this outcome is using markdown comments in your notebook
 
 ## Project Feedback + Evaluation
 
@@ -53,9 +56,9 @@ This will be useful as an overall gauge of whether you met the project goals, bu
 
 ### Format
 
-* Presentation Time: 6 minutes
+* Presentation Time: 4 minutes
 * Q & A: 3 minutes
-* **Total Time:** 9 minutes
+* **Total Time:** 7 minutes
 
 ### Attire
 
@@ -71,15 +74,15 @@ This will be useful as an overall gauge of whether you met the project goals, bu
 
 * Short presentation of yourself:
 	* Who are you?
-	* Your favorite thing about this course so far
+	* What you hope to get from this course
   * __Note: we are getting you ready for final presentation!__
 * Introduction
-  * Data set you chose.
-  * Why did you choose that data set?
+  * The game you chose
+  * What did you learn about games of chance from this presentation?
   * The most important thing you learned.
 * The code
     * Be prepared to explain your code as well as markdown comments 
-* The visualizations
-    * Explain your choice of visualizations and how you customized them to make them more clear for the reader
+* The computations
+    * Explain the outcomes you chose and their probabilities.
 * Your insight
-    * Explain what insight you derived from the visualizations and what this tells us about the data
+    * Explain what insight you derived from your calculations and what this tells us about the game.
