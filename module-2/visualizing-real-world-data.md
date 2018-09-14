@@ -14,9 +14,10 @@ The goal of this project is to practice creating and interpreting different type
 
 The technical requirements for this project are as follows:
  - You will select a dataset from a public source.
- - You will create a jupyter notebook to analyze the data
+ - You will create a jupyter noteboosk to analyze the data
  - Using your data, you will create a minimum of one scatter plot, one histogram, one box plot and one bar graph (you can add more than one visualization of each type of you choose). Graphs should contain the proper labeling of the x and y axis when appropriate as well as a title for the graph.
  - You will explain what insight or information is inferred from these visualizations. The explanation should be in the notebook in markdown cells.
+
 ## Necessary Deliverables
 
 The following deliverables should be pushed to your Github repo for this chapter.

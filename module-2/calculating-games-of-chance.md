@@ -1,6 +1,6 @@
 ![IronHack Logo](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_d5c5793015fec3be28a63c4fa3dd4d55.png)
 
-# Guided Project: Calculating Odds 
+# Guided Project: Calculating Probabilities of Games of Chance 
 
 ## Overview
 
@@ -15,7 +15,7 @@ The goal of this project is for you to explore a game of chance and compute the 
 The technical requirements for this project are as follows:
  - You will select a game of chance
  - You will create a jupyter notebook to perform your analysis of this game.
- - You will compute the probability of at least 2 different potential outcomes in this game.
+ - You will compute the probability of at least 2 different potential outcomes in this game. Outcomes should be calculated by defining functions in Python and using the functions available to you in the scipy library.
  - You will discuss how likely (or unlikely) these outcomes are to the player.
 ## Necessary Deliverables
 
