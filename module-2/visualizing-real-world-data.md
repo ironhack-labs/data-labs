@@ -27,7 +27,7 @@ The following deliverables should be pushed to your Github repo for this chapter
 
 ## Suggested Ways to Get Started
 
-* **Find a data set to process** - a great place to start looking would be [Awesome Public Data Sets](https://github.com/awesomedata/awesome-public-datasets) and [Kaggle Data Sets](https://www.kaggle.com/datasets). Another source would be the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php).
+* **Find a data set to process** - a great place to start looking would be [Awesome Public Data Sets](https://github.com/awesomedata/awesome-public-datasets), [Kaggle Data Sets](https://www.kaggle.com/datasets), or the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php). A great new source is the [Google dataset search](https://toolbox.google.com/datasetsearch).
 * **Perform Preliminary Analysis** - use functions like `describe` to help guide you to the correct insight and data visualization. 
 * **Use the tools in your tool kit** - your knowledge of the different types of visualizations and when to use them should come in handy with this assignment.
 * **Consult documentation and resources provided** to better understand the tools you are using and how to accomplish what you want.

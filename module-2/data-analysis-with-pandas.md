@@ -4,7 +4,7 @@
 
 ## Overview
 
-The goal of this project is for you to perform exploratory data analysis on a real world dataset of your choice using Pandas. 
+The goal of this project is for you to derive insights using the Pandas library to analyze a real world dataset of your choice.
 
 <b>You will be working individually for this project</b>, but we'll be guiding you along the process and helping you as you go. 
 
@@ -23,18 +23,16 @@ The technical requirements for this project are as follows:
 The following deliverables should be pushed to your Github repo for this chapter.
 
 - <b>A jupyter notebook</b> containing your analysis and the code you used to obtain this analysis.
-- <b>A data folder</b> containing the 
+- <b>A data folder</b> containing the csv file you chose.
+
 
 ## Suggested Ways to Get Started
 
-* Here are a few options of games of chance:
-    * [Blackjack](https://en.wikipedia.org/wiki/Blackjack#Basic_strategy)
-    * [Roulette](https://en.wikipedia.org/wiki/Roulette#Bet_odds_table)
-    * [Craps](https://en.wikipedia.org/wiki/Craps#Bet_odds_and_summary)
-* Compute the number of possible ways to get any outcome
-* Compute the number of ways to obtain a particular outcome
-* Divide the two and find the probability of each outcome
-* Explain how likely this outcome is using markdown comments in your notebook
+* **Find a data set to process** - a great place to start looking would be [Awesome Public Data Sets](https://github.com/awesomedata/awesome-public-datasets), [Kaggle Data Sets](https://www.kaggle.com/datasets), or the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php). A great new source is the [Google dataset search](https://toolbox.google.com/datasetsearch).
+* **Perform Preliminary Analysis** - use functions like `describe` to help uncover interesting insights about your dataset.
+* **Use the tools in your tool kit** - Using tools like calculated columns and pivot tables, discover and desribe the insights you have found.
+* **Consult documentation and resources provided** to better understand the tools you are using and how to accomplish what you want.
+
 
 ## Project Feedback + Evaluation
 
@@ -58,9 +56,9 @@ This will be useful as an overall gauge of whether you met the project goals, bu
 
 ### Format
 
-* Presentation Time: 4 minutes
+* Presentation Time: 6 minutes
 * Q & A: 3 minutes
-* **Total Time:** 7 minutes
+* **Total Time:** 9 minutes
 
 ### Attire
 
@@ -76,15 +74,18 @@ This will be useful as an overall gauge of whether you met the project goals, bu
 
 * Short presentation of yourself:
 	* Who are you?
-	* What you hope to get from this course
+	* What background did you have before taking this course?
   * __Note: we are getting you ready for final presentation!__
 * Introduction
-  * The game you chose
-  * What did you learn about games of chance from this presentation?
+  * The dataset you chose
+  * What drew you to this dataset?
   * The most important thing you learned.
+* One technical challenge you faced:
+  * Explain the challenge.
+  * Explain how and what you did to overcome it.
+  * Show your code and explain in markdown cells in your notebook.
 * The code
     * Be prepared to explain your code as well as markdown comments 
-* The computations
-    * Explain the outcomes you chose and their probabilities.
-* Your insight
-    * Explain what insight you derived from your calculations and what this tells us about the game.
+* Your insights
+    * Explain what insight you derived from your analysis and what this tells us about the data.
+    * What recommendations would you make given these insights?
