@@ -14,9 +14,9 @@ The goal of this project is for you to create and then resolve a merge conflict 
 
 The technical requirements for this project are as follows:
 
-- You will create a new git branch 
-- You will create a conflict with the master branch
-- You will resolve the conflict
+- Create a new git branch 
+- Create a conflict with the master branch
+- Resolve the conflict
 - Document all steps in this process using code snippets and screen shots
 - Document your thought process and conclusions
 

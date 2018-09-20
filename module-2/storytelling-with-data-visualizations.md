@@ -13,15 +13,15 @@ The goal of this project is for you to practice creating beautiful and concise v
 ## Technical Requirements
 
 The technical requirements for this project are as follows:
- - You will select a dataset from a public source.
- - You will create a jupyter notebook to analyze the data
- - You will create at least 3 different data visualizations that are clear and concise. Graphs should contain the proper labeling of the x and y axis when appropriate as well as a title for the graph.
- - You will explain what insight or information is inferred from these visualizations. The explanation should be in the notebook in markdown cells.
+ - Select a dataset from a public source.
+ - Create a Jupyter notebook to analyze the data
+ - Create at least 3 different data visualizations that are clear and concise. Graphs should contain the proper labeling of the x and y axis when appropriate as well as a title for the graph.
+ - Explain what insight or information is inferred from these visualizations. The explanation should be in the notebook in markdown cells.
 ## Necessary Deliverables
 
-The following deliverables should be pushed to your Github repo for this chapter.
+The following deliverables should be pushed to your GitHub repo for this chapter.
 
-- <b>A jupyter notebook</b> containing your analysis and the code you used to obtain this analysis.
+- <b>A Jupyter notebook</b> containing your analysis and the code you used to obtain this analysis.
 - <b>A data folder</b> containing your data set.
 
 ## Suggested Ways to Get Started
@@ -63,7 +63,7 @@ This will be useful as an overall gauge of whether you met the project goals, bu
 
 ### Outputs
 
-* Present your findings using the jupyter notebook.
+* Present your findings using the Jupyter notebook.
 * The presentation and demo will be executed on a class computer (instead of your own).
 * Be prepared to explain your entire notebook and thought process.
 

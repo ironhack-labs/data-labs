@@ -14,7 +14,7 @@ The goal of this project is for you to derive insights using the Pandas library 
 
 The technical requirements for this project are as follows:
  - You will select a real world dataset.
- - You will create a jupyter notebook to perform your analysis the dataset.
+ - You will create a Jupyter notebook to perform your analysis the dataset.
  - You should incorporate at least three elements from the topics covered in this chapter in your analysis of the dataset.
  - You should include your thoughts and conclusions from the analysis in markdown cells in the notebook.
  
@@ -22,7 +22,7 @@ The technical requirements for this project are as follows:
 
 The following deliverables should be pushed to your Github repo for this chapter.
 
-- <b>A jupyter notebook</b> containing your analysis and the code you used to obtain this analysis.
+- <b>A Jupyter notebook</b> containing your analysis and the code you used to obtain this analysis.
 - <b>A data folder</b> containing the csv file you chose.
 
 
@@ -66,7 +66,7 @@ This will be useful as an overall gauge of whether you met the project goals, bu
 
 ### Outputs
 
-* Present your findings using the jupyter notebook.
+* Present your findings using the Jupyter notebook.
 * The presentation and demo will be executed on a class computer (instead of your own).
 * Be prepared to explain your entire notebook and thought process.
 
