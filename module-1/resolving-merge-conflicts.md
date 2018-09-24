@@ -14,9 +14,9 @@ The goal of this project is for you to create and then resolve a merge conflict 
 
 The technical requirements for this project are as follows:
 
-- You will create a new git branch 
-- You will create a conflict with the master branch
-- You will resolve the conflict
+- Create a new git branch 
+- Create a conflict with the master branch
+- Resolve the conflict
 - Document all steps in this process using code snippets and screen shots
 - Document your thought process and conclusions
 
@@ -29,9 +29,7 @@ The following deliverables should be pushed to your Github repo for this chapter
 
 ## Project Feedback + Evaluation
 
-* __Technical Requirements__: Did you deliver a project that met all the technical requirements? Given what the class has covered so far, did you build something that was reasonably complex?
-
-* __Creativity__: Did you add a personal spin or creative element into your project submission? Did you incorporate domain knowledge or unique perspective into your analysis.
+* __Technical Requirements__: Did you deliver a project that met all the technical requirements? Did you manage to correctly use git to accomplish your goal?
 
 * __Code Quality__: Did you follow code style guidance and best practices covered in class?
 

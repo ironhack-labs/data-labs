@@ -13,16 +13,16 @@ The goal of this project is to practice creating and interpreting different type
 ## Technical Requirements
 
 The technical requirements for this project are as follows:
- - You will select a dataset from a public source.
- - You will create a jupyter noteboosk to analyze the data
- - Using your data, you will create a minimum of one scatter plot, one histogram, one box plot and one bar graph (you can add more than one visualization of each type of you choose). Graphs should contain the proper labeling of the x and y axis when appropriate as well as a title for the graph.
- - You will explain what insight or information is inferred from these visualizations. The explanation should be in the notebook in markdown cells.
+ - Select a dataset from a public source.
+ - Create a Jupyter noteboosk to analyze the data
+ - Using your data, create a minimum of one scatter plot, one histogram, one box plot and one bar graph (you can add more than one visualization of each type of you choose). Graphs should contain the proper labeling of the x and y axis when appropriate as well as a title for the graph.
+ - Explain what insight or information is inferred from these visualizations. The explanation should be in the notebook in markdown cells.
 
 ## Necessary Deliverables
 
 The following deliverables should be pushed to your Github repo for this chapter.
 
-- <b>A jupyter notebook</b> containing your analysis and the code you used to obtain this analysis.
+- <b>A Jupyter notebook</b> containing your analysis and the code you used to obtain this analysis.
 - <b>A data folder</b> containing your data set.
 
 ## Suggested Ways to Get Started
@@ -64,7 +64,7 @@ This will be useful as an overall gauge of whether you met the project goals, bu
 
 ### Outputs
 
-* Present your findings using the jupyter notebook.
+* Present your findings using the Jupyter notebook.
 * The presentation and demo will be executed on a class computer (instead of your own).
 * Be prepared to explain your entire notebook and thought process.
 
@@ -75,8 +75,8 @@ This will be useful as an overall gauge of whether you met the project goals, bu
 	* Your favorite thing about this course so far
   * __Note: we are getting you ready for final presentation!__
 * Introduction
-  * Data set you chose.
-  * Why did you choose that data set?
+  * Describe the dataset you chose
+  * Why did you choose that dataset?
   * The most important thing you learned.
 * The code
     * Be prepared to explain your code as well as markdown comments 
