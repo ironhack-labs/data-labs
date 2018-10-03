@@ -51,7 +51,9 @@ If you finish the tasks for a day early, you can either perform the tasks for th
 
 ### Day 1
 
-Choose one of the following data sets:
+On the first day of your project, you will be planning your project, choosing a data set, downloading and cleaning it, and storing it in a MySQL database.
+
+To get started, evaluate and choose from one of the following data sets:
 
 * [Telecom Customer Churn Data Set](https://www.kaggle.com/blastchar/telco-customer-churn)
 * [Mental Health in Tech Survey Data Set](https://www.kaggle.com/osmi/mental-health-in-tech-survey)
@@ -61,25 +63,31 @@ Choose one of the following data sets:
 
 These are all Kaggle data sets, so you can gain some context about them by looking at the field descriptions and the *Overview* tab for each data set. You can also get project ideas by looking at the different *Kernels* that people have created using the data sets and the approaches they have taken, but please **do not plagiarize or copy someone else's work.** Remember that the goal of this project is to demonstrate *your* skills, not someone else's.
 
-In order to download the data sets, you will need to create a free Kaggle account. Once the data sets have been download, you may start your project by doing the following:
+As you are evaluating the data sets and deciding which you would like to use for your project, think about the different types of information that could be extracted from each one and what problems you could potentially solve by applying supervised or unsupervised machine learning to the data.
 
-* Create a new MySQL database for your data.
+Once you have chosen a data set, you will need to download it. In order to do so, you will need to create a free Kaggle account if you don't already have one. Once you have downloaded the data, you should perform the steps below:
+
+* Create a new MySQL database where your data will eventually be stored.
 * Create a new Jupyter Notebook for your project.
-* In the Jupyter Notebook read the data files using Python.
+* In the Jupyter Notebook, read the data files using Python.
 * Perform any necessary data wrangling and cleaning using Python.
-* Create a connection to your MySQL database and write the clean version of the data to the database.
+* Create a connection to your MySQL database using `pymysql` and `sqlalchemy` and write the clean version of the data to the database.
 
 ### Day 2
 
+On the second day of your project, you will start with the clean data set you stored in your database on the previous day. You will explore, analyze, and visualize the data using Python and Tableau and applying the variety of techniques you learned throughout the program.
+
 * In your Jupyter Notebook, read the clean data from your MySQL database.
 * Using Pandas, generate summaries of the data and calculate descriptive statistics.
-* Practice generating a few basic charts and graphs using Python as well.
+* Practice generating a few basic charts and graphs using `matplotlib` or `seaborn` as well.
 * Export your clean data set to a CSV file.
 * Open Tableau Public and load the CSV file.
 * Explore the data in Tableau and look for interesting insights.
-* Put together a Tableau Story communicating those insights.
+* Put together an annotated Tableau Story communicating the insights you have discovered.
 
 ### Day 3
+
+On the third day of your project, you will be using the analysis you performed and the insights you discovered the previous day to help frame your machine learning problem, select and engineer appropriate features, train your models, and evaluate performance.
 
 * If you are planning on doing supervised machine learning, identify the target variable you would like to train a model to predict. Also determine whether you will be doing regression (target variable is continuous) or classification (target variable is discrete).
 * Perform feature selection/engineering to arrive at the features you feel best represent the problem you are trying to solve. During this stage, you may need to normalize or scale your variables.
@@ -89,8 +97,11 @@ In order to download the data sets, you will need to create a free Kaggle accoun
 
 ### Day 4
 
+Should you have a fourth day of final project work, you should spend the day refining your machine learning models and your presentations. If you have time, you may also go back and perform additional data exploration and analysis.
+
 * Continue iterating on your machine learning models with the objective of optimizing their performance.
-* Further refine your presentation of findings and results.
+* Organize your machine learning steps into a pipeline that performs feature selection/engineering, model training, model evaluation, and model storage.
+* Further refine your presentation based on additional findings and results.
 
 ## Technical Requirements
 
