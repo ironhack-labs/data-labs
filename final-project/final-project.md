@@ -75,7 +75,7 @@ Once you have chosen a data set, you will need to download it. In order to do so
 
 ### Day 2
 
-On the second day of your project, you will start with the clean data set you stored in your database on the previous day. You will explore, analyze, and visualize the data using Python and Tableau and applying the variety of techniques you learned throughout the program.
+On the second day of your project, you will start with the clean data set you stored in your database on the previous day. You will explore, analyze, and visualize the data using Python and Tableau, applying the variety of techniques you learned throughout the program.
 
 * In your Jupyter Notebook, read the clean data from your MySQL database.
 * Using Pandas, generate summaries of the data and calculate descriptive statistics.
@@ -91,13 +91,13 @@ On the third day of your project, you will be using the analysis you performed a
 
 * If you are planning on doing supervised machine learning, identify the target variable you would like to train a model to predict. Also determine whether you will be doing regression (target variable is continuous) or classification (target variable is discrete).
 * Perform feature selection/engineering to arrive at the features you feel best represent the problem you are trying to solve. During this stage, you may need to normalize or scale your variables.
-* Train a couple machine learning model on the data.
+* Train a couple machine learning models on the data.
 * Evaluate the performance of the models.
 * Prepare a presentation of your findings and results.
 
 ### Day 4
 
-Should you have a fourth day of final project work, you should spend the day refining your machine learning models and your presentations. If you have time, you may also go back and perform additional data exploration and analysis.
+Should you have a fourth day of final project work, you should spend the day refining your machine learning models and your presentation. If you have time, you may also go back and perform additional data exploration and analysis.
 
 * Continue iterating on your machine learning models with the objective of optimizing their performance.
 * Organize your machine learning steps into a pipeline that performs feature selection/engineering, model training, model evaluation, and model storage.
@@ -124,11 +124,11 @@ The following deliverables should be pushed to your Github repo.
 
 ## Useful Resources
 
-Just about everything you need to complete this final project should have been covered in the lessons of this program. If you need to research any errors you are getting or how to do something extra, we have tried to reinforce in every lesson that the places to look for answers are the Python/MySQL/Tableau documentation and StackOverflow (or other such techical question-and-answer sites). This is how people who work with data in the real world overcome the obstacles they encounter on a daily basis, so it is important to get some practice at it.
+Just about everything you need to complete this final project should have been covered in the lessons of this program. If you need to research any errors you are getting or how to do something extra, we have tried to reinforce that the places to look for answers are the Python/MySQL/Tableau documentation and StackOverflow (or other technical question-and-answer sites). This is how people who work with data in the real world find answers and overcome the obstacles they encounter on a daily basis, so it is important to get some practice at it.
 
 ## Project Feedback + Evaluation
 
-* __Technical Requirements__: Did you deliver a project that met all the technical requirements? Given what the class has covered so far, did you build something that was reasonably complex?
+* __Technical Requirements__: Did you deliver a project that met all the technical requirements? Given what the program has covered, did you build something that was reasonably complex?
 
 * __Creativity__: Did you add a personal spin or creative element into your project submission? Did you incorporate domain knowledge or unique perspective into your analysis.
 
