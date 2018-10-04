@@ -11,9 +11,9 @@ The goal of this project is to give you an opportunity to demonstrate the skills
 * Data storage
 * Data exploration and analysis
 * Feature selection
-* Machine learning
+* Machine learning model training
 * Model evaluation
-* Reporting of insights
+* Reporting and presentation of insights
 
 You will be provided a list of data sets to choose from for this project. Using the knowledge you have acquired and your experience working with data, you will need to come up with a plan for what you are going to do and then design the project around the data set you have chosen.
 
@@ -107,14 +107,24 @@ Should you have a fourth day of final project work, you should spend the day ref
 
 The technical requirements for this project are as follows:
 
+* You must demonstrate proficiency with every step of the analytics workflow.
+* Python should be used to import/export, clean, wrangle, analyze, and perform machine learning on the data.
+* MySQL should be used to store a clean version of your data set.
+* Tableau should be used for data exploration, analysis, visualization, and storytelling.
+* Your Python code should be stored in a Jupyter Notebook (.ipynb) file.
+* You should also include a README.md file that describes the steps you took and your thought process throughout each stage of your project - from choosing your data set all the way through evaluating your machine learning models.
 
 ## Necessary Deliverables
 
-The following deliverables should be pushed to your Github repo for this chapter.
+The following deliverables should be pushed to your Github repo.
 
+* A Jupyter Notebook (.ipynb) file containing all your Python code.
+* A data folder containing your original data set and your clean data set in CSV format.
+* A README.md file that provides a detailed description of what you did, how, and why.
 
 ## Useful Resources
 
+Just about everything you need to complete this final project should have been covered in the lessons of this program. If you need to research any errors you are getting or how to do something extra, we have tried to reinforce in every lesson that the places to look for answers are the Python/MySQL/Tableau documentation and StackOverflow (or other such techical question-and-answer sites). This is how people who work with data in the real world overcome the obstacles they encounter on a daily basis, so it is important to get some practice at it.
 
 ## Project Feedback + Evaluation
 
@@ -138,9 +148,9 @@ This will be useful as an overall gauge of whether you met the project goals, bu
 
 ### Format
 
-* Presentation Time: 6 minutes
+* Presentation Time: 12 minutes
 * Q & A: 3 minutes
-* **Total Time:** 9 minutes
+* **Total Time:** 15 minutes
 
 ### Attire
 
@@ -168,9 +178,7 @@ This will be useful as an overall gauge of whether you met the project goals, bu
   * Explain how and what you did to overcome it.
   * Show and explain code snippets in your presentation slides.
 * Git:
-  * Display an screenshot of your GitHub graphs to show your commit frequency and how much work you did.
-* Data Pipeline Walkthrough:
+  * Display a screenshot of your GitHub graphs to show your commit frequency and how much work you did.
+* Final Project Walkthrough:
   * Walk the audience through the data set you chose, providing an overview of some of the fields and other information contained in the data.
-  * Walk the audience through your process of designing and constructing your data pipeline including what tools and techniques you employed, what avenues you decided to pursue and why, and what lessons you learned.
-* One important mistake you made:
-  * Did you made a mistake in the construction of your pipeline? Did you perform one of the operations incorrectly?
+  * Walk the audience through your process of cleaning, exploring, analyzing, and performing machine learning on your data including what tools and techniques you employed, what avenues you decided to pursue and why, what interesting insights you discovered, and what lessons you learned.
