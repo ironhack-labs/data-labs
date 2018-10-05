@@ -199,4 +199,6 @@ Below are a few videos of the Ironhack Hackshow where our graudates presented th
 
 * Commit your codes and push to Github on regular basis. You should commit every time you complete a task and push at least once a day. This will help you avoid accidential data loss and is also the easiest way to document your iterative development process.
 
-* Test every component and step of your project presentation. Make sure your demo will be smooth.
+* Before final project presentation, test every component and step of your demo. Make sure your demo will run smoothly.
+
+## May the force be with you!
