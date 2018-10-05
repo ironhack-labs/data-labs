@@ -17,7 +17,7 @@ The goal of this project is to give you an opportunity to demonstrate the skills
 
 You will be provided a list of data sets to choose from for this project. Using the knowledge you have acquired and your experience working with data, you will need to come up with a plan for what you are going to do and then design the project around the data set you have chosen.
 
-**You will be working individually for this project**, but we'll be guiding you along the process and helping you as you go. You will be working on this project over the course of 3-4 days. Below is the anticipated activities you should be performing on each day.
+**You will be working individually for this project**, but we'll be guiding you along the process and helping you as you go. You will be working on this project over the course of 3-4 days (actual length of the project to be decided by your Lead Instructor). Below is the anticipated activities you should be performing on each day.
 
 ### Day 1
 
@@ -182,3 +182,21 @@ This will be useful as an overall gauge of whether you met the project goals, bu
 * Final Project Walkthrough:
   * Walk the audience through the data set you chose, providing an overview of some of the fields and other information contained in the data.
   * Walk the audience through your process of cleaning, exploring, analyzing, and performing machine learning on your data including what tools and techniques you employed, what avenues you decided to pursue and why, what interesting insights you discovered, and what lessons you learned.
+
+Below are a few videos of the Ironhack Hackshow where our graudates presented their final projects. Take a quick look on how our past students presented their projects.
+
+* [Web Dev final project demo](https://www.youtube.com/watch?v=MnUxEL3iiig)
+* [UX/UI final project demo](https://www.youtube.com/watch?v=oII8I2nl7WM) 
+* [Hackshow diciembre 2017 - Madrid](https://www.youtube.com/watch?v=64Jav707V9E) (Spanish)
+
+## 5 Tips for Successful Completion
+
+* Generate a project idea that solves a data problem with practical values. Make sure the problem you try to solve is clearly defined. Make sure the scope of the problem is manageable so that you can complete within the project timeframe. Meanwhile, think beyond the problem itself - can your solution of the problem inform how to solve other bigger/deeper problems?
+
+* Obtain timely feedback on your ideas, plans, progress, and products from the instructional staff. This ensures you stay on the right track and deliver impressive results.
+
+* Be prepared for technical difficulties. Manage your time wisely and pace yourself. Stick to the project agenda strictly.
+
+* Commit your codes and push to Github on regular basis. You should commit every time you complete a task and push at least once a day. This will help you avoid accidential data loss and is also the easiest way to document your iterative development process.
+
+* Test every component and step of your project presentation. Make sure your demo will be smooth.
