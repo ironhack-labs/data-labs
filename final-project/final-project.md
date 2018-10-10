@@ -63,7 +63,27 @@ To get started, evaluate and choose from one of the following data sets:
 
 These are all Kaggle data sets, so you can gain some context about them by looking at the field descriptions and the *Overview* tab for each data set. You can also get project ideas by looking at the different *Kernels* that people have created using the data sets and the approaches they have taken, but please **do not plagiarize or copy someone else's work.** Remember that the goal of this project is to demonstrate *your* skills, not someone else's.
 
-As you are evaluating the data sets and deciding which you would like to use for your project, think about the different types of information that could be extracted from each one and what problems you could potentially solve by applying supervised or unsupervised machine learning to the data.
+As you are evaluating the data sets and deciding which you would like to use for your project, think about the different types of information that could be extracted from each one and what problems you could potentially solve by applying supervised or unsupervised machine learning to the data. Below are some ideas for each data set to help get you started.
+
+#### Telecom Customer Churn
+
+This data set is great for practicing supervised machine learning. The most obvious supervised learning problem to model with this data set is attempting to predict churn (whether or not a customer is going to leave). Another supervised problem you can try to solve is predicting tenure, or how long a customer will end up staying with the company. There are also a lot of ways to slice, dice, and analyze this data set - for example, looking at how monthly charges increase or decrease depending on different types of contract, tenure, and services provided.
+
+#### Mental Health in Tech
+
+This data set is also good for supervised learning, where you would attempt to predict the whether the employee taking the survey has received treatment for mental health (treatment variable). You can also analyze how the other variables in the data set contribute to whether someone seeks treatment for mental health and explore what types of environments result in employees with the best mental heath states.
+
+#### Flight Delays and Cancellations
+
+This relational data set can help you practice your SQL joins as well as supervised learning as you attempt to predict which flights will be delayed and by how much time. There are also a variety of ways to explore this data set to determine which airlines are most efficient, what times of day there tends to be the most delays, which cities have more frequent delays than others, and how all this changes over time.
+
+#### Craft Beers
+
+This relational data set has fewer variables than the others, and that means that choosing it for your project will require you to apply some extra creativity. For example, you can create categorical variables out of the numberic abv and ibu variables to categorize a beer's strength and hoppiness. You can also use  string operations on the style field to extract additional keyword-based categories (e.g. IPAs, American, English, Wheat, etc.). For modeling, you can attempt to predict the style of the beer or the probability that it falls into a particular style. Alternatively, you can attempt to compute similarity between beers to determine which ones are most like which other ones.
+
+### Human Resources
+
+This is another relational data set where you can practice your SQL joins as well as data wrangling, analysis, and machine learning. As far as applying machine learning to this data set, you can attempt to cluster employees together into similar groups, you can attempt to predict performance scores or pay rate, or you can attempt to predict whether an employee will be terminated within a certain amount of time. Additionally, you can also analyze the relationship between pay and performance by position, department, and manager as well as employee demographics.
 
 Once you have chosen a data set, you will need to download it. In order to do so, you will need to create a free Kaggle account if you don't already have one. Once you have downloaded the data, you should perform the steps below:
 
@@ -199,4 +219,6 @@ Below are a few videos of the Ironhack Hackshow where our graudates presented th
 
 * Commit your codes and push to Github on regular basis. You should commit every time you complete a task and push at least once a day. This will help you avoid accidential data loss and is also the easiest way to document your iterative development process.
 
-* Test every component and step of your project presentation. Make sure your demo will be smooth.
+* Before final project presentation, test every component and step of your demo. Make sure your demo will run smoothly.
+
+## May the force be with you!
