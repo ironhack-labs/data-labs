@@ -4,7 +4,7 @@
 
 ## Introduction
 
-Now you should already be familar with the workflow of solving and submitting the labs. But in case not, review the guidelines in the `README.md` in the [repo root](../../..) and [previous lab](../lab-numpy).
+Now you should already be familar with the workflow of solving and submitting the labs. But in case not, review the guidelines in the `README.md` in the [repo root](../..) and [previous lab](../lab-numpy).
 
 In this lab, again you will be working on [main.py](your-code/main.py). Read the questions in the commentations and provide your answers. Make sure to test your answers in Python.
 
