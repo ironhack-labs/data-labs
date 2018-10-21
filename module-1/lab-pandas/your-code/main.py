@@ -1,38 +1,19 @@
 #1. Import the PANDAS package under the name pd. Import the NUMPY package under the name np
 
-import pandas as pd
-import numpy as np
-
 
 #2. Define a variable called `url` that contains the path to the csv file you downloaded. 
 # Alternatively, you can also assign the hyperlink value to `url`.
-
-url = "<path-to-csv-file>"
-
-# or
-
-url = "https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/data-static/data/apple_store.csv"
 
 
 #3. Using Pandas' `read_csv()` method, import the csv file at the url above. 
 # Assign the returned value to a variable called `data`.
 # Note: you can omit the `sep` parameter for `read_csv()` because the csv file uses the default separator of ",".
 
-data = pd.read_csv(url)
-
-# or
-
-data = pd.read_csv(url, sep=',')
-
 
 #4. Print the first 5 rows of `data` to see what the data look like.
 # A data analyst usually does this to have a general understanding about what the data look like before digging deep.
 
 """
->>> data.head(1)
-          id       track_name  size_bytes  price  rating_count_tot  rating_count_ver  user_rating  user_rating_ver prime_genre
-0  281656475  PAC-MAN Premium   100788224   3.99             21292                26          4.0              4.5       Games
->>> data.head(5)
           id                                         track_name  size_bytes      ...       user_rating  user_rating_ver   prime_genre
 0  281656475                                    PAC-MAN Premium   100788224      ...               4.0              4.5         Games
 1  281796108                          Evernote - stay organized   158578688      ...               4.0              3.5  Productivity
@@ -45,7 +26,6 @@ data = pd.read_csv(url, sep=',')
 #5.  Print the summary (info) of the data.
 
 """
->>> data.info()
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 7197 entries, 0 to 7196
 Data columns (total 9 columns):
@@ -66,7 +46,6 @@ memory usage: 506.1+ KB
 #6 Print the number of columns in the data.
 
 """
->>> data.shape[1]
 9
 """
 
@@ -74,7 +53,6 @@ memory usage: 506.1+ KB
 #7. Print all column names.
 
 """
->>> data.columns
 Index([u'id', u'track_name', u'size_bytes', u'price', u'rating_count_tot',
        u'rating_count_ver', u'user_rating', u'user_rating_ver',
        u'prime_genre'],
@@ -89,32 +67,14 @@ Index([u'id', u'track_name', u'size_bytes', u'price', u'rating_count_tot',
 #8. Print the # of observations of the data.
 # Your code should return the number 7197.
 
-data.shape[0]
-
-# or
-
-len(data.index)
-
 
 # Q2: What is the average rating of all apps?
 
 #9. First, read the `user_rating` column into a varialbe named `user_rating`.
 
-user_rating = data['user_rating']
-
 
 #10. Now you can calculate the average of the `user_rating` data.
 # Your code should return 3.526955675976101
-
-"""
->>> user_rating.mean()
-3.526955675976101
-
-or
-
->>> np.average(user_rating)
-3.526955675976101
-"""
 
 
 # Q3: How many apps have an average rating no less than 4?
@@ -122,33 +82,21 @@ or
 #11. First, filter `user_rating` where its value >= 4. 
 # Assign the filtered dataframe to a new variable called `user_rating_high`.
 
-user_rating_high = user_rating[user_rating>=4]
-
 
 #12. Now obtain the length of `user_rating_high` which should return 4781.
 
-"""
->>> len(user_rating_high)
-4781
-"""
 
 # Of course you don't have to define `user_rating_high` because you only use it once.
 # You can directly print the length of the filtered dataframe if you want.
-
-len(user_rating[user_rating >= 4])
 
 
 # Q4: How many genres are there in total for all the apps?
 
 #12. Define a new varialbe named `genres` that contains the `prime_genre` column of `data`.
 
-genres = data['prime_genre']
-
 
 #13. Google for how to obtain unique values of a dataframe column. 
 # Print the length of the unique values of `genres`. Your code should return 23.
-
-len(genres.unique())
 
 
 # Q5: What are the top 3 genres that have the most number of apps?
@@ -164,8 +112,6 @@ Entertainment     535
 Education         453
 Name: prime_genre, dtype: int64
 """
-
-genres.value_counts()[:3]
 
 
 # Q6. Which genre is most likely to contain free apps?
@@ -200,7 +146,6 @@ Medical                 8
 Name: prime_genre, dtype: int64
 """
 
-free_apps['prime_genre'].value_counts()
 
 """
 16. Now you can calculate the proportion of the free apps in each genre based on the 
@@ -234,8 +179,6 @@ Name: prime_genre, dtype: float64
 
 The numbers are interesting, aren't they?
 """
-
-(free_apps['prime_genre'].value_counts() / genres.value_counts()).sort_values(ascending=False)
 
 
 """
@@ -275,18 +218,5 @@ But if that's too difficult it's ok. You pass this test as long as you find out 
  expensive app genre is "Medical".
 """
 
-average_app_price = {'genre': [], "average_price": []}
-
-for genre in genres.unique():
-  average_app_price['genre'].append(genre)
-  average_app_price['average_price'].append(data[genres==genre]['price'].sum()/genres[genres==genre].count())
-
-pd.DataFrame(average_app_price).sort_values('average_price', ascending=False)
-
 
 # Bonus question: What is the proportion of the apps that don't have an English track_name?
-
-# Skipping the complete solution here but here's the key part:
-from langdetect import detect
-track_name = data['track_name']
-detect(track_name[7186].decode('utf8')) == 'en'
