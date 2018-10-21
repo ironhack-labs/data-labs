@@ -103,8 +103,8 @@ Index([u'id', u'track_name', u'size_bytes', u'price', u'rating_count_tot',
 
 """
 14. What you want to do is to count the number of occurrences of each unique genre values.
- Because you already know how to obtain the unique genre values, you can of course count those values.
- However, Pandas has a convient function to let you count values of a dataframe column.
+ Because you already know how to obtain the unique genre values, you can of course count the # of apps of each genre one by one.
+ However, Pandas has a convient function to let you count all values of a dataframe column with a single command.
  Google for "pandas count values" to find the solution. Your code should return the following:
 
 Games            3862
