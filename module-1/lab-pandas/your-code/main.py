@@ -219,4 +219,11 @@ But if that's too difficult it's ok. You pass this test as long as you find out 
 """
 
 
-# Bonus question: What is the proportion of the apps that don't have an English track_name?
+# Bonus question: What is the proportion of apps that don't have an English `track_name`?
+
+"""
+Tip: You can install `langdetect` (https://pypi.org/project/langdetect/) with `pip`, 
+ then use `langdetect.detect()` to detect the language of a string. Also, you may need to 
+ decode the string with `utf8` if the string is not based on the ASCII encoding. Otherwise 
+ `langdetect.detect()` may throw errors.
+"""

@@ -28,6 +28,8 @@ In this lab, you will examine a data file named `apple_store.csv` downloadable f
 
 1. If a developer tries to make money by developing and selling Apple Store apps, in which genre should s/he develop the apps? Please assume all apps cost the same amount of time and expense to develop.
 
+1. :icecream: Bonus Question: What is the proportion of apps that don't have an English `track_name`?
+
 **:exclamation: In this and future labs, if you feel you are already good at Python/Pandas and you don't need the instructions in `main.py` to walk you through, please feel free to skip `main.py` and create your own solution file. However, if you feel strugling on your own, please still consult those instructions because they guide you to think on the pro's track. As you make more and more progress in this course, the instructions provided in the labs will gradually decrease so that eventually you will think and solve problems by yourself like a real data analyst.**
 
 ## Deliverables
@@ -48,6 +50,12 @@ Upon completion, add your version of `main.py` to git. Then commit git and push 
 
 ## Additional Challenges for the Nerds
 
-**What is the proportion of the apps that don't have an English `track_name`?**
+### [Pandas Tutorial: Data analysis with Python | Part 1](https://www.dataquest.io/blog/pandas-python-tutorial/)
 
-:bulb: Tip: You can install [langdetect](https://pypi.org/project/langdetect/) with `pip`, then use `langdetect.detect()` to detect the language of a string. Also, you may need to decode the string with `utf8` if the string is not based on the [ASCII encoding](https://en.wikipedia.org/wiki/ASCII). Otherwise `langdetect.detect()` may throw errors.
+If you have completed the `apple_store` challenge without much difficulty, you will find this tutorial pretty easy. However, it's still a great tutorial to read because it explains a lot of the thinking process behind codes. You can skim through this tutorial quickly to check if there's anything you still don't know.
+
+### [Pandas Tutorial: Data analysis with Python | Part 2](https://www.dataquest.io/blog/pandas-tutorial-python-2/)
+
+This is an advanced tutorial about Pandas that involves [character encoding](http://www.cogsci.nl/blog/a-simple-explanation-of-character-encoding-in-python.html), [Pandas DataFrame `apply` method](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.apply.html), [Python `lambda` expression](https://docs.python.org/3/tutorial/controlflow.html#lambda-expressions), Python functional programming (you'll learn later this week), data cleaning (you'll learn later this week), and plotting with `matplotlib` (you'll learn in Module 2). There is a lot of new information but if you manage to complete this tutorial you'll be far ahead of your classmates.
+
+The most challenging part of this course is Module 3. In Module 1 and 2 most students should be able to complete with moderate efforts. What will make you truly stand out is how deep you can dive in Module 3, which depends on your level of accomplishment in Module 1 and 2. Therefore, if you have the power to accomplish more (in terms of both the depth and breadth) in the first two modules we will certainly encourage you to.
