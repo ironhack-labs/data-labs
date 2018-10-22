@@ -175,6 +175,7 @@ array([[[ 'D',  'D',  'D',  'B',  'D'],
         [ 'D',  'D',  'D',  'D',  'D'],
         [ 'B',  'D',   'A',  'D', 'D']]])
 Again, you don't need Numpy in this question.
+<<<<<<< HEAD
 """
 #Al intentar cambiarlo string da error por ue da error,
 
@@ -195,3 +196,6 @@ for a0, block in enumerate(d):
                    f[a0,a1,a2] = 'D'
 print(d)
 print(f)
+=======
+"""
+>>>>>>> e8c15488c1249b8cb82864ac797a4a8ed1d50c6a
