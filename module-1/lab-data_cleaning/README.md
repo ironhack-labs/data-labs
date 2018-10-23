@@ -45,7 +45,7 @@ Once you make the connection yoo will use some basic SELECT queries to retrieve 
 
 - `main.ipynb` with your responses to each of the questions above.
 - `outliers.csv` containing the outliers of the dataset.
-- `climate.ipynb` containing the additional challenge code and results.
+- `weather.ipynb` containing the additional challenge code and results.
 
 
 ## Submission
