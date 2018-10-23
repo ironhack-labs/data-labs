@@ -139,6 +139,9 @@ pd.value_counts(free_apps['prime_genre'].values, sort=True)
 """
 15. First, filter `data` where the price is 0.00. Assign the filtered data to a new variable called `free_apps`.
  Then count the values in `free_apps`. Your code should return:
+ 
+juegos_gratis = pd.value_counts(free_apps['prime_genre'].values, sort=True)
+juegos_gratis
 
 Games                2257
 Entertainment         334
