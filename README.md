@@ -51,3 +51,73 @@ The instructional team will review your branch and provide feedback.
 [Project | MySQL](module-1/mysql-project)
 
 [Lab | Numpy Deep Dive](module-1/lab-numpy)
+
+[Lab | Pandas Deep Dive](module-1/lab-pandas)
+
+Lab | Data Cleaning
+
+[Project | Pandas Project](module-1/pandas-project)
+
+Lab | Python List Comprehension & Error Handling
+
+Lab | Python String Operations & Functional Programming
+
+[Project | Web Data Pipeline](module-1/pipelines-project)
+
+Lab | Working with APIs
+
+Lab | Web Scraping
+
+[Project | API and Web Data Scraping](module-1/web-project)
+
+## Module 2
+
+Lab | Statistical Analysis with Pandas
+
+Lab | Pandas DataFrame, Aggregations, & Summarization
+
+Lab | Pivot Tables, Field Relations & Correlations
+
+[Project | Data Analysis with Pandas](module-2/data-analysis-with-pandas)
+
+Lab | DataViz with Seaborn & Matplotlib
+
+[Project | Visualizing Real World Data](module-2/visualizing-real-world-data)
+
+[Project | Storytelling with Data Visualizations](module-2/storytelling-with-data-visualizations)
+
+Lab | Probability
+
+Lab | Hypothesis Testing & Statistical Significance
+
+[Project | Calculating Game of Chances](module-2/calculating-games-of-chance)
+
+Lab | Tableau Deep Dive
+
+Lab | DataViz with Tableau
+
+Lab | BI with Tableau
+
+[Project | BI with Tableau](module-2/tableau-project)
+
+## Module 3
+
+Lab | Machine Learning Workflow
+
+Lab Feature Extraction & Engineering + Scikit-Learn
+
+Lab | Building & Saving Models
+
+Lab | Supervised Learning with Scikit-Learn
+
+[Project | Supervised Learning](module-3/supervised-learning-project)
+
+Lab | Unsupervised Learning with Scikit-Learn
+
+[Project | Unsupervised Learning (Clustering)](module-3/clustering-project)
+
+Lab | Machine Learning Pipelines
+
+[Project | Machine Learning Pipeline](module-3/machine-learning-pipeline-project)
+
+## [Final Project](final-project/final-project.md)
