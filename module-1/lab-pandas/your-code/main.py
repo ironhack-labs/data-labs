@@ -1,18 +1,19 @@
 #1. Import the PANDAS package under the name pd. Import the NUMPY package under the name np
-
-
+import pandas as pd 
+import numpy as np
 #2. Define a variable called `url` that contains the path to the csv file you downloaded. 
 # Alternatively, you can also assign the hyperlink value to `url`.
-
+url="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/data-static/data/apple_store.csv"
 
 #3. Using Pandas' `read_csv()` method, import the csv file at the url above. 
 # Assign the returned value to a variable called `data`.
 # Note: you can omit the `sep` parameter for `read_csv()` because the csv file uses the default separator of ",".
-
+data = pd.read_csv(url)
+data
 
 #4. Print the first 5 rows of `data` to see what the data look like.
 # A data analyst usually does this to have a general understanding about what the data look like before digging deep.
-
+data.head()
 """
           id                                         track_name  size_bytes      ...       user_rating  user_rating_ver   prime_genre
 0  281656475                                    PAC-MAN Premium   100788224      ...               4.0              4.5         Games
@@ -24,6 +25,7 @@
 
 
 #5.  Print the summary (info) of the data.
+data.info()
 
 """
 <class 'pandas.core.frame.DataFrame'>
@@ -44,7 +46,7 @@ memory usage: 506.1+ KB
 
 
 #6 Print the number of columns in the data.
-
+len(data.columns)
 """
 9
 """
@@ -52,6 +54,8 @@ memory usage: 506.1+ KB
 
 #7. Print all column names.
 
+headers = data.dtypes.index
+headers
 """
 Index([u'id', u'track_name', u'size_bytes', u'price', u'rating_count_tot',
        u'rating_count_ver', u'user_rating', u'user_rating_ver',
@@ -63,12 +67,19 @@ Index([u'id', u'track_name', u'size_bytes', u'price', u'rating_count_tot',
 # Now that we have a general understanding of the data, we'll start working on the challenge questions.
 
 # Q1: How many apps are there in the data source?
+print (len (data))
+7197
+
 
 #8. Print the # of observations of the data.
 # Your code should return the number 7197.
 
 
 # Q2: What is the average rating of all apps?
+user_rating = data.user_rating.mean()
+user_rating
+
+3.526955675976101
 
 #9. First, read the `user_rating` column into a varialbe named `user_rating`.
 
@@ -78,6 +89,8 @@ Index([u'id', u'track_name', u'size_bytes', u'price', u'rating_count_tot',
 
 
 # Q3: How many apps have an average rating no less than 4?
+user_rating_high= data[data.user_rating>=4]
+user_rating_high
 
 #11. First, filter `user_rating` where its value >= 4. 
 # Assign the filtered dataframe to a new variable called `user_rating_high`.
@@ -92,6 +105,7 @@ Index([u'id', u'track_name', u'size_bytes', u'price', u'rating_count_tot',
 
 # Q4: How many genres are there in total for all the apps?
 
+len(set(data['prime_genre']))
 #12. Define a new varialbe named `genres` that contains the `prime_genre` column of `data`.
 
 
@@ -101,6 +115,7 @@ Index([u'id', u'track_name', u'size_bytes', u'price', u'rating_count_tot',
 
 # Q5: What are the top 3 genres that have the most number of apps?
 
+pd.value_counts(data['prime_genre'].values, sort=True)[:3]
 """
 14. What you want to do is to count the number of occurrences of each unique genre values.
  Because you already know how to obtain the unique genre values, you can of course count the # of apps of each genre one by one.
@@ -115,6 +130,11 @@ Name: prime_genre, dtype: int64
 
 
 # Q6. Which genre is most likely to contain free apps?
+free_apps=data.loc[data['price'] == 0.00]
+free_apps
+
+pd.value_counts(free_apps['prime_genre'].values, sort=True)
+
 
 """
 15. First, filter `data` where the price is 0.00. Assign the filtered data to a new variable called `free_apps`.
@@ -152,6 +172,15 @@ Name: prime_genre, dtype: int64
  value counts you obtained in the previous two steps. Challenge yourself by achieving 
  that with one line of code. The output should look like:
 
+juegos_totales = pd.value_counts(data['prime_genre'].values, sort=True)
+juegos_totales_ordenado = juegos_totales.sort_index()
+juegos_totales_ordenado
+
+juegos_gratis = pd.value_counts(free_apps['prime_genre'].values, sort=True)
+juegos_gratis_ordenado = juegos_gratis.sort_index()
+jueproporcion = (juegos_gratis_ordenado/juegos_totales_o). sort_values(ascending=False)
+jueproporcion
+
 Shopping             0.991803
 Catalogs             0.900000
 Social Networking    0.856287
@@ -188,6 +217,9 @@ Q7. If a developer tries to make money by developing and selling Apple Store app
 
 We will leave this question to you. There are several way to solve it. Ideally your
  output should look like below:
+
+ data.head()
+data.groupby(['prime_genre'])['price'].mean(). sort_values(ascending=False)
 
     average_price              genre
 21       8.776087            Medical
