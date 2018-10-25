@@ -122,3 +122,15 @@ We will learn Scikit-Learn in Module 3 which has built in the BoW feature. Try t
 * Scikit-Learn removes stop words by default. You don't need to manually remove stop words.
 
 * Scikit-Learn's output has slightly different format from the output example demonstrated above. It's ok, you don't need to convert the Scikit-Learn output.
+
+The Scikit-Learn output will look like below:
+
+```python
+# BoW:
+{u'love': 5, u'ironhack': 3, u'student': 6, u'is': 4, u'cool': 2, u'am': 0, u'at': 1}
+
+# term_freq:
+[[0 0 1 1 1 0 0]
+ [0 0 0 1 0 1 0]
+ [1 1 0 1 0 0 1]]
+ ```
