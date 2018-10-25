@@ -54,7 +54,7 @@ Upon completion, add your deliverables to git. Then commit git and push to your 
   ```
 
 - Navigate to your repo and [create a Pull Request](https://help.github.com/articles/creating-a-pull-request/) from your project/lab branch to the target repo [ironhack-datalabs/madrid-oct-2018](https://github.com/ironhack-datalabs/madrid-oct-2018). 
-**REMEMBER TO CHECK THE ORIGIN BRANCH AND THE TARGET REPO IN YOUR PULL REQUEST!! PLEASE, REVIEW THE LOOK&FEEL OF YOUR PULL REQUEST IN THE TARGET REPO AFTER CREATING IT**
+**Remember to check the origin branch and the target repo in your pull request!! Review the look&feel of your pull request in the target repo after creating it**
 - The pull request should have as name the following notation: **"[<your_campus>][<bootcamp_code>] [<lab/project_name>]<your_name>"**
   - For instance, if you are doing data bootcamp in Madrid, your name is Marc Pomar and the lab you are working on is `lab-numpy`, your pull request should be named like this: "[MAD][datamad10108] [lab-numpy] Marc Pomar"
 - If you have successfully created the pull request you are done!  CONGRATS :)
