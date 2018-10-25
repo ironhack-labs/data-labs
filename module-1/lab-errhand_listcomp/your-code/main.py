@@ -17,7 +17,7 @@ print(my_listComprehension)
 
 
 
-#2. Calculate the double of the first 50 numbers. Use double as the name of the list.
+#2. Calculate the first 50 power of two. Use power_of_two as the name of the list.
 # Remember to use list comprehensions and to print your results
 
 
