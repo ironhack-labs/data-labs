@@ -32,6 +32,8 @@ data.shape
 data.head(10)
 ```
 
+![Housing Data](./images/housing-data.png)
+
 ```python
 print(list(data.columns))
 
@@ -41,6 +43,31 @@ print(list(data.columns))
 From this initial assessment, it looks like we have successfully ingested the data set. We can now move on to evaluating the quality of the data, cleaning it, and wrangling it so that it is ready to be analyzed and modeled.
 
 ## Data Wrangling and Cleaning
+
+One of the first things we do in the wrangling and cleaning phase of the workflow is ensure that each column is of the correct data type. Below, we produce a data frame of numeric fields (including various descriptives statistics about them) using the `describe` method and then transposing the results since so that we can see all the resulting fields. We will also add a unique column to the results that returns the number of unique values in each column and a null column that calculates the number of missing values.
+
+```python
+stats = data.describe().T
+stats['unique'] = [len(data[column].unique()) for column in stats.index]
+stats['null'] = [data[column].isnull().sum() for column in stats.index]
+stats
+```
+
+![Describe Data](./images/housing-data-describe.png)
+
+We will also call the `describe` method for categorical fields by setting the `include` parameter to contain only object and category data types.
+
+```python
+cat_stats = data.describe(include=['object','category']).T
+cat_stats['null'] = [data[column].isnull().sum() for column in cat_stats.index]
+cat_stats
+```
+
+![Describe Data Categorical](./images/housing-data-describe-cat.png)
+
+Below are the insights we derive from this that can help guide our data wrangling and cleaning efforts.
+
+* 
 
 ### Addressing Null Values
 
