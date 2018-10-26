@@ -52,7 +52,7 @@ We need to create a BoW from a list of documents. The documents (`doc1.txt`, `do
 
 :information_source: What is a corpus (plural: corpora)? Read the reference in the Resources section.
 
-You challenge is to use Python to generate the BoW of these documents. Your BoW should look like below:
+Your challenge is to use Python to generate the BoW of these documents. Your BoW should look like below:
 
 ```
 bag_of_words = ['a', 'am', 'at', 'cool', 'i', 'ironhack', 'is', 'love', 'student']
@@ -87,7 +87,7 @@ term_freq = [
 ## Deliverables
 
 - REQUIRED: `main.ipynb` with your solution to the challenge question.
-- OPITONAL: `bonus.ipynb` with yur solution to the bonus question.
+- OPITONAL: `bonus.ipynb` with your solution to the bonus question.
 
 ## Submission
 
