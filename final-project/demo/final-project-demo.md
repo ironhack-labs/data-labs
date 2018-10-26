@@ -113,9 +113,39 @@ To read the stored data back into Pandas at a later date, we used the `read_sql_
 data = pd.read_sql_query('SELECT * FROM housing.housing', engine)
 ```
 
+We also exported the cleaned data set as a CSV file that could be imported into Tableau for exploration and reporting.
+
+```python
+data.to_csv('housing_clean', index=False)
+```
+
 ## Data Exploration and Analysis
 
-After cleaning and storing the data, the next steps we took were exploring and analyzing the data. Each row in the data set represents a property and each column represents attributes belonging to those properties. We looked through these attributes to determine 
+After cleaning and storing the data, the next steps we took were exploring and analyzing the data. Each row in the data set represents a property and each column represents attributes belonging to those properties. We looked through these attributes to determine which ones would potentially yield the most informative insights.
+
+* Type of Sale
+* Sale condition
+* Neighborhood
+* Total square footage of the property
+* Numbers of bedrooms and bathrooms
+* Overall quality
+* Overall condition
+* Month and year of sale
+
+![Price by Sales Type](./images/sales-avg-price-by-sale-type.png)
+
+![Price by Sales Condition](./images/price-by-sale-condition.png)
+
+![Price by Neighborhood](./images/price-by-neighborhood.png)
+
+![Condition vs. Quality](./images/condition-vs-quality.png)
+
+![Bedroom vs. Bathroom](./images/bedroom-vs-bathroom.png)
+
+![Sqft vs. Price](./images/sqft-vs-price.png)
+
+![Avg Price by Month and Year](./images/month-year.png)
+
 
 ## Feature Selection
 
