@@ -55,7 +55,7 @@ stats
 
 ![Describe Data](./images/housing-data-describe.png)
 
-We will also call the `describe` method for categorical fields by setting the `include` parameter to contain only object and category data types.
+We call the `describe` method for categorical fields by setting the `include` parameter to contain only object and category data types.
 
 ```python
 cat_stats = data.describe(include=['object','category']).T
@@ -65,17 +65,57 @@ cat_stats
 
 ![Describe Data Categorical](./images/housing-data-describe-cat.png)
 
-Below are the insights we derive from this that can help guide our data wrangling and cleaning efforts.
+Below are a few insights we derived from this brief look at the data that can help guide our data wrangling and cleaning efforts.
 
-* 
+* There are several fields that are currently numeric that should be categorical. We can identify these via a combination of their column name and their low number of unique values.
 
-### Addressing Null Values
+* There are several fields in the data that contain null values. We will need to figure out how to address those.
 
-### Fixing Incorrect Data Types
+To fix the incorrect data types, we will simply identify the columns that are incorrectly typed and use the `astype` method to change the data type of each field to object.
+
+```python
+categorical = ['MSSubClass', 'OverallQual', 'OverallCond', 'MoSold', 'YrSold']
+
+for i in categorical:
+    data[i] = data[i].astype('object')
+```
+
+In order to address null values in the data, we looked at which fields contained them and decided whether we would like to leave them as is or replace them with an appropriate value.
+
+```python
+fill_zeros = ['LotFrontage', 'MasVnrArea']
+
+for column in fill_zeros:
+    data[column] = data[column].fillna(0)
+```
 
 ## Data Storage
 
+Once the data had been ingested and cleaned, we stored it in a MySQL database. To do this we first created a *housing* database using the `CREATE DATABASE` command.
+
+```sql
+CREATE DATABASE housing;
+```
+
+We then used `pymsql` and `sqlalchemy` to write the data to the database.
+
+```python
+import pymysql
+from sqlalchemy import create_engine
+
+engine = create_engine('mysql+pymysql://user:password@localhost/housing')
+data.to_sql('housing', engine, if_exists='replace', index=False)
+```
+
+To read the stored data back into Pandas at a later date, we used the `read_sql_query` method.
+
+```python
+data = pd.read_sql_query('SELECT * FROM housing.housing', engine)
+```
+
 ## Data Exploration and Analysis
+
+After cleaning and storing the data, the next steps we took were exploring and analyzing the data. Each row in the data set represents a property and each column represents attributes belonging to those properties. We looked through these attributes to determine 
 
 ## Feature Selection
 
