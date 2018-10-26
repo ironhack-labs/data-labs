@@ -54,13 +54,13 @@ The instructional team will review your branch and provide feedback.
 
 [Lab | Pandas Deep Dive](module-1/lab-pandas)
 
-Lab | Data Cleaning
+[Lab | Data Cleaning](module-1/lab-data_cleaning)
 
 [Project | Pandas Project](module-1/pandas-project)
 
-Lab | Python List Comprehension & Error Handling
+[Lab | Python List Comprehension & Error Handling](module-1/lab-errhand_listcomp)
 
-Lab | Python String Operations & Functional Programming
+[Lab | Python String Operations & Functional Programming](module-1/lab-functional-programming)
 
 [Project | Web Data Pipeline](module-1/pipelines-project)
 
