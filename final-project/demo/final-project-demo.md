@@ -8,11 +8,11 @@ This demo is meant to serve as a simplified version of the type of analysis expe
 
 ## The Data
 
-The data set we will be using for this demo will be a housing price data set. The data set contains a variety of features for each property listed for sale in a geographic area as well as the sale price at which each property was ultimately sold.
+The data set we will be using for this demo will be a housing price data set. The data set contains a variety of features for over 1,400 properties listed for sale in a geographic area as well as the sale price at which each property was ultimately sold.
 
 ## Data Ingestion
 
-In order to work with this data set, we must first ingest it. The file containing the data was in CSV format, so after downloading it, we used the `read_csv` method to read the data into a Pandas data frame.
+In order to work with this data set, we first had to ingest it. The file containing the data was in CSV format, so after downloading it, we used the `read_csv` method to read the data into a Pandas data frame.
 
 ```python
 import pandas as pd
@@ -193,8 +193,84 @@ From this, we can see that average sale prices are relatively consistent through
 
 ## Feature Selection
 
+Once we had a better understanding of the data and some insight as to how different property attributes impact pricing, we proceeded to prep our data set for modeling. To do this, we narrowed down our feature set to just those that we explored and analyzed so that we could see how well those features can inform a machine learning model whose goal is to predict the sale price of a given property.
+
+```python
+features = ['Neighborhood', 'OverallQual', 'OverallCond', 
+            'FullBath', 'HalfBath', 'BedroomAbvGr', 
+            'MoSold', 'YrSold', 'SaleType', 'SaleCondition', 
+            'SalePrice', 'Total Sqft', 'Price Per Sqft']
+
+selected = data[features]
+```
+
+Next, we transformed these features so that all categorical variables were one-hot encoded.
+
+```python
+transformed = pd.get_dummies(selected)
+```
+
 ## Model Training and Evaluation
 
-## Reporting of Insights
+We decided to compare several supervised learning regression models via k-fold cross validation to see which ones would best be able to predict the sale price of a property. To do this, we imported a variety of regression models from Scikit-learn and wrote a `compare_models` function that would train and evaluate multiple regressor models (stored in a dictionary) and compute cross validation scores for each so that we can compare their performance.
+
+```python
+from sklearn.model_selection import cross_val_score
+
+from sklearn.linear_model import Ridge
+from sklearn.neighbors import KNeighborsRegressor
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.ensemble import GradientBoostingRegressor
+from sklearn.ensemble import AdaBoostRegressor
+from sklearn.ensemble import BaggingRegressor
+
+regressors = {'K-Nearest Neighbor': KNeighborsRegressor(n_neighbors=3),
+              'Decision Tree': DecisionTreeRegressor(),
+              'Ridge Regression': Ridge(),
+              'Random Forest': RandomForestRegressor(),
+              'Gradient Boosting': GradientBoostingRegressor(), 
+              'AdaBoost': AdaBoostRegressor(),
+              'Bagging Regressor': BaggingRegressor()}
+
+def compare_models(x, y, model_dict, folds=3):
+    results = []
+    
+    for name, model in model_dict.items():
+        scores = cross_val_score(model, x, y, cv=folds)
+        stats = [name, scores.mean(), min(scores), max(scores), scores.std(), pd.Series(scores).mad()]
+        results.append(stats)
+    
+    df = pd.DataFrame(results, columns = ['Model', 'Mean', 'Min', 'Max','Std', 'Mad'])
+    df = df.sort_values('Mean', ascending = False)
+    return df
+```
+
+Next, we designated the sale price field as our target (y) variable and the rest of the fields (with the exception of price per sqft since the sale price is used to calculate it) as our independent variable (x) set.
+
+```python
+y = transformed['SalePrice']
+x = transformed.drop(['SalePrice', 'Price Per Sqft'], axis=1)
+```
+
+We then ran our model comparison function using 5-fold cross validation and obtained the following results.
+
+```python
+compare_models(x, y, regressors, 5)
+```
+
+![Avg Price by Month and Year](./images/model-comparison.png)
+
+It looks like the Gradient Boosting model performed the best with an average score of 0.85. We then used that algorithm to train a model on the entire data set and pickle it for future use.
+
+```python
+import pickle
+
+model = GradientBoostingRegressor()
+model.fit(x, y)
+pickle.dump(model, open('housing_price_model.pkl', 'wb'))
+```
 
 ## Conclusion
+
+In this demo final project, we have analyzed a data set consisting of over 1,400 properties, their attributes, and their sale prices. We have followed the steps of the data analysis workflow, starting with data ingestion, wrangling and cleaning, and exploration and analysis before moving on to the the machine learning workflow consisting of feature selection/engineering, model selection, and model evaluation. In the end, we were able to predict housing prices with a respectable level of accuracy and we also derived insights about how factors such as neighborhood, square footage, and quality of the property affect the sale price.
