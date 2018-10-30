@@ -59,7 +59,29 @@ Then you can open `output.json` with your favorite text editor to have a deep lo
 
 ## Goals
 
-### Challenge 1: Hidden Code Joke
+### Challenge 1: Fork Languages
+
+You will find out among all the forks created from the `ironhack-datalabs/madrid-oct-2018` repo, how many types of languages are used. Steps:
+
+1. Obtain all the forks of the `ironhack-datalabs/madrid-oct-2018` through Github API.
+
+1. Loop the JSON response for the `language` attribute of each fork. Use an array to store the `language` attributes of each fork. The values in the array should be unique.
+
+1. Print the language array. It should be something like:
+
+	```["Python", "Jupyter Notebook", "HTML"]```
+
+Again, the documentation of Github API is [here](https://developer.github.com/v3/).
+
+### Challenge 2: Count Commits
+
+Count how many commits were made between October 20, 2018 and October 25, 2018.
+
+1. Obtain all the commits made between October 20, 2018 and October 25, 2018 via API, which is a JSON array that contains multiple commit objects.
+
+1. Count how many commit objects are there in the array.
+
+### Challenge 3: Hidden Cold Joke
 
 Using Python, call Github API to find out the cold joke contained in the 24 secret files in this repo whose filenames contain `.scavengerhunt`. The secret files are named from `.0001.scavengerhunt` to `.0024.scavengerhunt`. They are scattered randomly throughout this repo. You need to **search for these files by calling the Github API**, not searching on your computer.
 
@@ -89,26 +111,6 @@ After you find out the secrete files:
 
 1. Print out the joke.
 
-### Challenge 2: Fork Languages
-
-You will find out among all the forks created from the `ironhack-datalabs/madrid-oct-2018` repo, how many types of languages are used. Steps:
-
-1. Obtain all the forks of the `ironhack-datalabs/madrid-oct-2018` through Github API.
-
-1. Parse the JSON response for the `language` attribute of each fork. Use an array to contain the `language` attributes of each fork. The values in the array should be unique.
-
-1. Print the language array. It should be something like:
-
-	```["Python", "Jupyter Notebook", "HTML"]```
-
-### Challenge 3: Count Commits
-
-Count how many commits were made between October 20, 2018 and October 25, 2018.
-
-1. Obtain all the commits made between October 20, 2018 and October 25, 2018 via API, which is an array that contains multiple commit objects.
-
-1. Count how many commit objects are there in the array.
-
 ## Deliverables
 
 * `challenge-1.py` or `challenge-1.ipynb` that contains your solution to Challenge 1.
@@ -116,7 +118,6 @@ Count how many commits were made between October 20, 2018 and October 25, 2018.
 * `challenge-2.py` or `challenge-1.ipynb` that contains your solution to Challenge 2.
 
 * `challenge-3.py` or `challenge-1.ipynb` that contains your solution to Challenge 3.
-
 
 ## Submission
 
