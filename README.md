@@ -64,7 +64,7 @@ The instructional team will review your branch and provide feedback.
 
 [Project | Web Data Pipeline](module-1/pipelines-project)
 
-Lab | Working with APIs
+[Lab | API Scavenger Game](module-1/lab-api-scavenger-game)
 
 Lab | Web Scraping
 
