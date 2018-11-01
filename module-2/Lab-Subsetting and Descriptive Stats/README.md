@@ -1,22 +1,20 @@
 ![Ironhack logo](https://i.imgur.com/1QgrNNw.png)
 
-# Lab | Web Scraping
+# Lab | Subsetting and descriptive stats
+
 
 ## Introduction
 
-As you have learned in the lesson, Web "scraping" (also called "web harvesting", "web data extraction" or even "web data mining"), can be defined as "the construction of an agent to download, parse, and organize data from the web in an automated manner". Or, in other words: instead of a human end-user clicking away in their web browser and copy-pasting interesting parts into, say, a spreadsheet, web scraping offloads this task to a computer program which can execute it much faster, and more correctly, than a human can. 
-
-Data scientists have often found web scraping to be a powerful tool to have in their arsenal, as many data science projects starts with the first step of obtaining an appropiate data set, so why not utilize the information the web provides?
-
-In this lab, you will practice a series of exercises to test your web scraping skills. You will work on your own but remember the teaching staff is at your service whenever you encounter problems.
+As a data analyst you will have to work with a big amount of data. Extracting meaningful insights from your data can be done by dividing your data into subsets using Pandas library. It's a simple way to perform several type of analyses such as descriptive statistics.
+In this lab, you will use Pandas library to extract insights from your data by dividing it into into several subsets. You might also need to use some Pandas descriptive statistics functions. 
 
 ## Getting Started
 
-Open the `main.ipynb` file in the `your-code` directory. There are a bunch of questions to be solved. Each exercise is independent from the previous one. If you get stuck in one exercise you can skip to the next one. Read each instruction carefully and provide your answer beneath it. 
+Open the `main.ipynb` file in the `your-code` directory. There are 3 exercises and in each exercise you will work with 3 different datasets. The datasets are in the same directory. Please keep in mind that you might also need to use some of the functions you saw in the previous lessons. Remember there is a common thread!! 
 
 ## Deliverables
 
-- `main.ipynb` with your responses to each of the exercises.
+- `main.ipynb` with your responses.
 
 ## Submission
 
@@ -24,14 +22,8 @@ Upon completion, add your deliverables to git. Then commit git and push your bra
 
 ## Resources
 
-[Web Scraping Tutorial Dataquest](https://www.dataquest.io/blog/web-scraping-tutorial-python/)
+https://pandas.pydata.org/pandas-docs/stable/index.html
+https://pandas.pydata.org/pandas-docs/stable/10min.html
+https://www.google.com/search?q=pandas+python
 
-[Web Scraping Tutorial Kdnuggets](https://www.kdnuggets.com/2018/02/web-scraping-tutorial-python.html)
 
-[HTML Scraping](https://docs.python-guide.org/scenarios/scrape/)
-
-[The Anatomy of a Search Engine](http://infolab.stanford.edu/~backrub/google.html)
-
-## Additional Challenges for the Nerds
-
-If you are way ahead of your classmates and willing to accept some tough challenges about Web scraping you will find five bonus questions in the `main.ipynb`. 
