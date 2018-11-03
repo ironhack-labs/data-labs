@@ -23,8 +23,8 @@ Upon completion, add your deliverables to git. Then commit git and push your bra
 
 ## Resources
 
-https://pandas.pydata.org/pandas-docs/stable/index.html
-https://pandas.pydata.org/pandas-docs/stable/10min.html
-https://www.google.com/search?q=pandas+python
+[Pandas Documentation](https://pandas.pydata.org/pandas-docs/stable/index.html)
+[10 Minutes to Pandas](https://pandas.pydata.org/pandas-docs/stable/10min.html)
+[Google Search](https://www.google.com/search?q=pandas+python)
 
 
