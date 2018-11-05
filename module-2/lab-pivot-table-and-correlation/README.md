@@ -1,13 +1,13 @@
 
 ![Ironhack logo](https://i.imgur.com/1QgrNNw.png)
 
-# Lab | Subsetting and descriptive stats
+# Lab | Pivot Table and Correlations
 
 
 ## Introduction
 
-As a data analyst you will have to work with a big amount of data. Extracting meaningful insights from your data can be done by dividing your data into subsets using Pandas library. It's a simple way to perform several type of analyses such as descriptive statistics.
-In this lab, you will use Pandas library to extract insights from your data by dividing it into into several subsets. You might also need to use some Pandas descriptive statistics functions. 
+You may already be familiar with the concept of pivot tables from Excel to quickly slice, filter, and group data in an efficient way.
+In the first part of this lab, you will use Pandas pivot table to extract insights from your data. In the second part of this lab you will learn to describe the strengh and direction of the relationship between two variables. Correlation analysis measures how two variables are related.
 
 ## Getting Started
 
