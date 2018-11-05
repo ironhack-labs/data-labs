@@ -27,3 +27,5 @@ Upon completion, add your deliverables to git. Then commit git and push your bra
 ## Resources
 
 [Data Analysis Iteration](https://www.youtube.com/watch?v=xOomNicqbkk)
+
+[Pokemon with Stats](https://www.kaggle.com/abcsds/pokemon)
