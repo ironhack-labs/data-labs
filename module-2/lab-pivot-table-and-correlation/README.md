@@ -23,9 +23,9 @@ Upon completion, add your deliverables to git. Then commit git and push your bra
 
 ## Resources
 
-[Pandas Documentation](https://pandas.pydata.org/pandas-docs/stable/index.html)
+[Pandas Pivot Table](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.pivot_table.html)
 
-[10 Minutes to Pandas](https://pandas.pydata.org/pandas-docs/stable/10min.html)
+[Correlation and Dependance](https://en.wikipedia.org/wiki/Correlation_and_dependence)
 
 [Google Search](https://www.google.com/search?q=pandas+python)
 
