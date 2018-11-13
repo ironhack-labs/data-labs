@@ -25,6 +25,7 @@ Upon completion, add your deliverables to git. Then commit git and push your bra
 ## Resources
 
 [Scipy module Stats](https://docs.scipy.org/doc/scipy/reference/stats.html)
+
 [Probability distribution cheat sheet](http://blog.cloudera.com/blog/2015/12/common-probability-distributions-the-data-scientists-crib-sheet/)
 
 
