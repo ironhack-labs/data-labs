@@ -26,4 +26,4 @@ Upon completion, add your deliverables to git. Then commit git and push your bra
 
 [Difference Between T-test and ANOVA](https://keydifferences.com/difference-between-t-test-and-anova.html)
 
-[`scipy.stats.f_oneway](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.f_oneway.html)
+[`scipy.stats.f_oneway`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.f_oneway.html)
