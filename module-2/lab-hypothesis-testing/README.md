@@ -4,10 +4,11 @@
 
 ## Introduction
 
+In this lab we'll familiarize you with t-test and Analysis of Variance (ANOVA) which the lessons did not cover. You will also write Python codes to conduct t-tests and ANOVA on pokemons.
 
 ## Deliverables
 
-- 
+- `challenge-1.ipynb` and `challenge-2.ipynb`.
 
 ## Submission
 
