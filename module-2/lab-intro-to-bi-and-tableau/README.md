@@ -4,7 +4,9 @@
 
 ## Introduction
 
-In this lab, we will practice loading data into Tableau, inspecting and modifying data types, and coming up with appropriate metrics or KPIs based on the information contained in the data set. We will be working with a [liquor store sales data set](https://docs.google.com/spreadsheets/d/1pQ2VFsuuwLqBstYYTY3fcZY32WLigw3Pzxnikkce6IA/edit?usp=sharing) hosted in Google Sheets.
+In this lab, we will practice loading data into Tableau, inspecting and modifying data types, and creating tabular views with metrics based on the information contained in the data set. We will be working with a [liquor store sales data set](https://docs.google.com/spreadsheets/d/1pQ2VFsuuwLqBstYYTY3fcZY32WLigw3Pzxnikkce6IA/edit?usp=sharing) hosted in Google Sheets.
+
+If you get stuck on any of the tasks in this lab, you can reference the excellent training video resources provided on the [Tableau website](https://www.tableau.com/learn/training). We have also referenced specific articles on topics such as binning variables and creating aliases that should be helpful in completing this lab.
 
 ## Getting Started
 
