@@ -10,7 +10,7 @@ The data we will be creating visualizations for will be an American football tea
 
 As in the last lab, if you get stuck on any of the tasks in this lab, you can reference the excellent training video resources provided on the [Tableau website](https://www.tableau.com/learn/training).
 
-## Getting Started
+## Challenge 1
 
 To complete this lab, follow each of the steps below.
 
@@ -69,9 +69,23 @@ To complete this lab, follow each of the steps below.
     - Add a title to the dashboard by checking the *Show dashboard title* checkbox at the lower left of the screen. Edit the dashboard title to be *NFL Team Performance Dashboard*.
 12. Save your work to Tableau Public, ensure that your workbook is viewable, and copy the URL for the workbook into the deliverables file for this lab.
 
+## Bonus Challenge
+
+Use the `countries of the world.csv` dataset, create two data visualization maps for:
+
+- World GDP Per Capital. Choose a color palette to visualize country GDP Per Capital where deeper color indicates higher GDP Per Capital. Your dataviz should look like below:
+
+    ![World GDP Per Capital](bonus-1.png)
+
+- World Population Density by Country. Choose a color palette to visualize country population density where deeper color indicates higher population density. Your dataviz should look like below:
+
+    ![World GDP Per Capital](bonus-2.png)
+
+Create a dashboard to display both dataviz maps and save it to Tableau Public. Ensure that your workbook is viewable, and copy the URL for the workbook into the deliverables file for this lab.
+
 ## Deliverables
 
-- `main.txt` file with a link to your Tableau Public workbook.
+- `main.txt` file with a link to your Tableau Public workbooks.
 
 ## Submission
 
