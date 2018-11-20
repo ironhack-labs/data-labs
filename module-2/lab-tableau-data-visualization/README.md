@@ -15,30 +15,40 @@ As in the last lab, if you get stuck on any of the tasks in this lab, you can re
 To complete this lab, follow each of the steps below.
 
 1. Open Tableau and import the `nfl_football_team_stats.csv` file.
-2. Change the data type of the Year field to string.
-3. Let's start our analysis by looking at the number of games a team has played per year.
-    - Create a new sheet that contains a tabular visualization of the number of games (records) by Team (rows) and Year (columns). You should notice that 2017 has fewer games than previous years, indicating that this data was likely collected midway through the 2017 season. This is something we should keep in mind, especially when comparing sums of statistics across seasons.
-4. Create another worksheet that contains a tabular visualization with the number of records by Team (rows).
-    - Drag the Year and Result fields into the *Columns* section so that we can see the number of wins vs. losses for each team and year.
-    - From the *Show Me* menu at the top right of the screen, select the pie chart visualization. This will create a pie chart for each team-year combination showing the proportion of wins to losses.
-    - Make sure that the Team field is in the *Row* section and that the Year field is in the *Columns* section after you add the pie charts. Tableau will sometimes reverse the axes when you change visualizations. If Tableau reversed the axes, go to the *Analysis* menu option and select *Swap Rows and Columns*.
-    - Change the pie chart colors so that the wins are blue and the losses are red by clicking on the legend menu and selecting *Edit Colors*.
-    - Add data labels by dragging the Number of Records measure to the Labels square in the Marks section.
-    - Change the drop-down selection at the top center of the screen from Standard to Fit Width so that you can see all the win/loss pie charts for a team across years.
+2. [OPTIONAL] Change the data type of the `Year` field to string.
+    - We change `Year` to string because in this lab we treat it as a categorical data. In some uncommon cases Tableau has issues by treating year as a number when we use it as categorical variable. 
+    - In a lot of times software has bugs and data analysts need to document these issues and their work-around so that they know how to avoid the same issues in their future work.
+3. Let's start our analysis by looking at the number of games played per year. 
+    1. Drag the `Number of Records` measure to Rows.
+    1. Drag the `Year` dimension to Columns.
+    1. You now see a bar chart with `Number of Records` as the Y axis and `Year` as the X axis.
+    1. You should also notice that 2017 has fewer games than previous years. Guess why? Yes, it indicates this data was likely collected midway through the 2017 season. This is something we should keep in mind, especially when comparing sums of statistics across seasons.
+    1. You're almost there. However, this visualization is still not "number of games played per year". Why? How to fix the issue?
+        * *Hint: read the actual data to figure out why. And modify the Rows formula to fix the issue.*
+    1. After you fix the measure, drag it from *Rows* to *Measures* to create a new measure. Rename it to `Number of Games` so that you can reuse it later.
+4. Now we want to visualize the win/loss proportions of each team by year using pie charts. Follow the steps below:
+    1. Create another worksheet that contains a tabular visualization with the number of records by `Team`. This can be achieved by dragging the `Number of Records` measure to Rows, then dragging the `Team` dimension into the `Number of Records` bar in the visualization panel.
+    1. Drag the `Year` and `Result` dimensions into Columns so that we can see the number of wins vs. losses for each team and year.
+    1. From the *Show Me* menu at the top right of the screen, select the pie chart visualization. This will create a pie chart for each team-year combination showing the proportion of wins to losses.
+    1. Make sure that the `Team` field is in the *Row* section and the `Year` field is in the *Columns* section after you add the pie charts. Tableau will sometimes reverse the axes when you change visualizations. If Tableau reversed the axes, go to the *Analysis* menu option and select *Swap Rows and Columns*.
+    1. Change the pie chart colors so that the wins are red and the losses are blue by clicking on *Color* in the *Marks* menu.
+    1. Add data labels by dragging the `Number of Records` measure to the Labels square in the *Marks* section.
+    1. Change the drop-down selection at the top center of the screen from Standard to Fit Width so that you can see all the win/loss pie charts for a team across years.
 5. Let's try to determine whether playing at home or away has an impact on how often a team wins.
-    - Create a new sheet that contains a side-by-side bar chart showing Number of Records by Result and Game Location (columns). We should be able to see from this visualization that the home team has won approximately 280 more games than the away team over the last several years. Considering the total number of games, do you think this advantage is significant?
+    - Create a new sheet that contains a side-by-side bar chart showing `Number of Records` by `Result` and `Game Location` (columns). We should be able to see from this visualization that the home team has won approximately 280 more games than the away team over the last several years. Considering the total number of games, do you think this advantage is significant?
 6. We can determine a team's effectiveness on offense and defense by the number points they score and then number of points their opponents score on the respectively.
-    - Create a scatter plot that shows Average Team Score (rows)and Average Opponents Score (columns) with a different color plot point for each team (drag the Team field to the color box in the Marks section).
-    - Also drag the Team field to the Labels box so that the team names display next to their plot points where possible.
+    - Create a scatter plot that shows `Average Team Score` (rows) and `Average Opponents Score` (columns) with a different color plot point for each team (drag the Team field to the color box in the Marks section).
+    - Also drag the `Team` field to the *Labels* box so that the team names display next to their plot points where possible.
     - You will notice that the plot points are pretty tightly clustered together in the upper right hand corner of the chart. Adjust both axes to start at 16 so that we can get a closer view of the relationships between points scored and points allowed. You can do this by right-clicking on each axis, selecting *Edit Axis*, and setting it to Fixed with a start value of 16.
-7. Next, we will look at passing statistics, which will show us how strong a team's passing abilities are.
-    - Create a new sheet containing a tabular visualization that shows Passing Attempts and Passing Completions by Team (rows).
+7. Next, we will look at passing statistics in Year 2016, which will show us how strong a team's passing abilities are.
+    - Create a new sheet containing a tabular visualization that shows `Passing Attempts` and `Passing Completions`  measures (Columns) by Team (Rows).
     - Filter the data for just 2016 by dragging the Year field into the Filters section and selecting 2016 from the options presented.
-    - Create a calculated field called Completion Percentage that represents Passing Completions divided by Passing Attempts and add it to your tabular visualization. By default, Tableau will sum it, so you will need to change it to show the average. To do this, click on the drop-down arrow for the metric, select *Measure*, and change the selection from *Sum* to *Average*.
-    - Change the number format for the Completion Percentage field to percentage.
-    - Finally, sort your visualization by Average Completion Percentage so that we can see which team in 2016 had the highest percent of pass completions.
+    - Create a calculated field (Analysis > Create Calculated Field) called Completion Percentage that represents Passing Completions divided by Passing Attempts and add it to your tabular visualization. By default, Tableau will sum it, so you will need to change it to show the average. To do this, click on the drop-down arrow of the metric in ***Measure Values***, select *Measure*, and change the selection from *Sum* to *Average*.
+        - Note you don't want to change the *Measure* in ***Marks*** because it will change all your meansures including `SUM(Passing Completions)`, `SUM(Passing Attempts)`, and `SUM(Completion Percentage)`. You only want to change `SUM(Completion Percentage)` to `AVG(Completion Percentage)`.
+    - Change the number format for the Completion Percentage field to percentage. The procedure is similar to changing its *average* measure in the previous step.
+    - Finally, sort your visualization by Average Completion Percentage. Which team in 2016 had the highest percent of pass completions?
 8. Let's look at Percentage Completion as a more interesting visualization than just a table.
-    - Create a tree map visualization containing labels for Team and Average Completion Percentage.
+    - Create a *treemap* visualization containing labels for Team and Average Completion Percentage.
     - Average Completion Percentage should inform both the size of the boxes and the colors. For the colors, choose the Red-Blue Diverging palette so that teams with high percentages are colored blue and ones with low percentages are colored red.
     - Filter the data for 2017 by dragging the Year field into the Filter section and see how the visualization changes. You can also add a filter box by selecting *Analysis > Filters > Year*. Change the filter to 2016 and then to 2015 using the filter box we just added and note how the visualization changes.
 9. Let's look at how some defensive statistics - specifically, the average number of sacks, interceptions, and safeties for each team when they win.
@@ -53,11 +63,11 @@ To complete this lab, follow each of the steps below.
     - Next, we will need to drag and drop the Opponent field into the Details box of the Marks section. This will expand the box and whiskers in the visualization, allowing us to see how the averages vary based on the opposing team instead of just the overall average.
 11. Let's combine some of the visualizations we have created into a dashboard.
     - Create a dashboard by going to *Dashboard > New Dashboard*.
-    - Add the win/loss results by game location visualization to the dashboard by dragging and dropping it.
-    - Add the points scored vs. points allowed scatter plot visualization to the dashboard as well (right next to it).
-    - Underneath the previous two visualizations, add the win/loss pie charts by team and year visualization.
+    - Add 2-3 visualizations you created to the dashboard by dragging and dropping each sheet to the dashboard.
+    - If your dashboard is too small, you can change its size by selecting the *Size* dropdown from *Fixed Size* to *Automatic*. Tableau will then automatically resize the visualizations to the screen.
+    - In *Automatic* size, you can also adjust the height of each visualization charts being displayed to achieve the optimal visual effect.
     - Add a title to the dashboard by checking the *Show dashboard title* checkbox at the lower left of the screen. Edit the dashboard title to be *NFL Team Performance Dashboard*.
-11. Save your work to Tableau Public, ensure that your workbook is viewable, and copy the URL for the workbook into the deliverables file for this lab.
+12. Save your work to Tableau Public, ensure that your workbook is viewable, and copy the URL for the workbook into the deliverables file for this lab.
 
 ## Deliverables
 
