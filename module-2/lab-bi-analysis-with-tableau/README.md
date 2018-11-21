@@ -79,14 +79,12 @@ Upon completion, add your deliverables to git. Then commit git and push your bra
 
 ## Resources
 
-- [A Beginner's Guide to American Football](https://www.youtube.com/watch?v=3t6hM5tRlfA)
-
-- [American Football Strategy | Wikipedia](https://en.wikipedia.org/wiki/American_football_strategy)
-
-- [Sort Data in a Visualization | Tableau](https://onlinehelp.tableau.com/current/pro/desktop/en-us/sortgroup_sorting_computed_howto.htm)
-
-- [Filter Data From Your Views | Tableau](https://onlinehelp.tableau.com/current/pro/desktop/en-us/filtering.htm)
-
-- [Color Palettes and Effects](https://onlinehelp.tableau.com/current/pro/desktop/en-us/viewparts_marks_markproperties_color.htm)
-
 - [Tableau Training Videos](https://www.tableau.com/learn/training)
+
+- [Convert a Measure to a Dimension | Tableau](https://onlinehelp.tableau.com/current/pro/desktop/en-us/datafields_typesandroles_convertdimtomeas.htm)
+
+- [Show Totals in a Visualization | Tableau](https://onlinehelp.tableau.com/current/pro/desktop/en-us/calculations_totals_grandtotal_turnon.htm)
+
+- [Get Started with Calculations in Tableau](https://onlinehelp.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_create.htm)
+
+- [Stories | Tableau](https://onlinehelp.tableau.com/current/pro/desktop/en-us/stories.htm)
