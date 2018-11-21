@@ -5,8 +5,7 @@
 
 ## Introduction
 
-As a data analyst or data scientist, you will find that while using ML algorithms is the fun and glamorous part of your work. Preparing your data sometimes takes up 90% of your time. Therefore, learning to prepare your data properly is one of the most important skills you will need.
-
+As data analysts or data scientists, we find that we don't always get the data we need, but the data that we deserve. Many times it is up to us to extract meaningful information from our data. It could be done by transforming the data using derived columns, grouping the data and using aggregated information, or cleaning and reformatting the data. We will explore these techniques in this lab.
 ## Getting Started
 
 Open the `main.ipynb` file in the `your-code` directory. Follow the instructions and add your code and explanations as necessary. By the end of this lab, you will have learned how to prepare a dataset for most scikit-learn algorithms.
@@ -21,9 +20,5 @@ Upon completion, add your deliverables to git. Then commit git and push your bra
 
 ## Resources
 
-[Linear Interpolation](https://en.wikipedia.org/wiki/Linear_interpolation)
-
-[Missing Data Imputation](http://www.stat.columbia.edu/~gelman/arm/missing.pdf)
-
-[7 Steps to Data Preparation](https://www.kdnuggets.com/2017/06/7-steps-mastering-data-preparation-python.html)
+[Joining and Merging in Pandas](https://pandas.pydata.org/pandas-docs/stable/merging.html)
 
