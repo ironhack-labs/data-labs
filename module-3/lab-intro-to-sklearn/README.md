@@ -1,14 +1,15 @@
 ![Ironhack logo](https://i.imgur.com/1QgrNNw.png)
 
-# Lab | Feature Extraction and Introduction to Supervised Learning
+# Lab | Introduction to Scikit-Learn
 
 
 ## Introduction
 
-As data analysts or data scientists, we find that we don't always get the data we need, but the data that we deserve. Many times it is up to us to extract meaningful information from our data. It could be done by transforming the data using derived columns, grouping the data and using aggregated information, or cleaning and reformatting the data. We will explore these techniques in this lab.
+In this lab, we will begin to explore the scikit-learn library in the context of supervised learning.
+
 ## Getting Started
 
-Open the `main.ipynb` file in the `your-code` directory. Follow the instructions and add your code and explanations as necessary. By the end of this lab, you will have learned how to prepare a dataset for most scikit-learn algorithms.
+Open the `main.ipynb` file in the `your-code` directory. Follow the instructions and add your code and explanations as necessary. By the end of this lab, you will have learned about the scikit-learn library and about different aspects of linear regression.
 
 ## Deliverables
 
@@ -20,5 +21,9 @@ Upon completion, add your deliverables to git. Then commit git and push your bra
 
 ## Resources
 
-[Joining and Merging in Pandas](https://pandas.pydata.org/pandas-docs/stable/merging.html)
+[Linear Model Hypothesis Testing](https://onlinecourses.science.psu.edu/stat501/node/297/)
+
+[R squared in scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.r2_score.html)
+
+[Recursive Feature Elimination](https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.RFE.html)
 
