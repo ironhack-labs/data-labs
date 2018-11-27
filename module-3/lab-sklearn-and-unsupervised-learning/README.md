@@ -1,11 +1,11 @@
 ![Ironhack logo](https://i.imgur.com/1QgrNNw.png)
 
-# Lab | Supervised Learning with Scikit-Learn
+# Lab | Unsupervised Learning with Scikit-Learn
 
 
 ## Introduction
 
-In this lab, we will evaluate and compare multiple supervised learning algorithms.
+In this lab, we will learn more about scikit-learn and start learning about unsupervised learning.
 
 ## Getting Started
 
@@ -21,9 +21,7 @@ Upon completion, add your deliverables to git. Then commit git and push your bra
 
 ## Resources
 
-[Linear Model Hypothesis Testing](https://onlinecourses.science.psu.edu/stat501/node/297/)
+[An introduction to scikit-learn](https://scikit-learn.org/stable/tutorial/basic/tutorial.html)
 
-[R squared in scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.r2_score.html)
-
-[Recursive Feature Elimination](https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.RFE.html)
+[K-Means in scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html)
 
