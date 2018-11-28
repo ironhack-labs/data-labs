@@ -1,6 +1,6 @@
 ![Ironhack logo](https://i.imgur.com/1QgrNNw.png)
 
-# Lab | Introduction to Scikit-Learn
+# Lab | Supervised Learning with Scikit-Learn
 
 
 ## Introduction
