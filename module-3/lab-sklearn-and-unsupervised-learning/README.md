@@ -23,5 +23,8 @@ Upon completion, add your deliverables to git. Then commit git and push your bra
 
 [An introduction to scikit-learn](https://scikit-learn.org/stable/tutorial/basic/tutorial.html)
 
+[sklearn.datasets.load_wine](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_wine.html)
+
 [K-Means in scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html)
 
+[pandas.DataFrame.fillna](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.fillna.html)
