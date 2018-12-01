@@ -64,7 +64,7 @@ These topics are covered in greater detail in the following tutorial and in the 
 - [PyCon 2018: Network Analysis Made Simple, Part 1 Tutorial](https://www.youtube.com/watch?v=HkbMUrgzwMs)
 - [Networkx Documentation Tutorial](https://networkx.github.io/documentation/stable/tutorial.html)
 
-You are highly encouraged to watch the *Network Analysis Made Simple* tutorial and work through the examples in the *Networkx Documentation Tutorial* so that you gain a solid understanding of network analysis and some practice using the Networkx library.
+You are highly encouraged to watch the *Network Analysis Made Simple* tutorial and work through the examples in the *Networkx Documentation Tutorial* so that you gain a solid understanding of network composition and some practice creating graphs with the Networkx library.
 
 You should also try to complete the exercises in the *Networkx Basics Notebook* (up until the Tests section) that accompanies the *Network Analysis Made Simple* tutorial:
 
@@ -72,14 +72,35 @@ You should also try to complete the exercises in the *Networkx Basics Notebook* 
 
 ## Analyzing Networks
 
-Graph statistics
+Once we have a built a graph, we can begin to analyze the properties of the network. Two of the basic things we would want to know about a graph is its *order* (number of nodes) and *size* (number of edges). We can calculate those with Networkx using the `order` or `number_of_nodes` methods to get the total nodes and the `size` or `number_of_edges` methods to get the total edges.
 
-- Number of nodes
-- Number of edges
-- Average degree
-- Density
-- Diameter
-- Average distance
+```python
+G.order()
+G.number_of_nodes()
+
+G.size()
+G.number_of_edges()
+```
+
+There are a few other important statistics that we would want to know about a graph that Networkx can compute for us. For example, each node in a graph has a *degree*, or the number of nodes you can reach from that node by traversing along the edges of the graph (jumping from one node to other connected nodes). The *average degree* of the graph tells you the average number of nodes that can be reached from a node in the graph and is a measure of how connected your graph is. We can retrieve the degree for each node in a graph by calling the `degree` method, so obtaining the average degree is just a matter of summing up all the degree values and then dividing by the number of nodes in the graph.
+
+```python
+sum(dict(G.degree()).values())/G.order()
+```
+
+A related metric is the *density* of the graph, which is calculated by dividing the average degree (computed above) by the number of nodes in the graph. This tells us the percentage of the graph that can be reached by the average node. It can be calculated easily by calling Networkx's `density` method.
+
+```python
+nx.density(G)
+```
+
+There are a couple other graph statistics you should know about: *diameter* and *average distance*. However, these statistics are only applicable when you have a *completely connected graph* or one where all nodes can reach all other nodes. When this is the case, the diameter of the graph tells you the what the longest path in the network is, or the maximum number of nodes you'll encounter getting between two nodes. Average distance is simply the average number of nodes you'll encounter getting between two nodes. Both can be computed as follows.
+
+```python
+nx.diameter(G)
+
+nx.average_shortest_path_length(G)
+```
 
 Centrality metrics
 
