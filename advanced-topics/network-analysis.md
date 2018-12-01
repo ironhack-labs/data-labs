@@ -102,13 +102,21 @@ nx.diameter(G)
 nx.average_shortest_path_length(G)
 ```
 
-Centrality metrics
+### Node Centrality Metrics
 
-- Betweenness
-- Closeness
-- Eigenvector
-- Degree
-- PageRank
+In addition to calculating statistics that inform us about the properties of the graph as a whole, we can compute centrality metrics that tell us which modes are most important and influential. Networkx comes with a variety of centrality metrics such as betweenness, closeness, eigenvector, degree, and pagerank. Each of these metrics calculate node importance slightly differently.
+
+Betweenness centrality tells us which nodes in our network are likely pathways for information. Closeness centrality measures node reach or how fast information would spread from that node to other nodes. Degree centrality is a measure of popularity based on a node's degree. Eigenvector centrality measures related influence or who is closest to the most important nodes in the network. PageRank centrality is a variant of Eigenvector centrality that uses edges from other important nodes as a measure of a node's importance.
+
+Each of these centrality measures can be obtained for each node in a graph as follows.
+
+```python
+betweenness = nx.betweenness_centrality(G, weight='edge')
+closeness = nx.closeness_centrality(G, distance='edge')
+eigenvector = nx.eigenvector_centrality_numpy(G)
+degree = nx.degree_centrality(G)
+pagerank = nx.pagerank(G)
+```
 
 ## Building and Analyzing Graphs from Tabular Data
 
