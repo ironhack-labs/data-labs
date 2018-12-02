@@ -104,7 +104,7 @@ nx.average_shortest_path_length(G)
 
 ### Node Centrality Metrics
 
-In addition to calculating statistics that inform us about the properties of the graph as a whole, we can compute centrality metrics that tell us which modes are most important and influential. Networkx comes with a variety of centrality metrics such as betweenness, closeness, eigenvector, degree, and pagerank. Each of these metrics calculate node importance slightly differently.
+In addition to calculating statistics that inform us about the properties of the graph as a whole, we can compute centrality metrics that tell us which nodes are most important and influential. Networkx comes with a variety of centrality metrics such as betweenness, closeness, eigenvector, degree, and pagerank. Each of these metrics calculate node importance slightly differently.
 
 Betweenness centrality tells us which nodes in our network are likely pathways for information. Closeness centrality measures node reach or how fast information would spread from that node to other nodes. Degree centrality is a measure of popularity based on a node's degree. Eigenvector centrality measures related influence or who is closest to the most important nodes in the network. PageRank centrality is a variant of Eigenvector centrality that uses edges from other important nodes as a measure of a node's importance.
 
@@ -120,18 +120,53 @@ pagerank = nx.pagerank(G)
 
 ## Building and Analyzing Graphs from Tabular Data
 
-When analyzing networks from tabular data, there are typically three main things you can analyze:
+In order to perform network analysis, we need to have our data structured in a way that shows pairwise entity relationships. We mentioned earlier that networks are everywhere. If that is true, we should be able to create a network from just about any data set. So how do we convert an ordinary, tabular data set into graph format?
 
-- Entities (and their attributes)
-- Relationships (and their attributes)
-- Interactions (and their attributes)
+When data is structured in a tabular format, the rows typically represent either entities, transactions, or interactions and the columns usually represent attributes or features of whatever the rows represent. This gives us three potential things we can analyze from a network perspective:
 
-Recall from previous lessons in the program that when data is structured in a tabular format, entities are typically represented by rows and attributes (or features) of the entities are typically represented by the columns in the table.
+- Entities
+- Relationships
+- Transactions or Interactions
 
-- Identifying entities
-- Identifying & defining relationships
+When rows represent transactions or interactions, they often have both parties of the transaction identified, so we can derive relationships directly from those. Examples of these types of data sets can include communication records, marketplace transactions, social media interactions, and other types of records where there are two parties. The relationships attributes for these records are the transaction attributes and they are often directed (one party calls another, a seller sells something to a buyer, etc.).
+
+When rows represent entities however, we need to infer relationships based on attributes that different rows have in common. These relationships can be constructed based on entities belonging to the same group (same categorical variable values) or from having similar numeric variable values. These relationships are often undirected.
+
+### Transforming Data to Graph Structure
+
+When our rows represent transactions or interactions, we can transform our tabular data to a graph structure by aggregating the data, grouping by the fields containing the two parties, and counting the number of transactions or interactions.
+
+**Provide data set and example here.**
+
+Additionally, we can aggregate further, grouping by individual entity and count the number of unique connections each entity has. This will provide us with context around each interaction, letting us see how connected each side of a transaction or interaction is.
+
+**Provide example here.**
+
 - Transforming data to graph structure
+
+```python
+def df_to_graph(df, entity, edge):
+    df2 = df.copy()
+    graph_df = pd.merge(df, df2, how='inner', on=edge)
+    graph_df = graph_df.groupby([entity + '_x', entity + '_y']).count().reset_index()
+    graph_df = graph_df[graph_df[entity + '_x'] != graph_df[entity + '_y']]
+    
+    if type(edge) == list:
+        graph_df = graph_df[[entity + '_x', entity + '_y'] + edge]
+    else:
+        graph_df = graph_df[[entity + '_x', entity + '_y', edge]]
+    
+    return graph_df
+
+graph_df = df_to_graph(df, entity, edge)
+```
+
 - Converting data frames to graphs
+
+```python
+G = nx.from_pandas_edgelist(graph_df, source, target)
+```
+
 - Analyzing networks extracted from data
 
 ## Visualization of Network Data
@@ -148,6 +183,7 @@ Recall from previous lessons in the program that when data is structured in a ta
 - Subgraphs
 - Hierarchical graphs
 - Querying graphs
+- Different entity types in the same graph
 - Community detection
 - Clustering
 
