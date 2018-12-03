@@ -128,15 +128,31 @@ When data is structured in a tabular format, the rows typically represent either
 - Relationships
 - Transactions or Interactions
 
-When rows represent transactions or interactions, they often have both parties of the transaction identified, so we can derive relationships directly from those. Examples of these types of data sets can include communication records, marketplace transactions, social media interactions, and other types of records where there are two parties. The relationships attributes for these records are the transaction attributes and they are often directed (one party calls another, a seller sells something to a buyer, etc.).
+### Rows Represent Transactions or Interactions
 
-When rows represent entities however, we need to infer relationships based on attributes that different rows have in common. These relationships can be constructed based on entities belonging to the same group (same categorical variable values) or from having similar numeric variable values. These relationships are often undirected.
-
-### Transforming Data to Graph Structure
+When rows represent transactions or interactions, they often have both parties of the transaction identified, so we can derive relationships directly from those. Examples of these types of data sets can include communication records, marketplace transactions, social media interactions, and other types of records where there are two parties. The relationships attributes for these records are the transaction attributes and they are sometimes directed (one party calls another, a seller sells something to a buyer, etc.), but they don't have to be.
 
 When our rows represent transactions or interactions, we can transform our tabular data to a graph structure by aggregating the data, grouping by the fields containing the two parties, and counting the number of transactions or interactions.
 
-**Provide data set and example here.**
+The `us_womens_gymnastics.csv` data set is a good example of this type of data. The data set contains pairs of U.S. gymnasts that competed in the same Olympic games and events together. In other words, each row represents an interaction between the gymnasts. Use your Python skills, use Pandas to read and aggregate the data by the *Name_x* and *Name_y* fields and count the number of events in which they have an interaction. Once you have done this, sort descending by the number of pairwise interactions. Which pair of gymnasts have competed in the most events together?
+
+Now that we have a data frame in this format, Networkx provides us with an easy way to turn it into a graph via the `from_pandas_edgelist` method.
+
+```python
+G = nx.from_pandas_edgelist(df, source, target)
+```
+
+Use this method to turn the data frame into a graph and then practice computing the graph statistics and centrality measures we covered in the previous section. Below are some questions to answer about this graph.
+
+- How many gymnasts (nodes) are in the graph?
+- How many edges are in the graph?
+- What is the average degree?
+- What is the density of the graph?
+- Is this graph fully-connected? How do you know?
+
+### Rows Represent Entities
+
+When we have a data set where the rows represent entities, we need to infer relationships based on attributes that different rows have in common. These relationships can be constructed based on entities belonging to the same group (same categorical variable values) or from having similar numeric variable values. These relationships are often undirected.
 
 Additionally, we can aggregate further, grouping by individual entity and count the number of unique connections each entity has. This will provide us with context around each interaction, letting us see how connected each side of a transaction or interaction is.
 
@@ -163,16 +179,21 @@ graph_df = df_to_graph(df, entity, edge)
 
 - Converting data frames to graphs
 
-```python
-G = nx.from_pandas_edgelist(graph_df, source, target)
-```
+
 
 - Analyzing networks extracted from data
 
 ## Visualization of Network Data
 
 - Network visualizations
-    - Different layouts - spring, circular, etc.
+
+```python
+nx.draw(G)
+```
+
+- Different layouts - spring, circular, etc.
+
+
 - Other ways to visualize network data
     - Bar charts
     - Scatter plots
