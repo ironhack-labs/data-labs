@@ -192,14 +192,60 @@ Now that you have a data frame of pairwise connections, use the `from_pandas_edg
 
 ## Visualization of Network Data
 
-- Network visualizations
+In addition to analyzing our graph via graph statistics and node centrality metrics, we can also create visualizations that have the potential to be informative to our analysis. Networkx has a few different options for drawing graphs, but we will also be using the `nxviz` library as well.
+
+The most basic way to create a network visualization is with Networkx's `draw` method.
 
 ```python
 nx.draw(G)
 ```
 
-- Different layouts - spring, circular, etc.
+However, just using this method usually produces some pretty ugly visualizations. To make it look nicer, try setting different values for the `node_size` and `node_color` parameters as well as modifying the default size of the plot. For example, the version below should make your graph look a bit nicer.
 
+```python
+plt.figure(figsize=(10,5))
+nx.draw(G, node_size=20, node_color='cyan')
+```
+
+Graphs can be visualized via different layouts. The default one is spring layout, which is what you get when you call `nx.draw()`. You can also view the graph in a circular layout, a Kamada-Kawai force-directed layout, or via a [few other layouts](https://networkx.github.io/documentation/stable/reference/drawing.html). Below are examples for how to draw graphs with circular and Kamada-Kawai force-directed layouts via Networkx.
+
+```python
+nx.draw_circular(G, node_size=20, node_color='cyan')
+
+nx.draw_kamada_kawai(G, node_size=20, node_color='cyan')
+```
+
+In addition to the Networkx's drawing capabilities, the [nxviz](https://nxviz.readthedocs.io/en/stable/) library also has a few useful graph visualization layouts that you can apply to the graphs you construct with Networkx. The visualizations in the nxviz library are typically more visually appealing than the layouts in Networkx. In order to use it, we will need to pip install it.
+
+```bash
+$ pip install nxviz
+```
+
+Once you have it installed, you can generate network visualizations in the following layouts.
+
+```python
+#Circos Plots
+from nxviz import CircosPlot
+
+c = CircosPlot(G)
+c.draw()
+```
+
+```python
+#Matrix Plots
+from nxviz import MatrixPlot
+
+m = MatrixPlot(G)
+m.draw()
+```
+
+```python
+#Arc Plots
+from nxviz import ArcPlot
+
+a = ArcPlot(G)
+a.draw()
+```
 
 - Other ways to visualize network data
     - Bar charts
@@ -222,4 +268,6 @@ nx.draw(G)
 - [PyCon 2018: Network Analysis Made Simple, Part 2 Tutorial](https://www.youtube.com/watch?v=MRCLwmYTVpc)
 - [Network Analysis Made Simple Github Repo](https://github.com/ericmjl/Network-Analysis-Made-Simple)
 - [Networkx Documentation](https://networkx.github.io/documentation/stable/)
+- [Networkx Drawing](https://networkx.github.io/documentation/stable/reference/drawing.html)
+- [nxviz Documentation](https://nxviz.readthedocs.io/en/stable/)
 - [DataCamp Social Network Analysis Article](https://www.datacamp.com/community/tutorials/social-network-analysis-python)
