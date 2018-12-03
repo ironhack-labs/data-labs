@@ -149,16 +149,17 @@ Use this method to turn the data frame into a graph and then practice computing 
 - What is the average degree?
 - What is the density of the graph?
 - Is this graph fully-connected? How do you know?
+- What gymnast has the highest betweenness centrality?
+- What gymnast has the highest Eigenvector centrality?
+- What gymnast has the highest degree centrality?
 
 ### Rows Represent Entities
 
-When we have a data set where the rows represent entities, we need to infer relationships based on attributes that different rows have in common. These relationships can be constructed based on entities belonging to the same group (same categorical variable values) or from having similar numeric variable values. These relationships are often undirected.
+When we have a data set where the rows represent entities, we need to infer relationships based on attributes that different rows have in common. These relationships can be constructed based on entities belonging to the same group (same categorical variable values) or from having similar numeric variable values. These relationships are typically undirected.
 
-Additionally, we can aggregate further, grouping by individual entity and count the number of unique connections each entity has. This will provide us with context around each interaction, letting us see how connected each side of a transaction or interaction is.
+The `us_mens_basketball.csv` data set is a good example of this. Each row represents an single basketball player's participation in a single event at a single Olympics.
 
-**Provide example here.**
-
-- Transforming data to graph structure
+Below is a `df_to_graph` function that creates pairwise relationships from data sets where rows represent entities. It creates a copy of the data set and then leverages the Pandas `merge` method to join the two copies together via whatever categorical column or list of columns you choose to define the edges of the network.
 
 ```python
 def df_to_graph(df, entity, edge):
@@ -173,15 +174,21 @@ def df_to_graph(df, entity, edge):
         graph_df = graph_df[[entity + '_x', entity + '_y', edge]]
     
     return graph_df
-
-graph_df = df_to_graph(df, entity, edge)
 ```
 
-- Converting data frames to graphs
+Use the function above to structure the basketball data set as a data frame of pairwise connections. You can use the *Name* field to create your entities and the *Games* field to base your edges on. Once you have the data in this format, sort descending by the number of Olympic games the players have played in together. Which players have played together in the Olympics the most number of times?
 
+Now that you have a data frame of pairwise connections, use the `from_pandas_edgelist` to convert it into a graph. Compute the statistics of this graph and answer the following questions.
 
-
-- Analyzing networks extracted from data
+- How many basketball players (nodes) are in the graph?
+- How many edges are in the graph?
+- What is the average degree?
+- What is the density of the graph?
+- Is this graph fully-connected? How do you know?
+- What player has the highest betweenness centrality?
+- What player has the highest Eigenvector centrality?
+- What player has the highest degree centrality?
+- What are some notable differences between this graph and the gymnastics graph you analyzed earlier?
 
 ## Visualization of Network Data
 
