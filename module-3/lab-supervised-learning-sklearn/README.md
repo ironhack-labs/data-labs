@@ -1,6 +1,6 @@
 ![Ironhack logo](https://i.imgur.com/1QgrNNw.png)
 
-# Lab | Introduction to Scikit-Learn
+# Lab | Supervised Learning with Scikit-Learn
 
 
 ## Introduction
@@ -21,7 +21,17 @@ Upon completion, add your deliverables to git. Then commit git and push your bra
 
 ## Resources
 
+[sklearn.datasets.load_diabetes](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_diabetes.html)
+
+[sklearn.linear_model.LinearRegression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html)
+
+[StatsModels Linear Regression](https://www.statsmodels.org/dev/regression.html)
+
+[StatsModels Linear Regression Ordinary Least Squares](https://www.statsmodels.org/dev/generated/statsmodels.regression.linear_model.OLS.html)
+
 [Linear Model Hypothesis Testing](https://onlinecourses.science.psu.edu/stat501/node/297/)
+
+[The Coefficient of Determination, r-squared](https://onlinecourses.science.psu.edu/stat501/node/255/)
 
 [R squared in scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.r2_score.html)
 
