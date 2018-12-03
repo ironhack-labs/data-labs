@@ -178,7 +178,7 @@ def df_to_graph(df, entity, edge):
 
 Use the function above to structure the basketball data set as a data frame of pairwise connections. You can use the *Name* field to create your entities and the *Games* field to base your edges on. Once you have the data in this format, sort descending by the number of Olympic games the players have played in together. Which players have played together in the Olympics the most number of times?
 
-Now that you have a data frame of pairwise connections, use the `from_pandas_edgelist` to convert it into a graph. Compute the statistics of this graph and answer the following questions.
+Now that you have a data frame of pairwise connections, use the `from_pandas_edgelist` method to convert it into a graph. Compute the statistics of this graph and answer the following questions.
 
 - How many basketball players (nodes) are in the graph?
 - How many edges are in the graph?
@@ -215,7 +215,7 @@ nx.draw_circular(G, node_size=20, node_color='cyan')
 nx.draw_kamada_kawai(G, node_size=20, node_color='cyan')
 ```
 
-In addition to the Networkx's drawing capabilities, the [nxviz](https://nxviz.readthedocs.io/en/stable/) library also has a few useful graph visualization layouts that you can apply to the graphs you construct with Networkx. The visualizations in the nxviz library are typically more visually appealing than the layouts in Networkx. In order to use it, we will need to pip install it.
+In addition to Networkx's drawing capabilities, the [nxviz](https://nxviz.readthedocs.io/en/stable/) library also has a few useful graph visualization layouts that you can apply to the graphs you construct with Networkx. The visualizations in the nxviz library are typically more visually appealing than the layouts in Networkx. In order to use it, we will need to pip install it.
 
 ```bash
 $ pip install nxviz
@@ -247,10 +247,17 @@ a = ArcPlot(G)
 a.draw()
 ```
 
-- Other ways to visualize network data
-    - Bar charts
-    - Scatter plots
-    - Line charts
+In addition to the variety of layouts you can use to visualize networks, it's important to remember that you also have all the other types of visualizations you have learned about that you can leverage to visually analyze your network data.
+
+### Bar Charts
+
+For example, you can aggregate your data by entity, count the number of connections or the total number of interactions, sort them, filter to get just the top 20, and visualize it as a horizontal bar chart. By this point in the program, you should have all the tools in your arsenal to be able to do this. Try it for the basketball data set and see who are the top 20 players in the network that have played alongside the most number of other players.
+
+### Scatter Plots
+
+With the same aggregated data, you can also generate a scatter plot that shows the relationship that exists between the number of connections and the number of interactions in the data set. Try doing this for the gymnastics data set.
+
+What other ways can you think of to visualize these data sets? Let your creativity run wild and show us what you've got!
 
 ## Deeper Analysis of Networks
 
