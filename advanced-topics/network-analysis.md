@@ -261,12 +261,27 @@ What other ways can you think of to visualize these data sets? Let your creativi
 
 ## Deeper Analysis of Networks
 
-- Subgraphs
-- Hierarchical graphs
-- Querying graphs
-- Different entity types in the same graph
+### Subgraphs
+
+Up until this point, we have been calculating statistics and visualizing entire networks, or at least what we thought were entire networks. In reality, both the gymnastics and the basketball data sets came from a larger Olympics data set that contains the athletes that participated in all Olympic events.
+
+Therefore, what we have been analyzing are essentially subgraphs for the domains of gymnastics and basketball. Analyzing subgraphs is useful because full graphs have a tendency to get extremely large and complex. Subgraphs allow you to focus and really be able to examine the connections in a graph without getting overwhelmed with too much information. They also usually produce much more coherent network visualizations, whereas full graph visualization tends to suffer from the hairball effect.
+
+One way to analyze a subgraph is the way we did it - by filtering a data set before converting it to a graph and then creating a Networkx graph object from the data. Another way to create a subgraph is to zoom in and look at an ego graph, which is a subgraph that focuses on one node and its connections in the network. Networkx has a handy `ego_graph` method that will create a ego graph from a node that we specify.
+
+```python
+ego = nx.ego_graph(G, 'NodeName', radius=1)
+```
+
+The `radius` parameter specifies how many degrees away from the node to create the ego graph. The default radius is 1, which means that only nodes that are directly connected to the node you specify will be included in the ego graph. If you were to set the radius to 2, it would include all nodes connected to your node's first degree connections, and so forth.
+
+Which nodes does it make the most sense to analyze ego graphs for? A good place to start would be with the nodes that have the highest centrality metrics. Practice creating and visualizing ego graphs from both the gymnastics and basketball graphs we have created. When visualizing them, you can add a `with_labels=True` parameter to any of the Networkx `draw` methods to show athlete names next to each node.
+
 - Community detection
 - Clustering
+- Hierarchical graphs
+- Different entity types in the same graph
+- Querying graphs
 
 ## Resources
 
