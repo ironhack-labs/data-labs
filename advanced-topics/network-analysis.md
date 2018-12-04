@@ -149,16 +149,17 @@ Use this method to turn the data frame into a graph and then practice computing 
 - What is the average degree?
 - What is the density of the graph?
 - Is this graph fully-connected? How do you know?
+- What gymnast has the highest betweenness centrality?
+- What gymnast has the highest Eigenvector centrality?
+- What gymnast has the highest degree centrality?
 
 ### Rows Represent Entities
 
-When we have a data set where the rows represent entities, we need to infer relationships based on attributes that different rows have in common. These relationships can be constructed based on entities belonging to the same group (same categorical variable values) or from having similar numeric variable values. These relationships are often undirected.
+When we have a data set where the rows represent entities, we need to infer relationships based on attributes that different rows have in common. These relationships can be constructed based on entities belonging to the same group (same categorical variable values) or from having similar numeric variable values. These relationships are typically undirected.
 
-Additionally, we can aggregate further, grouping by individual entity and count the number of unique connections each entity has. This will provide us with context around each interaction, letting us see how connected each side of a transaction or interaction is.
+The `us_mens_basketball.csv` data set is a good example of this. Each row represents an single basketball player's participation in a single event at a single Olympics.
 
-**Provide example here.**
-
-- Transforming data to graph structure
+Below is a `df_to_graph` function that creates pairwise relationships from data sets where rows represent entities. It creates a copy of the data set and then leverages the Pandas `merge` method to join the two copies together via whatever categorical column or list of columns you choose to define the edges of the network.
 
 ```python
 def df_to_graph(df, entity, edge):
@@ -173,31 +174,90 @@ def df_to_graph(df, entity, edge):
         graph_df = graph_df[[entity + '_x', entity + '_y', edge]]
     
     return graph_df
-
-graph_df = df_to_graph(df, entity, edge)
 ```
 
-- Converting data frames to graphs
+Use the function above to structure the basketball data set as a data frame of pairwise connections. You can use the *Name* field to create your entities and the *Games* field to base your edges on. Once you have the data in this format, sort descending by the number of Olympic games the players have played in together. Which players have played together in the Olympics the most number of times?
 
+Now that you have a data frame of pairwise connections, use the `from_pandas_edgelist` method to convert it into a graph. Compute the statistics of this graph and answer the following questions.
 
-
-- Analyzing networks extracted from data
+- How many basketball players (nodes) are in the graph?
+- How many edges are in the graph?
+- What is the average degree?
+- What is the density of the graph?
+- Is this graph fully-connected? How do you know?
+- What player has the highest betweenness centrality?
+- What player has the highest Eigenvector centrality?
+- What player has the highest degree centrality?
+- What are some notable differences between this graph and the gymnastics graph you analyzed earlier?
 
 ## Visualization of Network Data
 
-- Network visualizations
+In addition to analyzing our graph via graph statistics and node centrality metrics, we can also create visualizations that have the potential to be informative to our analysis. Networkx has a few different options for drawing graphs, but we will also be using the `nxviz` library as well.
+
+The most basic way to create a network visualization is with Networkx's `draw` method.
 
 ```python
 nx.draw(G)
 ```
 
-- Different layouts - spring, circular, etc.
+However, just using this method usually produces some pretty ugly visualizations. To make it look nicer, try setting different values for the `node_size` and `node_color` parameters as well as modifying the default size of the plot. For example, the version below should make your graph look a bit nicer.
 
+```python
+plt.figure(figsize=(10,5))
+nx.draw(G, node_size=20, node_color='cyan')
+```
 
-- Other ways to visualize network data
-    - Bar charts
-    - Scatter plots
-    - Line charts
+Graphs can be visualized via different layouts. The default one is spring layout, which is what you get when you call `nx.draw()`. You can also view the graph in a circular layout, a Kamada-Kawai force-directed layout, or via a [few other layouts](https://networkx.github.io/documentation/stable/reference/drawing.html). Below are examples for how to draw graphs with circular and Kamada-Kawai force-directed layouts via Networkx.
+
+```python
+nx.draw_circular(G, node_size=20, node_color='cyan')
+
+nx.draw_kamada_kawai(G, node_size=20, node_color='cyan')
+```
+
+In addition to Networkx's drawing capabilities, the [nxviz](https://nxviz.readthedocs.io/en/stable/) library also has a few useful graph visualization layouts that you can apply to the graphs you construct with Networkx. The visualizations in the nxviz library are typically more visually appealing than the layouts in Networkx. In order to use it, we will need to pip install it.
+
+```bash
+$ pip install nxviz
+```
+
+Once you have it installed, you can generate network visualizations in the following layouts.
+
+```python
+#Circos Plots
+from nxviz import CircosPlot
+
+c = CircosPlot(G)
+c.draw()
+```
+
+```python
+#Matrix Plots
+from nxviz import MatrixPlot
+
+m = MatrixPlot(G)
+m.draw()
+```
+
+```python
+#Arc Plots
+from nxviz import ArcPlot
+
+a = ArcPlot(G)
+a.draw()
+```
+
+In addition to the variety of layouts you can use to visualize networks, it's important to remember that you also have all the other types of visualizations you have learned about that you can leverage to visually analyze your network data.
+
+### Bar Charts
+
+For example, you can aggregate your data by entity, count the number of connections or the total number of interactions, sort them, filter to get just the top 20, and visualize it as a horizontal bar chart. By this point in the program, you should have all the tools in your arsenal to be able to do this. Try it for the basketball data set and see who are the top 20 players in the network that have played alongside the most number of other players.
+
+### Scatter Plots
+
+With the same aggregated data, you can also generate a scatter plot that shows the relationship that exists between the number of connections and the number of interactions in the data set. Try doing this for the gymnastics data set.
+
+What other ways can you think of to visualize these data sets? Let your creativity run wild and show us what you've got!
 
 ## Deeper Analysis of Networks
 
@@ -215,4 +275,6 @@ nx.draw(G)
 - [PyCon 2018: Network Analysis Made Simple, Part 2 Tutorial](https://www.youtube.com/watch?v=MRCLwmYTVpc)
 - [Network Analysis Made Simple Github Repo](https://github.com/ericmjl/Network-Analysis-Made-Simple)
 - [Networkx Documentation](https://networkx.github.io/documentation/stable/)
+- [Networkx Drawing](https://networkx.github.io/documentation/stable/reference/drawing.html)
+- [nxviz Documentation](https://nxviz.readthedocs.io/en/stable/)
 - [DataCamp Social Network Analysis Article](https://www.datacamp.com/community/tutorials/social-network-analysis-python)
