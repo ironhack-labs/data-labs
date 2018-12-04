@@ -300,9 +300,29 @@ values = list(parts.values())
 nx.draw_kamada_kawai(G, node_size=20, node_color=values)
 ```
 
-- Hierarchical graphs
-- Different entity types in the same graph
-- Querying graphs
+### Hierarchical Graphs
+
+Thus far, we have analyzed graphs where the nodes represented individual athletes and the edges represented Olympic games or specific events that they have competed in together. We didn't call attention to it at the time, but we essentially analyzed data at two different hierarchical levels, as there can be several events within a particular year's Olympic games.
+
+We can continue going up the hierarchy if we wanted to, strip out the athletes as entities, and analyze the data at the Games level. To do this, we would need to designate the Games field as the entities and then use the athlete names as the edge criteria so that there would be an edge between two Olympic games if an athlete played in both of them.
+
+You already have the tools in your toolbox to be able to do this, so give it a try using the basketball data set. Create a graph with Games as the entities and then produce a visualization showing the network.
+
+- Are there any years connected that you weren't expecting? 
+- Are there any years you were expecting to be connected that are not?
+- Dig into the underlying data and see if you can find out which players are driving the connection between years.
+
+## Bonus: More Complex Networks
+
+Now that we have analyzed networks at multiple hierarchical levels individually, we can try to include nodes at different levels of the hierarchy *within the same graph*. For example, you can create a graph that matches basketball players to the Olympic games they participated in and then combine that graph with the player graph you created previously to form a new graph that has both games, players, and all the relationships between them captured.
+
+To do this, you would select the *Games* and *Name* field from the original basketball data set and create a graph (H) using the `from_pandas_edgelist` method. You would then combine this new graph with your player graph (G) using the `nx.compose` method into a new graph (F) as follows.
+
+```python
+F = nx.compose(G,H)
+```
+
+You should now be able to generate sub/ego graphs from this new graph and run all the statistics and analytics we've covered.
 
 ## Resources
 
@@ -313,4 +333,5 @@ nx.draw_kamada_kawai(G, node_size=20, node_color=values)
 - [Networkx Documentation](https://networkx.github.io/documentation/stable/)
 - [Networkx Drawing](https://networkx.github.io/documentation/stable/reference/drawing.html)
 - [nxviz Documentation](https://nxviz.readthedocs.io/en/stable/)
+- [Python-Louvain Documentation](https://python-louvain.readthedocs.io/en/latest/api.html)
 - [DataCamp Social Network Analysis Article](https://www.datacamp.com/community/tutorials/social-network-analysis-python)
