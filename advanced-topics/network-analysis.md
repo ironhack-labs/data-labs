@@ -277,8 +277,29 @@ The `radius` parameter specifies how many degrees away from the node to create t
 
 Which nodes does it make the most sense to analyze ego graphs for? A good place to start would be with the nodes that have the highest centrality metrics. Practice creating and visualizing ego graphs from both the gymnastics and basketball graphs we have created. When visualizing them, you can add a `with_labels=True` parameter to any of the Networkx `draw` methods to show athlete names next to each node.
 
-- Community detection
-- Clustering
+### Community Detection
+
+Another useful thing you can do with network data is community detection, where nodes in the graph are grouped together based on the other nodes they are connected to. One of the most straightforward ways to do this is using the `python-louvain` library, which you can pip install as follows.
+
+```bash
+$ pip install python-louvain
+```
+
+Once installed, you can import its `community` module and use the `best_partition` method to figure out which nodes in the graph to group together.
+
+```python
+import community
+
+parts = community.best_partition(G)
+```
+
+This produces a dictionary containing the name of each node and which community it has been grouped into. You can extract the values of this dictionary and pass it to the `node_color` parameter of a `draw` method to color code the nodes in your network visualizations according to their community. Below is an example of how to do this.
+
+```python
+values = list(parts.values())
+nx.draw_kamada_kawai(G, node_size=20, node_color=values)
+```
+
 - Hierarchical graphs
 - Different entity types in the same graph
 - Querying graphs
