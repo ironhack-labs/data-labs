@@ -120,4 +120,4 @@ Lab | Machine Learning Pipelines
 
 [Project | Machine Learning Pipeline](module-3/machine-learning-pipeline-project)
 
-## [Final Project](final-project/final-project.md)
+## [Final Project](final-project)

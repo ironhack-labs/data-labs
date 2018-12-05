@@ -2,6 +2,25 @@
 
 # Final Project: Comprehensive Data Analytics Project
 
+## Table of Content
+
+**[Overview](#overview)**
+
+**[Project Instructions](#project-instructions)**
+
+* [Day 1](#day-1)
+* [Day 2](#day-2)
+* [Day 3](#day-3)
+* [Day 4](#day-4)
+
+**[Necessary Deliverables](#necessary-deliverables)**
+
+**[Presentation Guideline and Criteria](#presentation-guideline-and-criteria)**
+
+**[5 Tips for Successful Completion](#5-tips-for-successful-completion)**
+
+---
+
 ## Overview
 
 The goal of this project is to give you an opportunity to demonstrate the skills you have built throughout this program. In this project, you will use Python, SQL, and Tableau to put together a complete analytics workflow, including:
@@ -15,35 +34,33 @@ The goal of this project is to give you an opportunity to demonstrate the skills
 * Model evaluation
 * Reporting and presentation of insights
 
-You will be provided a list of data sets to choose from for this project. Using the knowledge you have acquired and your experience working with data, you will need to come up with a plan for what you are going to do and then design the project around the data set you have chosen.
+The final project is structured into 4 days in which you build up your deliverables progressively and iteratively. We have provided a list of data sets for you to choose from. However, you are encouraged to obtain your own data sets. Using the knowledge you have acquired and your experience working with data, you will come up with a plan for what you are going to do and then design the project around the data set you have chosen.
 
-**You will be working individually for this project**, but we'll be guiding you along the process and helping you as you go. You will be working on this project over the course of 3-4 days (actual length of the project to be decided by your Lead Instructor). Below is the anticipated activities you should be performing on each day.
+**You will be working individually for this project**, but we'll be guiding you along the process and helping you as you go. You will be working on this project over the course of 4 days. The proposed progression for each day is listed below. However, if you finish a certain step ahead of time, you can proceed to the next step. In that case, you will conduct more iterations of your deliverables by for example deep cleanining your data, selecting better features, comparing different ML models, improving model predictions, and so on. Also, remember that data analysis is iterative. So from time to time you may need to step back to a previous phase and iterate.
 
-### Day 1
+### Day 1 - Brain Storming and Data Preparation
 
 * Idea generation & planning
 * Data gathering & cleaning
 * Data storage
 
-### Day 2
+### Day 2 - Exploratory Data Analysis
 
-* Exploratory data analysis
+* Data exploration
 * Data visualization
+* Data transformation
 
-### Day 3
+### Day 3 - Data Analysis First Iteration
 
 * Feature selection
-* Model selection & comparison
+* Model training and evaluation
 * Model evaluation
-* Prepare for presentation
 
-### Day 4 (optional)
+### Day 4 - Data Analysis More Iterations
 
 * Iterations on your modeling
-* Model evaluation
+* Model evaluation and comparison
 * Prepare for presentation
-
-If you finish the tasks for a day early, you can either perform the tasks for that day deeper (ex. deeper cleaning, exploration, modeling, etc.) or move on to the tasks for the next day.
 
 ---
 
@@ -53,7 +70,7 @@ If you finish the tasks for a day early, you can either perform the tasks for th
 
 On the first day of your project, you will be planning your project, choosing a data set, downloading and cleaning it, and storing it in a MySQL database.
 
-To get started, evaluate and choose from one of the following data sets:
+To get started, explore and choose from one of the following data sets:
 
 * [Telecom Customer Churn Data Set](https://www.kaggle.com/blastchar/telco-customer-churn)
 * [Mental Health in Tech Survey Data Set](https://www.kaggle.com/osmi/mental-health-in-tech-survey)
@@ -63,9 +80,13 @@ To get started, evaluate and choose from one of the following data sets:
 
 These are all Kaggle data sets, so you can gain some context about them by looking at the field descriptions and the *Overview* tab for each data set. You can also get project ideas by looking at the different *Kernels* that people have created using the data sets and the approaches they have taken, but please **do not plagiarize or copy someone else's work.** Remember that the goal of this project is to demonstrate *your* skills, not someone else's.
 
+You are free to use other data sources from [Kaggle](https://www.kaggle.com), [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets.html), [data.gov](https://www.data.gov/), public APIs, websites, etc. However you will need to spend more time to search and evaluate the quality and complexity of the data set you want to use. Discuss with your instructor as early as possible regarding your project ideas in order to avoid potential blockers.
+
 #### Project Ideas
 
-As you are evaluating the data sets and deciding which you would like to use for your project, think about the different types of information that could be extracted from each one and what problems you could potentially solve by applying supervised or unsupervised machine learning to the data. Below are some ideas for each data set to help get you started.
+As you are evaluating the data sets and deciding which you would like to use for your project, think about the different types of information that could be extracted from each one and what problems you could potentially solve. You are not required to use machine learning but it is definitely a plus if you use it. It is totally fine if you are more of a business-focused person and use Tableau to extract business intelligence from the data. It is also fine if you are more of a traditional data analyst and primarily conduct statistical analysis on your data. But challenging your own limit is always beneficial.
+
+Below are some ideas for the data sets we selected for you which can help get you started with these data sets.
 
 ##### Telecom Customer Churn
 
@@ -94,6 +115,48 @@ Once you have chosen a data set, you will need to download it. In order to do so
 * In the Jupyter Notebook, read the data files using Python.
 * Perform any necessary data wrangling and cleaning using Python.
 * Create a connection to your MySQL database using `pymysql` and `sqlalchemy` and write the clean version of the data to the database.
+
+#### Additional Ideas
+
+##### Analyze Your Wwn Facebook Data
+
+Do you know you can download your own Facebook data to your harddisk? You can use this data to do social network analysis or visualize your friendships.
+
+Warning: Downloading your Facebook data takes a lot of time. You are strongly encouraged to download your data ahead of time.
+
+Resources:
+
+[Accessing & Downloading Your Facebook Information](https://www.facebook.com/help/1701730696756992)
+
+[How to Visualize Your Facebook Network](https://linkurio.us/blog/how-to-visualize-your-facebook-network/)
+
+[Facebook Social Network Analysis](http://www.fmsasg.com/socialnetworkanalysis/facebook/)
+
+##### Web Scraping
+
+The web is a free source of unlimited data. There are Wikipedia, Google Maps, YouTube, Amazon, and countless content you can download and dig. General advise? Choose a website you know well and are conerned about. Use API instead of HTML data if you can.
+
+Resources:
+
+[What are some interesting web scraping projects you have done](https://www.quora.com/What-are-some-interesting-web-scraping-projects-you-have-done)
+
+[Web Scraping: Top 15 Ways To Use It For Business](https://www.agenty.com/docs/blog/39/web-scraping-top-15-ways-to-use-it-for-business)
+
+##### Data Visualization
+
+In addition to your Facebook data, there are tons of other data visualizaiton ideas. You can visualize virtually everything such as people, animals, countries, products, music, weather, Github, etc.
+
+Resources:
+
+[15 Data Visualizations That Will Blow Your Mind](https://blog.udacity.com/2015/01/15-data-visualizations-will-blow-mind.html)
+
+[80 Data Visualization Examples Using Location Data and Maps](https://carto.com/blog/eighty-data-visualizations-examples-using-location-data-maps/)
+
+##### Even More
+
+[24 Ultimate Data Science Projects To Boost Your Knowledge and Skills](https://www.analyticsvidhya.com/blog/2018/05/24-ultimate-data-science-projects-to-boost-your-knowledge-and-skills/)
+
+[What are some good data science projects?](https://www.quora.com/What-are-some-good-data-science-projects)
 
 ### Day 2
 
@@ -125,46 +188,15 @@ Should you have a fourth day of final project work, you should spend the day ref
 * Organize your machine learning steps into a pipeline that performs feature selection/engineering, model training, model evaluation, and model storage.
 * Further refine your presentation based on additional findings and results.
 
-## Technical Requirements
-
-The technical requirements for this project are as follows:
-
-* You must demonstrate proficiency with every step of the analytics workflow.
-* Python should be used to import/export, clean, wrangle, analyze, and perform machine learning on the data.
-* MySQL should be used to store a clean version of your data set.
-* Tableau should be used for data exploration, analysis, visualization, and storytelling.
-* Your Python code should be stored in a Jupyter Notebook (.ipynb) file.
-* You should also include a README.md file that describes the steps you took and your thought process throughout each stage of your project - from choosing your data set all the way through evaluating your machine learning models.
-
 ## Necessary Deliverables
+
+A [Final Project Template](final-project-template.md) has been prepared for you to document and report your final project. You can use the structure in that template to prepare your report or presentation. But you are not limited to the Markdown file format in turning in your report as long as you follow the structure prescribed in the template.
 
 The following deliverables should be pushed to your Github repo.
 
 * A Jupyter Notebook (.ipynb) file containing all your Python code.
 * A data folder containing your original data set and your clean data set in CSV format.
-* A README.md file that provides a detailed description of what you did, how, and why.
-
-## Useful Resources
-
-Just about everything you need to complete this final project should have been covered in the lessons of this program. If you need to research any errors you are getting or how to do something extra, we have tried to reinforce that the places to look for answers are the Python/MySQL/Tableau documentation and StackOverflow (or other technical question-and-answer sites). This is how people who work with data in the real world find answers and overcome the obstacles they encounter on a daily basis, so it is important to get some practice at it.
-
-## Project Feedback + Evaluation
-
-* __Technical Requirements__: Did you deliver a project that met all the technical requirements? Given what the program has covered, did you build something that was reasonably complex?
-
-* __Creativity__: Did you add a personal spin or creative element into your project submission? Did you incorporate domain knowledge or unique perspective into your analysis.
-
-* __Code Quality__: Did you follow code style guidance and best practices covered in class?
-
-* __Total__: Your instructors will give you a total score on your project between:
-
-    **Score**|**Expectations**
-    -----|-----
-    0|Does not meet expectations
-    1|Meets expectactions, good job!
-    2|Exceeds expectations, you wonderful creature, you!
-
-This will be useful as an overall gauge of whether you met the project goals, but __the more important scores are described in the specs above__, which can help you identify where to focus your efforts on future projects in the real world!
+* Your final project report/presentation created from template.
 
 ## Presentation Guideline and Criteria
 

@@ -1,31 +1,38 @@
 # [Your Final Project Title]
 
 **[Your Name]**
+
 **[Your Cohort Campus & Time]**
 
 ## Overview
+
+Include the following points in your overview:
 
 * What data/business/research/personal question you would like to answer?
 	* Make sure the question description is human-friendly because you will have non-tech audience to see your final project presentation.
 * What is the hypothesis you would like to test in order to answer your question?
 	* Frame your hypothesis with statistical/data languages (i.e. define Null and Alternative Hypothesis). You can use formulas if you want but that is not required.
-* How you will test your hypothesis? 
-	* Based on the nature of your goal and your intended problem-solving process, you can choose to use as many technologies and techniques as you wish. For example:
-		* Data analysis using Jupyter Notebook
-		* Tableau
-		* Data visualization
-		* Machine Learning
+* How will you test your hypothesis?	
 
-Additional notes:
+Notes:
 
 * You can submit the final project with Jupyter Notebook. If you would like to submit a different file format, make sure to discuss with the instructor.
+* Based on the nature of your goal and your intended problem-solving approach, you are encouraged to use as many skills, technologies, and tools as possible that you have learned in this course, which include but are not limited to:
+	* Python
+	* MySQL
+	* Statistical analysis
+	* Data visualization
+	* Jupyter Notebook
+	* Tableau
+	* Machine Learning
+	* Apache Spark / Network Analysis / Natual Language Processing
 * Include screenshots wherever relevant.
 * Feel free to add more sections to this worksheet.
 * Meet with your instructor/TA on daily basis to obtain feedback and support.
 
-## The Data
+## Data Preparation
 
-Overview:
+### Overview:
 
 * What is your dataset about?
 * Where/how did you obtain your dataset?
@@ -49,9 +56,11 @@ Overview:
 
 ## Data Analysis
 
+### Overview
+
 Overview the general steps you will go through to analyze your data in order to test your hypothesis.
 
-### Data Exploration and Analysis
+### Data Exploration and Visualization
 
 * Document each step of your data exploration and analysis.
 * Print charts to demonstrate the effect of your work. Charts make your presentation look good too.
