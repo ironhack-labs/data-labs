@@ -2,7 +2,9 @@
 
 # Advanced Topic: Network Analysis
 
-## Objectives
+## Overview
+
+### Objectives
 
 - Understand the basics of network/graph analysis
 - Build graphs from scratch using the Python Networkx library
@@ -11,6 +13,15 @@
 - Create data visualizations from network data
 - Perform deeper analysis of network graphs
 - Understand how to incorporate network analysis in your final project
+
+### Ingredients
+
+* Data Analysis - 100%
+* Data Engineering - 0%
+
+### Difficulty Level
+
+★★★★ Intermediate
 
 ## Graph Theory and Network Composition
 

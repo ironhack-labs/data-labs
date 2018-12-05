@@ -66,58 +66,66 @@ The instructional team will review your branch and provide feedback.
 
 [Lab | API Scavenger Game](module-1/lab-api-scavenger-game)
 
-Lab | Web Scraping
+[Lab | Web Scraping](module-1/lab-web-scraping)
 
 [Project | API and Web Data Scraping](module-1/web-project)
 
 ## Module 2
 
-Lab | Statistical Analysis with Pandas
+[Lab | Subsetting and descriptive stats](module-2/lab-subsetting-and-descriptive-stats)
 
-Lab | Pandas DataFrame, Aggregations, & Summarization
+[Lab | Dataframe Calculation and Transformation](module-2/lab-df-calculation-and-transformation)
 
-Lab | Pivot Tables, Field Relations & Correlations
+[Lab | Pivot Table and Correlations](module-2/lab-pivot-table-and-correlation)
 
 [Project | Data Analysis with Pandas](module-2/data-analysis-with-pandas)
 
-Lab | DataViz with Seaborn & Matplotlib
+[Lab | DataViz with Seaborn & Matplotlib](module-2/lab-matplotlib-seaborn)
 
 [Project | Visualizing Real World Data](module-2/visualizing-real-world-data)
 
 [Project | Storytelling with Data Visualizations](module-2/storytelling-with-data-visualizations)
 
-Lab | Probability
+[Lab | Probability Distribution](module-2/lab-probability-distribution)
 
-Lab | Hypothesis Testing & Statistical Significance
+[Lab | Hypothesis Testing](module-2/lab-hypothesis-testing)
 
 [Project | Calculating Game of Chances](module-2/calculating-games-of-chance)
 
-Lab | Tableau Deep Dive
+[Lab | Introduction to BI and Tableau](module-2/lab-intro-to-bi-and-tableau)
 
-Lab | DataViz with Tableau
+[Lab | DataViz with Tableau](module-2/lab-tableau-data-visualization)
 
-Lab | BI with Tableau
+[Lab | BI with Tableau](module-2/lab-bi-analysis-with-tableau)
 
-[Project | BI with Tableau](module-2/tableau-project)
+[Project | Tableau Project](module-2/tableau-project)
 
 ## Module 3
 
-Lab | Machine Learning Workflow
+[Lab | Intro to Machine Learning](module-3/lab-intro-to-ml)
 
-Lab Feature Extraction & Engineering + Scikit-Learn
+[Lab | Feature Extraction and Introduction to Supervised Learning](module-3/lab-supervised-learning-feature-extraction)
 
-Lab | Building & Saving Models
+[Lab | Unsupervised Learning with Scikit-Learn](module-3/lab-sklearn-and-unsupervised-learning)
 
-Lab | Supervised Learning with Scikit-Learn
+[Lab | Supervised Learning with Scikit-Learn](module-3/lab-supervised-learning-sklearn)
 
 [Project | Supervised Learning](module-3/supervised-learning-project)
 
-Lab | Unsupervised Learning with Scikit-Learn
-
 [Project | Unsupervised Learning (Clustering)](module-3/clustering-project)
 
-Lab | Machine Learning Pipelines
+[Lab | Machine Learning Pipelines](module-3/lab-machine-learning-pipelines)
+
+[Lab | Supervised Learning](module-3/lab-supervised-learning)
+
+[Lab | Unsupervised Learning](module-3/lab-unsupervised-learning)
 
 [Project | Machine Learning Pipeline](module-3/machine-learning-pipeline-project)
+
+[Advanced Topics: Network Analysis](module-3/lab-network-analysis)
+
+[Advanced Topics: Topic Modeling](module-3/lab-topic-modeling)
+
+[Advanced Topics: Apache Spark](module-3/lab-apache-spark)
 
 ## [Final Project](final-project)
