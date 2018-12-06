@@ -1,5 +1,7 @@
 ![Ironhack logo](https://i.imgur.com/1QgrNNw.png)
 
+# Challenge 4: Deploy Spark in Databricks Community Edition
+
 In this challenge you will create an account at [Databricks](https://databricks.com/) and deploy an Apache Spark instance in cluster mode. Databricks was founded by the same team who created Apache Spark. They provide a series of solutions to satisfy the data needs by businesses, data scientists, data engineers, and education. Their [SparkHub](https://sparkhub.databricks.com) is a cool community that provides various resources for Spark developers and data engineers.
 
 **Suggested time on this challenge: 90-120m min**
