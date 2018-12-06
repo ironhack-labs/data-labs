@@ -40,18 +40,16 @@ Please be advised that in addition to a good foundation in Python and in technol
 	* Xcode (macOS)
 	* Anaconda (Windows)
 
-
 ## Getting Started
 
 Complete Challenge 1-4 in order. Try to finish at least Challenge 1 and 2 in the morning so that you'll have enough time to work on Challenge 3 and 4 in the afternoon. Challenge 4 is not required but it will be useful if you want to use Apache Spark in your final project.
 
 ## Deliverables
 
-- PySpark deployed and running properly on your computer.
 - `challenge-3.ipynb`.
-- [OPTIONAL] Spark instance deployed in cluster mode in your Databricks account.
+- Published Databricks Jupyter Notebook.
 
 ## Submission
 
 * Submit `challenge-3.ipynb` with your solutions via git.
-* Submit the link to your Spark cluster mode Web UI in a text file.
+* Submit the link to your published Notebook in a text file.
