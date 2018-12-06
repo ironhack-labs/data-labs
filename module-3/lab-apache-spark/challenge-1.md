@@ -4,7 +4,7 @@
 
 In this challenge, you will watch two videos that introduce you to the concept and architecture of Apache Spark. For each video, we will provide a checklist of important knowledge points for you. Keep an eye on the checklist and keep assessing whether you have fully understood the concepts discussed in the videos. If you feel the videos do not provide you with adequate understanding of any of the knowledge points, google them or ask your instructor/TA.
 
-**Suggested time on this lab: 60 min**
+**Suggested time on this challenge: 60 min**
 
 ## Objectives
 

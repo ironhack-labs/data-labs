@@ -4,7 +4,11 @@
 
 In this challenge, you will install Apache Spark on your computer in the local model and test the installation.
 
-**Suggested time on this lab: 90-120 min**
+Installing cutting-edge open-source software for programming is always troublesome even for pros. There are plenty of tutorials online but the problem is you don't know which one will work for you until you test them out one by one. Sometimes even the tutorials on the developer's website don't work. Also, when you encounter technical problems, it's difficult to know if it's because the tutorial does not work or because there is something missing or broken on your computer. The more open-source software you install and configure, the more experience you gain which will allow you to know better next time installing other software.
+
+We are providing step-by-step instructions for [Mac users](#mac-users) to follow in this challenge to install Spark. For [Windows users](#windows-users) and [Ubuntu users](#ubuntu-users), we also identified good tutorials. In case the instructions or the videos don't work for you. your instructor and TA will for sure help you.
+
+**Suggested time on this challenge: 90-120 min**
 
 ## Objectives
 
@@ -12,13 +16,25 @@ In this challenge, you will install Apache Spark on your computer in the local m
 * Test your PySpark installation in command line.
 * Test your PySpark integration with Jupyter Notebook with sample code.
 
-## Step 1: Installing Spark
+## Windows Users
 
-Installing cutting-edge open-source software for programming is always troublesome even for pros. There are plenty of tutorials online but the problem is you don't know which one will work for you until you test them out one by one. Sometimes even the tutorials on the developer's website don't work. Also, when you encounter technical problems, it's difficult to know if it's because the tutorial does not work or because there is something missing or broken on your computer. The more open-source software you install and configure, the more experience you gain which will allows you to know better next time installing other software.
+Please follow the instructions in the tutorials below to install PySpark in Windows.
 
-We have tested and written detailed step-by-step instructions for you to follow in this lab. These instructions are for Mac users but the general procedures also apply for Windows users. We've also identified and tested a good tutorial video for Windows users which you can follow or use as a reference. In case you encounter any barriers please ask for help from the instructor or TA.
+**Tutorial: [Install Spark on Windows (PySpark)](https://medium.com/@GalarnykMichael/install-spark-on-windows-pyspark-4498a5d8d66c)**
 
-### Mac Users
+**Video: [Install Spark on Windows (PySpark) + Configure Jupyter Notebook](https://www.youtube.com/watch?v=t63PS3kiTTQ)**
+
+## Ubuntu Users
+
+Please follow the instructions in the tutorials below to install PySpark in Windows.
+
+**Tutorial: [Install Spark on Ubuntu (PySpark)](https://medium.com/@GalarnykMichael/install-spark-on-ubuntu-pyspark-231c45677de0)**
+
+**Video: [Install Spark on Ubuntu (PySpark) + Configure Jupyter Notebook](https://www.youtube.com/watch?v=uhVYTNEe_-A)**
+
+## Mac Users
+
+### Step 1: Installing Spark
 
 Mac users don't need to install Anaconda though they still can do that if they want. We have installed most of the prerequisite software when we setup the development environment at the beginning of this course. The following is the verified simplest installation process for PySpark.
 
@@ -50,19 +66,9 @@ Mac users don't need to install Anaconda though they still can do that if they w
 	brew install apache-spark
 	```
 
-### Windows Users
-
-Please follow the instructions in the tutorials below to install PySpark in Windows.
-
-**Tutorial: [Install Spark on Windows (PySpark)](https://medium.com/@GalarnykMichael/install-spark-on-windows-pyspark-4498a5d8d66c)**
-
-**Video: [Install Spark on Windows (PySpark) + Configure Jupyter Notebook](https://www.youtube.com/watch?v=t63PS3kiTTQ)**
-
-## Step 2: Set Environmental Variables
+### Step 2: Set Environmental Variables
 
 You are required to set the proper environmental variables (envvars) in your OS so that the software you use (e.g. command line tool and Jupyter Notebook) knows where to execute Spark.
-
-### Mac Users
 
 Setting envvars is achieved by adding the following commands in your `~/.bash_profile` tool:
 
@@ -89,20 +95,7 @@ After saving `~/.bash_profile`, restart your Terminal (the envvars are picked up
 
 * The alias `snotebook` creates a shortcut to start your PySpark executable. The `--master "local[*]"` param tells Spark that you are running the master process on your local computer and Spark should decide how many parallel processes it can automatically create when you invoke the `parallelize` command in Python.
 
-### Windows Users
-
-```bash
-setx SPARK_HOME C:\opt\spark\spark-2.1.0-bin-hadoop2.7
-setx HADOOP_HOME C:\opt\spark\spark-2.1.0-bin-hadoop2.7
-setx PYSPARK_DRIVER_PYTHON ipython
-setx PYSPARK_DRIVER_PYTHON_OPTS notebook
-
-??SPARK_PATH??
-
-??PYSPARK_PYTHON??
-```
-
-## Step 3: Test Spark Installation in Command Line
+### Step 3: Test Spark Installation in Command Line
 
 1. In your Terminal, execute `spark-shell`. Spark will be started and you will see the Spark version you have installed:
 
@@ -142,17 +135,15 @@ setx PYSPARK_DRIVER_PYTHON_OPTS notebook
 
 	After the Spark job is finished, the Web UI will go down again.
 
-## Step 4: Test Jupyter Notebook Integration with PySpark
+### Step 4: Test Jupyter Notebook Integration with PySpark
 
 If your Step 2 is successful, the Jupyter Notebook integration with PySpark should already been accomplished. Now let's give it a test.
 
-**For Mac users**, you have created an alias in your `.bash_profile` that is called `snotebook`. So you can simply run `snotebook` in your Terminal. Alternatively, you can run the full command:
+You have created an alias in your `.bash_profile` that is called `snotebook`. So you can simply run `snotebook` in your Terminal. Alternatively, you can run the full command:
 
 ```bash
 $SPARK_PATH/bin/pyspark --master "local[*]"
 ```
-
-**For Windows users**, simply run `pyspark --master "local[*]"`.
 
 Jupyter Notebook should open in your browser.
 
@@ -161,6 +152,10 @@ Jupyter Notebook should open in your browser.
 [Install Spark on Windows (PySpark)](https://medium.com/@GalarnykMichael/install-spark-on-windows-pyspark-4498a5d8d66c)
 
 [Install Spark on Windows (PySpark) + Configure Jupyter Notebook](https://www.youtube.com/watch?v=t63PS3kiTTQ)
+
+[Install Spark on Ubuntu (PySpark)](https://medium.com/@GalarnykMichael/install-spark-on-ubuntu-pyspark-231c45677de0)
+
+[Install Spark on Ubuntu (PySpark) + Configure Jupyter Notebook](https://www.youtube.com/watch?v=uhVYTNEe_-A)
 
 [Install Spark on Mac (PySpark)
 ](https://medium.com/@GalarnykMichael/install-spark-on-mac-pyspark-453f395f240b)

@@ -118,11 +118,11 @@ Once you have chosen a data set, you will need to download it. In order to do so
 
 #### Additional Ideas
 
-##### Analyze Your Wwn Facebook Data
+##### Analyze Your Own Facebook Data
 
 Do you know you can download your own Facebook data to your harddisk? You can use this data to do social network analysis or visualize your friendships.
 
-Warning: Downloading your Facebook data takes a lot of time. You are strongly encouraged to download your data ahead of time.
+**Warning: Downloading your Facebook data takes a lot of time. After you request your data in your Facebook account, Facebook needs to spend at least a day (depending on how much data you have) to make the file available for you to download. You must request your data from Facebook and download the file ahead of time.**
 
 Resources:
 
