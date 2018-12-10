@@ -4,31 +4,32 @@
 
 ## Introduction
 
-TBD
+This lab will introduce you to the basics of natural language processing, or NLP. You will also conduct a lab to analyze the sentiment of Twitter tweets.
 
 ### Objectives
 
-TBD
+* Learn about NLP.
+* Install and test NLTK, a popular library created for NLP.
+* Learn how to use NLTK to conduct sentiment analysis.
 
 ### Ingredients 
 
-* Data Analysis - 60%
-* Data Engineering - 40%
+* Data Analysis - 80%
+* Data Engineering - 20%
 
 ### Difficulty Level 
 
 ★★★★★ Advanced
 
-TBD
-
 ## Getting Started
 
-TBD
+Take Challenge 1-3 in order. Create Jupyter Notebooks as appropriate to code your answers.
 
 ## Deliverables
 
-- `challenge-3.ipynb`.
+- Jupyter Notebooks containing your responses.
 
 ## Submission
 
-TBD
+* Submit the deliverables via git.
+
