@@ -56,7 +56,7 @@ The dataset we'll be using today is located in the lab directory named `Sentimen
 
 * The dataset was downloaded from [Kaggle](https://www.kaggle.com/kazanova/sentiment140). We made a slight change on the original data so that each column has a label.
 
-* The dataset is huuuuge (1.6m tweets). When you develop your data analysis codes, you can use a subset of the data (e.g. 20k records) so that you will save a lot of time when you test your codes. When you create the subset, use `.copy()` to create a clone of the data.
+* The dataset is huuuuge (1.6m tweets). When you develop your data analysis codes, you can sample a subset of the data (e.g. 20k records) so that you will save a lot of time when you test your codes.
 
 ### Prepare Textual Data for Sentiment Analysis
 
