@@ -122,7 +122,9 @@ Once you have chosen a data set, you will need to download it. In order to do so
 
 Do you know you can download your own Facebook data to your harddisk? You can use this data to do social network analysis or visualize your friendships.
 
-**Warning: Downloading your Facebook data takes a lot of time. After you request your data in your Facebook account, Facebook needs to spend at least a day (depending on how much data you have) to make the file available for you to download. You must request your data from Facebook and download the file ahead of time.**
+**Warning: Downloading your Facebook data takes a lot of time.** You need to first request your data in your Facebook account. Then Facebook will prepare your data for you to download as a ZIP file. If you request all your data (e.g. posts, photos, likes, friends, places, etc.), it takes at least a whole day for Facebook to get your data ready. But instead of requesting all your data, you can also request only the categories you want to analyze such as friends and places, which takes significantly less time. In either case, request your data as early as you can so that you can have the data before the project week begins.
+
+Besides, when you request your data from Facebook, choose if you would like the data to be in JSON or HTML format. It's a strategic choice depending on what topic you want to work on for your final project. If you request JSON, you will be able to focus on data visualization and analysis. If you request HTML, the data may be more suitable for natural language processing but you will need to spend time on parsing the HTML data.
 
 Resources:
 
