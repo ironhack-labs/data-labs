@@ -61,11 +61,12 @@ Then you can open `output.json` with your favorite text editor to have a deep lo
 
 ### Challenge 1: Fork Languages
 
-You will find out among all the forks created from the `ironhack-datalabs/madrid-oct-2018` repo, how many types of languages are used. Steps:
+You will find out how many programming languages are used among all the forks created from the main lab repo of your bootcamp. Assuming the main lab repo is `ironhack-datalabs/madrid-oct-2018`, you will:
 
-1. Obtain all the forks of the `ironhack-datalabs/madrid-oct-2018` through Github API.
+1. Obtain the full list of forks created from the main lab repo via Github API.
 
-1. Loop the JSON response for the `language` attribute of each fork. Use an array to store the `language` attributes of each fork. The values in the array should be unique.
+1. Loop the JSON response to find out the `language` attribute of each fork. Use an array to store the `language` attributes of each fork.
+    * *Hint: Each language should appear only once in your array.*
 
 1. Print the language array. It should be something like:
 
@@ -75,35 +76,37 @@ Again, the documentation of Github API is [here](https://developer.github.com/v3
 
 ### Challenge 2: Count Commits
 
-Count how many commits were made between October 20, 2018 and October 25, 2018.
+Count how many commits were made in the past week.
 
-1. Obtain all the commits made between October 20, 2018 and October 25, 2018 via API, which is a JSON array that contains multiple commit objects.
+1. Obtain all the commits made in the past week via API, which is a JSON array that contains multiple commit objects.
 
-1. Count how many commit objects are there in the array.
+1. Count how many commit objects are contained in the array.
 
 ### Challenge 3: Hidden Cold Joke
 
-Using Python, call Github API to find out the cold joke contained in the 24 secret files in this repo whose filenames contain `.scavengerhunt`. The secret files are named from `.0001.scavengerhunt` to `.0024.scavengerhunt`. They are scattered randomly throughout this repo. You need to **search for these files by calling the Github API**, not searching on your computer.
+Using Python, call Github API to find out the cold joke contained in the 24 secret files in the following repo:
+
+https://github.com/ironhack-datalabs/scavenger
+
+The filenames of the secret files contain `.scavengerhunt` and they are scattered in different directories of this repo. The secret files are named from `.0001.scavengerhunt` to `.0024.scavengerhunt`. They are scattered randomly throughout this repo. You need to **search for these files by calling the Github API**, not searching the local files on your computer.
 
 Notes:
 
 * Github API documentation can be found [here](https://developer.github.com/v3/).
 
-* Data analysts often use `curl` to test the parameters of API requests in Terminal because it's quick. You will need to inspect the JSON responses from the API and determine if that is the information you look for. If not, research the documentations and refine the parameters until you obtain the desired information.
+* You will need to study the Github API documentation to decide which API endpoint to call and what parameters to use in order to obtain the information you need. Unless you are already super familiar with Github API or super lucky, you probably will do some trials and errors. Therefore, be prepared to go back and forth in studying the API documentation, testing, and revising until you obtain what you need.
 
-* The repo you'll search under is `ironhack-datalabs/madrid-oct-2018`.
+* After receiving the JSON data object, you need to inspect its structure and decide how to parse the data.
 
-* After figuring out the correct parameters, you need to inspect the JSON data structure and decide how to parse the data objects. Then you can write the Python scripts to do actual parsing. 
+* When you test your requests with Github API, sometimes you may be blocked by Github with an error message that reads:
 
-* When you test your requests to Github API, sometimes you may be blocked by Github with an error message that reads:
-
-	```You have triggered an abuse detection mechanism and have been temporarily blocked from content creation. Please retry your request again later.```
+	> You have triggered an abuse detection mechanism and have been temporarily blocked from content creation. Please retry your request again later.
 
 	Don't worry. Check the parameters in your request and wait for a minute or two before you make additional requests.
 
-After you find out the secrete files: 
+**After you find out the secrete files:**
 
-1. Order them ascendingly based on the numeric value in the filenames.
+1. Sort the filenames ascendingly.
 
 1. Read the content of each secret files into an array of strings.
 
