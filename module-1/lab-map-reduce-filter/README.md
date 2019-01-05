@@ -5,7 +5,7 @@
 
 ## Introduction
 
-In this 
+In this lab, we will implement what we have learned about functional programming using the map, reduce, and filter functions. These functions allow us to pass an input and a transformation to a function and produce an output. 
 
 ## Getting Started
 
@@ -20,3 +20,7 @@ Open the `main.ipynb` file in the `your-code` directory. Follow the instructions
 Upon completion, add your deliverables to git. Then commit git and push your branch to the remote.
 
 ## Resources
+
+[The Official Python Documentation on Mapping, Reducing, and Filtering](https://docs.python.org/3/howto/functional.html#built-in-functions)
+
+[The `apply` Function in Pandas](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.apply.html)
