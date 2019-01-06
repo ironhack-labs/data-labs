@@ -49,7 +49,7 @@ If you use pen and paper to create the design, take a picture with your phone an
 
 	*Note: If you have set a password for the database user, you need to supply `-p` in the MySQL connection command. Once you hit enter, MySQL will ask you to type the password. If you didn't set the password for the database user, you don't need to supply `-p` in the connection command.*
 
-1. **Now, based on the database design you created, write the SQL query to create the tables and columns.** You will be using the `CREATE TABLE` statement for which you can find reference [here](https://dev.mysql.com/doc/refman/5.5/en/creating-tables.html).
+1. **Now, based on the database design you created, write the SQL query to create the tables and columns.** You will be using the `CREATE TABLE` statement for which you can find reference [here](https://dev.mysql.com/doc/refman/8.0/en/creating-tables.html).
 
 	You can test your `CREATE TABLE` statement in either SQL command line or the database software you installed (e.g. Sequel Pro or MySQL Workbench). Remember after creating each table, you need to delete it in order to test the same `CREATE TABLE` statement again.
 
@@ -67,7 +67,7 @@ This `.sql` file will be one of your deliverables. A `.sql` file is often used b
 
 The purpose of *database seeding* is to provide some dummy data for an empty database so that software development can be started based on the dummy data. In this challenge you will create **`seeding.sql`** which inserts dummy data rows into the tables of your new database.
 
-You'll be using the `INSERT INTO` statement for this purpose. A tutorial you can refer to can be fine [here](https://dev.mysql.com/doc/refman/5.5/en/insert.html).
+You'll be using the `INSERT INTO` statement for this purpose. A tutorial you can refer to can be fine [here](https://dev.mysql.com/doc/refman/8.0/en/insert.html).
 
 For your convenience, we provide you some example dummy data. These dummy data may not readily work with your database depending on how you have designed your database. You may need to change them to the appropriate form.
 
@@ -157,10 +157,10 @@ In addition, you also find a duplicated car entry for VIN `DAM41UDN3CHU2WVF6`. Y
 
 [Database seeding](https://en.wikipedia.org/wiki/Database_seeding)
 
-[MySQL 5.5 Reference: Creating a Table](https://dev.mysql.com/doc/refman/5.5/en/creating-tables.html)
+[MySQL Reference: Creating a Table](https://dev.mysql.com/doc/refman/8.0/en/creating-tables.html)
 
-[MySQL 5.5 Reference: INSERT Syntax](https://dev.mysql.com/doc/refman/5.5/en/insert.html)
+[MySQL Reference: INSERT Syntax](https://dev.mysql.com/doc/refman/8.0/en/insert.html)
 
-[MySQL 5.5 Reference: UPDATE Syntax](https://dev.mysql.com/doc/refman/5.5/en/update.html)
+[MySQL Reference: UPDATE Syntax](https://dev.mysql.com/doc/refman/8.0/en/update.html)
 
-[MySQL 5.5 Reference: DELETE Syntax](https://dev.mysql.com/doc/refman/5.5/en/delete.html)
+[MySQL Reference: DELETE Syntax](https://dev.mysql.com/doc/refman/8.0/en/delete.html)

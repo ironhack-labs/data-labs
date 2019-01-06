@@ -36,6 +36,8 @@ Elevating from your solution in Challenge 1, query how many titles each author h
 
 To check if your output is correct, sum up the `TITLE COUNT` column. The sum number should be the same as the total number of records in Table `titleauthor`.
 
+*Hint: In order to count the number of titles published by an author, you need to use [MySQL COUNT](https://dev.mysql.com/doc/refman/8.0/en/counting-rows.html). Also check out [MySQL Group By](https://dev.mysql.com/doc/refman/8.0/en/group-by-modifiers.html) because you will count the rows of different groups of data. Refer to the references and learn by yourself. These features will be formally discussed in the Temp Tables and Subqueries lesson.*
+
 ## Challenge 3 - Best Selling Authors
 
 Who are the top 3 authors who have sold the highest number of titles? Write a query to find out.
@@ -49,6 +51,8 @@ Requirements:
 	* `TOTAL` - total number of titles sold from this author
 * Your output should be ordered based on `TOTAL` from high to low.
 * Only output the top 3 best selling authors.
+
+*Hint: In order to calculate the total of profits of an author, you need to use the [MySQL SUM function](https://dev.mysql.com/doc/refman/8.0/en/group-by-functions.html#function_sum). Refer to the reference and learn how to use it.*
 
 ## Challenge 4 - Best Selling Authors Ranking
 
@@ -86,3 +90,10 @@ Requirements:
 * Push to your fork
 * Create a pull request to the class repo
 
+## References
+
+[MySQL Reference: Counting Rows](https://dev.mysql.com/doc/refman/8.0/en/counting-rows.html)
+
+[MySQL Reference: Group By](https://dev.mysql.com/doc/refman/8.0/en/group-by-modifiers.html)
+
+[MySQL Reference: SUM Function](https://dev.mysql.com/doc/refman/8.0/en/group-by-functions.html#function_sum)
