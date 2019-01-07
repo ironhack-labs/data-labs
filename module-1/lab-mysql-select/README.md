@@ -76,7 +76,7 @@ Requirements:
 
 *Hints:* 
 
-* If a title has multiple authors, how they split the royalties can be found in the `royaltyper` column of the `titleauthor` table. 
+* If a title has multiple authors, how they split the royalties can be found in the `royaltyper` column of the `titleauthor` table.
 * We assume the coauthors will split the advance in the same way as the royalties.
 
 ## Deliverables
