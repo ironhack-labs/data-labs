@@ -22,3 +22,6 @@ Upon completion, add your deliverables to git. Then commit git and push your bra
 
 ## Resources
 
+- [Feedparser Documentation](https://pythonhosted.org/feedparser/)
+- [Using Feedparser in Python | Python for Beginners](https://www.pythonforbeginners.com/feedparser/using-feedparser-in-python)
+- [Python - Reading RSS Feed | TutorialsPoint](https://www.tutorialspoint.com/python/python_reading_rss_feed.htm)
