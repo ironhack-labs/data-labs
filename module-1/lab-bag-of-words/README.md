@@ -4,7 +4,7 @@
 
 ## Introduction
 
-**Bag of words (BoW)** is an important technique in [natural language processing](https://en.wikipedia.org/wiki/Natural_language_processing) and [information retrieval](https://en.wikipedia.org/wiki/Information_retrieval). BoW uses term-frequency vectors to represent the content of text documents which makes it possible to use mathematics and computer programs to analyze and compare text documents.
+**Bag of words (BoW)** is an important technique in text mining and [information retrieval](https://en.wikipedia.org/wiki/Information_retrieval). BoW uses term-frequency vectors to represent the content of text documents which makes it possible to use mathematics and computer programs to analyze and compare text documents.
 
 BoW contains the following information:
 
@@ -34,13 +34,11 @@ The BoW of the above documents looks like below:
 | student | 0 | 0 | 1 |
 
 
-The term-frequency array of each document in BoW can be considered a high-dimensional vector. Data scientists use these vectors to represent the content of the documents. For instance, DOC 1 is represented with `[0, 0, 0, 1, 0, 1, 1, 0, 0]`, DOC 2 is represented with `[0, 0, 0, 0, 1, 1, 0, 1, 0]`, and DOC 3 is represented with `[1, 1, 1, 0, 1, 1, 0, 0, 1]`. Two documents are considered identical if their vector representations have close [cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity). 
+The term-frequency array of each document in BoW can be considered a high-dimensional vector. Data scientists use these vectors to represent the content of the documents. For instance, DOC 1 is represented with `[0, 0, 0, 1, 0, 1, 1, 0, 0]`, DOC 2 is represented with `[0, 0, 0, 0, 1, 1, 0, 1, 0]`, and DOC 3 is represented with `[1, 1, 1, 0, 1, 1, 0, 0, 1]`. **Two documents are considered identical if their vector representations have close [cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity).**
 
-In real practice there are many additional techniques to improve the text mining accuracy such as using [stop words](https://en.wikipedia.org/wiki/Stop_words) (i.e. neglecting common words such as `a`, `I`, `to` that don't contribute much meaning), synonym list (e.g. consider `New York City` the same as `NYC` and `Big Apple`), and HTML tag removal if the data sources are webpages.
+In real practice there are many additional techniques to improve the text mining accuracy such as using [stop words](https://en.wikipedia.org/wiki/Stop_words) (i.e. neglecting common words such as `a`, `I`, `to` that don't contribute much meaning), synonym list (e.g. consider `New York City` the same as `NYC` and `Big Apple`), and HTML tag removal if the data sources are webpages. In Module 3 you will learn how to use those advanced techniques for [natural language processing](https://en.wikipedia.org/wiki/Natural_language_processing), a component of text mining.
 
-## Goals
-
-In this exercise, you will practice creating a BoW using Python. Don't worry, you don't need to create BoW manually in real text mining projects because there are Python packages already made for that purpose (e.g. `Scikit-Learn` which you will learn in Module 3). But let's practice this manually today in order for you to master string manipulation, list comprehensions, functional programming, and other Python skills covered so far in this course.
+In real text mining projects data analysts use packages such as Scikit-Learn and NLTK, which you will learn in Module 3, to extract BoW from texts. In this exercise, however, we would like you to create BoW manually with Python. This is because by manually creating BoW you can better understand the concept and also practice the Python skills you have learned so far.
 
 ### Getting Started
 
@@ -50,7 +48,7 @@ In your Terminal, navigate into the directory `your-code` of this lab that conta
 
 We need to create a BoW from a list of documents. The documents (`doc1.txt`, `doc2.txt`, and `doc3.txt`) can be found in the `your-code` directory of this exercise. You will read the content of each document into an array of strings named `corpus`.
 
-:information_source: What is a corpus (plural: corpora)? Read the reference in the Resources section.
+:information_source: *What is a corpus (plural: corpora)? Read the reference in the Resources section.*
 
 Your challenge is to use Python to generate the BoW of these documents. Your BoW should look like below:
 
@@ -66,7 +64,7 @@ term_freq = [
 
 ### Bonus Question
 
-Optimize your solution for the above question by removing stop words from the BoW. For your convenience, a list of stop words is defined below. These are the default English stop words defined by Scikit-Learn.
+Optimize your solution for the above question by removing stop words from the BoW. For your convenience, a list of stop words is defined below.
 
 ```
 stop_words = ['all', 'six', 'less', 'being', 'indeed', 'over', 'move', 'anyway', 'fifty', 'four', 'not', 'own', 'through', 'yourselves', 'go', 'where', 'mill', 'only', 'find', 'before', 'one', 'whose', 'system', 'how', 'somewhere', 'with', 'thick', 'show', 'had', 'enough', 'should', 'to', 'must', 'whom', 'seeming', 'under', 'ours', 'has', 'might', 'thereafter', 'latterly', 'do', 'them', 'his', 'around', 'than', 'get', 'very', 'de', 'none', 'cannot', 'every', 'whether', 'they', 'front', 'during', 'thus', 'now', 'him', 'nor', 'name', 'several', 'hereafter', 'always', 'who', 'cry', 'whither', 'this', 'someone', 'either', 'each', 'become', 'thereupon', 'sometime', 'side', 'two', 'therein', 'twelve', 'because', 'often', 'ten', 'our', 'eg', 'some', 'back', 'up', 'namely', 'towards', 'are', 'further', 'beyond', 'ourselves', 'yet', 'out', 'even', 'will', 'what', 'still', 'for', 'bottom', 'mine', 'since', 'please', 'forty', 'per', 'its', 'everything', 'behind', 'un', 'above', 'between', 'it', 'neither', 'seemed', 'ever', 'across', 'she', 'somehow', 'be', 'we', 'full', 'never', 'sixty', 'however', 'here', 'otherwise', 'were', 'whereupon', 'nowhere', 'although', 'found', 'alone', 're', 'along', 'fifteen', 'by', 'both', 'about', 'last', 'would', 'anything', 'via', 'many', 'could', 'thence', 'put', 'against', 'keep', 'etc', 'amount', 'became', 'ltd', 'hence', 'onto', 'or', 'con', 'among', 'already', 'co', 'afterwards', 'formerly', 'within', 'seems', 'into', 'others', 'while', 'whatever', 'except', 'down', 'hers', 'everyone', 'done', 'least', 'another', 'whoever', 'moreover', 'couldnt', 'throughout', 'anyhow', 'yourself', 'three', 'from', 'her', 'few', 'together', 'top', 'there', 'due', 'been', 'next', 'anyone', 'eleven', 'much', 'call', 'therefore', 'interest', 'then', 'thru', 'themselves', 'hundred', 'was', 'sincere', 'empty', 'more', 'himself', 'elsewhere', 'mostly', 'on', 'fire', 'am', 'becoming', 'hereby', 'amongst', 'else', 'part', 'everywhere', 'too', 'herself', 'former', 'those', 'he', 'me', 'myself', 'made', 'twenty', 'these', 'bill', 'cant', 'us', 'until', 'besides', 'nevertheless', 'below', 'anywhere', 'nine', 'can', 'of', 'your', 'toward', 'my', 'something', 'and', 'whereafter', 'whenever', 'give', 'almost', 'wherever', 'is', 'describe', 'beforehand', 'herein', 'an', 'as', 'itself', 'at', 'have', 'in', 'seem', 'whence', 'ie', 'any', 'fill', 'again', 'hasnt', 'inc', 'thereby', 'thin', 'no', 'perhaps', 'latter', 'meanwhile', 'when', 'detail', 'same', 'wherein', 'beside', 'also', 'that', 'other', 'take', 'which', 'becomes', 'you', 'if', 'nobody', 'see', 'though', 'may', 'after', 'upon', 'most', 'hereupon', 'eight', 'but', 'serious', 'nothing', 'such', 'why', 'a', 'off', 'whereby', 'third', 'i', 'whole', 'noone', 'sometimes', 'well', 'amoungst', 'yours', 'their', 'rather', 'without', 'so', 'five', 'the', 'first', 'whereas', 'once']

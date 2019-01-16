@@ -100,8 +100,6 @@ array([[[ 75.,  75.,  75.,  25.,  75.],
 """
 
 
-
-
 """
 #18. Bonus question: instead of using numbers (i.e. 0, 25, 50, 75, and 100), how to use string values 
 ("A", "B", "C", "D", and "E") to label the array elements? You are expecting the result to be:
