@@ -1,36 +1,24 @@
 ![Ironhack logo](https://i.imgur.com/1QgrNNw.png)
 
-# Lab | Pandas Deep Dive
+# Lab | Storytelling Through Data Visualization
 
 ## Introduction
 
-By this point in the program, you should have learned how to perform a variety of operations using the Pandas library.
+In this lab you will practice how to tell stories using data visualization. However, you will not practice storytelling alone. Instead, you will be exposed to the complete workflow of: 
 
-In this lab, again you will be working on [main.ipynb](your-code/main.ipynb). Read the instructions and questions in the Jupyter notebook and provide your answers. Make sure to test your answers in Python.
+1. Understanding the dataset
+1. [optional] Adjusting skewed normal distribution
+1. Exploring the fields that may be interesting based on your common sense
+1. [optional] Exploring the field correlations using heatmap
+1. Summarizing and presenting your stories with data visualization
 
-## Goals
+## Getting Started
 
-In this lab, you will examine a data file named `apple_store.csv` downloadable from [this link](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/data-static/data/apple_store.csv). This file contains information of over 7,000 Apple Store apps such as ID, name, size in bytes, price, number of ratings, user rating, prime genre, and so on. You will use Pandas to import the data source and examine the data in order to answer several questions described next.
-
-### Challenge Questions
-
-- How many apps are there in the data source?
-
--  What is the average rating of all apps?
-
-- How many apps have an average rating no less than 4?
-
-- How many genres are there in total for all the apps?
-
-- What are the top 3 genres that have the most number of apps?
-
-- Which genre is most likely to contain free apps?
-
-- If a developer tries to make money by developing and selling Apple Store apps, in which genre should s/he develop the apps? Please assume all apps cost the same amount of time and expense to develop.
+Open `main.ipynb` and follow the instructions in the file to provide your solutions.
 
 ## Deliverables
 
-- `main.ipynb` with your responses to each of the questions above.
+- `main.ipynb` with your responses.
 
 ## Submission
 
@@ -38,20 +26,10 @@ Upon completion, add your version of `main.ipynb` to git. Then commit git and pu
 
 ## Resources
 
-[Pandas Documentation](https://pandas.pydata.org/pandas-docs/stable/api.html)
+[Housing Prices on Kaggle](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data)
 
-[10 Minutes to Pandas](https://pandas.pydata.org/pandas-docs/stable/10min.html)
+[Housing Prices Data Description](your-code/data-description.txt)
 
-[Google Search](https://www.google.com/search?q=how+to+use+pandas+python)
+[Find out the percentage of missing values in each column in the given dataset](https://stackoverflow.com/questions/51070985/find-out-the-percentage-of-missing-values-in-each-column-in-the-given-dataset)
 
-## Additional Challenges for the Nerds
-
-### [Pandas Tutorial: Data analysis with Python | Part 1](https://www.dataquest.io/blog/pandas-python-tutorial/)
-
-If you have completed the `apple_store` challenge without much difficulty, you will find this tutorial pretty easy. However, it's still a great tutorial to read because it explains a lot of the thinking process behind codes. You can skim through this tutorial quickly to check if there's anything you still don't know.
-
-### [Pandas Tutorial: Data analysis with Python | Part 2](https://www.dataquest.io/blog/pandas-tutorial-python-2/)
-
-This is an advanced tutorial about Pandas that involves [character encoding](http://www.cogsci.nl/blog/a-simple-explanation-of-character-encoding-in-python.html), [Pandas DataFrame `apply` method](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.apply.html), [Python `lambda` expression](https://docs.python.org/3/tutorial/controlflow.html#lambda-expressions), Python functional programming (you'll learn later this week), data cleaning (you'll learn later this week), and plotting with `matplotlib` (you'll learn in Module 2). There is a lot of new information but if you manage to complete this tutorial you'll be far ahead of your classmates.
-
-The most challenging part of this course is Module 3. In Module 1 and 2 most students should be able to complete with moderate efforts. What will make you truly stand out is how deep you can dive in Module 3, which depends on your level of accomplishment in Module 1 and 2. Therefore, if you have the power to accomplish more (in terms of both the depth and breadth) in the first two modules we will certainly encourage you to.
+[Histograms and Inverting Skewed Data](https://trainingdatascience.com/workshops/histograms-and-skewed-data/)
