@@ -82,7 +82,7 @@ The instructional team will review your branch and provide feedback.
 
 [Lab | DataViz with Seaborn & Matplotlib](module-2/lab-matplotlib-seaborn)
 
-[Project | Visualizing Real World Data](module-2/visualizing-real-world-data)
+[Project | Visualizing Real World Data](module-2/visualizing-real-world-data-project)
 
 [Project | Storytelling with Data Visualizations](module-2/storytelling-with-data-visualizations)
 
