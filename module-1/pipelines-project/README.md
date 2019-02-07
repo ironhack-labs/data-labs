@@ -32,7 +32,7 @@ The following deliverables should be pushed to your Github repo for this chapter
 
 ## Suggested Ways to Get Started
 
-* **Find a data set to process** - a great place to start looking would be [Awesome Public Data Sets](https://github.com/awesomedata/awesome-public-datasets) and [Kaggle Data Sets](https://www.kaggle.com/datasets).
+* **Find a data set to process** - You can use a dataset you are familiar with like [Sharks](https://www.kaggle.com/teajay/global-shark-attacks/version/1) or find another. A great place to start looking would be [Awesome Public Data Sets](https://github.com/awesomedata/awesome-public-datasets) and [Kaggle Data Sets](https://www.kaggle.com/datasets).
 * **Examine the data and come up with a deliverable** before diving in and applying any methods to it.
 * **Break the project down into different steps** - leverage the stages of the data pipeline covered in the pipelines lesson and answer the appropriate questions for each stage.
 * **Use the tools in your tool kit** - your knowledge of intermediate Python as well as some of the things you've learned in previous chapters. This is a great way to start tying everything you've learned together!
