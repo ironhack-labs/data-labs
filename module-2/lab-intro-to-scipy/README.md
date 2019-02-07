@@ -20,3 +20,6 @@ Upon completion, add your deliverables to git. Then commit git and push your bra
 
 ## Resources
 
+[The SciPy Package](https://docs.scipy.org/doc/scipy/reference/index.html)
+
+[Fisher's exact test](https://en.wikipedia.org/wiki/Fisher%27s_exact_test)
