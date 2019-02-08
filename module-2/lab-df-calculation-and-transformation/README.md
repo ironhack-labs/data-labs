@@ -12,16 +12,15 @@ During the problem-solving process, you are required to constantly test your sol
 
 Keep in mind the general guidelines above when you conduct data analysis in this lab and in the future. You need to learn this scientific research methodology if you want to become a successful data analyst. For a detailed explanation of the iterative data analysis workflow, watch [this YouTube video](https://www.youtube.com/watch?v=xOomNicqbkk).
 
-
 **You are required to watch the above video before proceeding.**
 
 ## Getting Started
 
-Launch `main.ipynb` in the `your-code` directory of this lab. Take the exercises following the step-by-step instructinos.
+Launch `challenge-1.ipynb`, `challenge-2.ipynb`, and `challenge-3.ipynb` in the `your-code` directory of this lab. Take the exercises following the step-by-step instructinos.
 
 ## Deliverables
 
-- `main.ipynb` with your responses
+`challenge-1.ipynb`, `challenge-2.ipynb`, and `challenge-3.ipynb` with your responses
 
 ## Submission
 
@@ -34,3 +33,5 @@ Upon completion, add your deliverables to git. Then commit git and push your bra
 [Pokemon with Stats](https://www.kaggle.com/abcsds/pokemon)
 
 [Google Search: get all numeric columns in dataframe](https://www.google.com/search?q=pandas+dataframe+get+all+numeric+columns)
+
+[One Hot Encoding](https://hackernoon.com/what-is-one-hot-encoding-why-and-when-do-you-have-to-use-it-e3c6186d008f)
