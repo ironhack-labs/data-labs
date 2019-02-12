@@ -4,7 +4,7 @@
 
 ## Introduction
 
-In this lab we'll familiarize you with t-test and Analysis of Variance (ANOVA) which the lessons did not cover. You will also write Python codes to conduct t-tests and ANOVA on pokemons.
+In this lab we'll familiarize you with one sample hypothesis tests. You will also write Python code to conduct one sample hypothesis tests as well as construct confidence intervals.
 
 ## Deliverables
 
@@ -18,12 +18,10 @@ Upon completion, add your deliverables to git. Then commit git and push your bra
 
 [T Test](https://researchbasics.education.uconn.edu/t-test/)
 
-[What is the difference between a paired and unpaired t-test?](https://www.quora.com/What-is-the-difference-between-a-paired-and-unpaired-t-test)
+[Hypothesis Tests in SciPy](https://scipy-lectures.org/packages/statistics/index.html#hypothesis-testing-comparing-two-groups)
 
-[`scipy.stats.ttest_ind`](https://docs.scipy.org/doc/scipy-0.15.1/reference/generated/scipy.stats.ttest_ind.html)
+[Confidence Intervals](https://en.wikipedia.org/wiki/Confidence_interval)
 
-[`scipy.stats.ttest_rel`](https://docs.scipy.org/doc/scipy-0.15.1/reference/generated/scipy.stats.ttest_rel.html)
+[Standard Error in SciPy](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.sem.html)
 
-[Difference Between T-test and ANOVA](https://keydifferences.com/difference-between-t-test-and-anova.html)
-
-[`scipy.stats.f_oneway`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.f_oneway.html)
+[One Sample Tests of Proportions](http://sphweb.bumc.bu.edu/otlt/MPH-Modules/BS/SAS/SAS6-CategoricalData/SAS6-CategoricalData2.html)
