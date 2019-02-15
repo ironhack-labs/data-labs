@@ -1,6 +1,6 @@
 ![Ironhack logo](https://i.imgur.com/1QgrNNw.png)
 
-# Lab | Supervised Learning Pipelines
+# Lab | Machine Learning Pipelines
 
 ## Introduction
 
