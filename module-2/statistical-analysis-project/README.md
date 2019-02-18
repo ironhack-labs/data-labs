@@ -2,4 +2,106 @@
 
 # Guided Project: Statistical Analysis
 
-TBD
+## Overview
+
+The goal of this project is for you to practice statistical analysis using the iterative data analysis process. For this project, you will use this [Housing Prices](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data) dataset we choose for you. You need to download the `train.csv` dataset then use your statistical analysis skills to analyze this dataset. **The goal of your analysis is to identify the most important features of houses that affect the sale prices.**
+
+**You will be working individually for this project**, but we'll be guiding you along the process and helping you as you go. 
+
+---
+
+## Technical Requirements
+
+The technical requirements for this project are as follows:
+
+* Try to apply everything you have learned so far about data analysis (in creative ways if you can) such as data cleaning, data manipulation, data visualization, and various statistical analysis methods.
+
+* Apply the iterative data analysis process -- setting expectations, collecting information, and reacting to data / revising expectations.
+
+* Conduct your analysis in Jupyter Notebook using Pandas, Numpy, Scipy, Matplotlib, Seaborn, Plotly, and other Python libraries you have learned, as necessary.
+
+## Necessary Deliverables
+
+The following deliverables should be pushed to your Github repo for this project.
+
+* **A Jupyter Notebook (statistical-analysis.ipynb)** containing your Python codes, outputs, and data visualizations. Make sure to include explanations for each of your steps in Markdown cells or Python comments.
+
+* [optional] A `README.md` file containing any additional information.
+
+## Suggested Ways to Get Started
+
+1. Explore data and understand what the fields mean.
+
+1. Examine the relationships between the sales price and other features in the dataset. Use data visualization techniques to help you gain intuitive understanding of the relationships.
+
+1. Make informed guess on which features should be investigated in depth.
+
+1. Data cleaning & manipulation. Apply the following techniques as appropriate:
+    * Adjust skewed data distribution.
+    * Remove columns with high proportion of missing values.
+    * Remove records with missing values.
+    * Feature reduction.
+    * Convert categorical data to numerical.
+
+1. Compute field relationship scores with the chosen statistical model.
+
+1. Present your findings in statistical summary and/or data visualizations.
+
+## Project Feedback + Evaluation
+
+* __Technical Requirements__: Did you deliver a project that met all the technical requirements? Given what the class has covered so far, did you build something that was reasonably complex?
+
+* __Creativity__: Did you add a personal spin or creative element into your project submission? Did you incorporate domain knowledge or unique perspective into your analysis.
+
+* __Code Quality__: Did you follow code style guidance and best practices covered in class?
+
+* __Total__: Your instructors will give you a total score on your project between:
+
+    **Score**|**Expectations**
+    -----|-----
+    0|Does not meet expectations
+    1|Meets expectactions, good job!
+    2|Exceeds expectations, you wonderful creature, you!
+
+This will be useful as an overall gauge of whether you met the project goals, but __the more important scores are described in the specs above__, which can help you identify where to focus your efforts for the next project!
+
+## Presentation Guideline and Criteria
+
+### Format
+
+* Presentation Time: 6 minutes
+* Q & A: 3 minutes
+* **Total Time:** 9 minutes
+
+### Attire
+
+* DRESS TO IMPRESS: [Smart casual](https://en.wikipedia.org/wiki/Smart_casual) would be great
+
+### Outputs
+
+* A presentation in [slides.com](https://slides.com/)
+* A demo deployed on GitHub Pages
+* The presentation and demo will be executed on a class computer (instead of your own)
+* Get ready to explain some of your code in GitHub
+
+### Things you might want to talk about
+
+* Short presentation of yourself:
+    * Who are you?
+    * A hobby you have.
+    * __Note: we are getting you ready for final presentation!__
+* Elevator pitch:
+    * Data set you chose.
+    * Why did you chose that data set?
+    * The most important thing you learned.
+* One technical challenge you faced:
+    * Explain the challenge.
+    * Explain how and what you did to overcome it.
+    * Show and explain code snippets in your presentation slides.
+* Git:
+    * Display an screenshot of your GitHub graphs to show your commit frequency and how much work you did.
+* Pandas Data Wrangling Walkthrough:
+    * Walk the audience through the data set you chose, providing an overview of some of the fields and other information contained in the data.
+    * Walk the audience through your data wrangling workflow including what initial problems you identified in the data, what cleaning and manipulation techniques you employed, what avenues you decided to pursue and why, and what lessons you learned.
+* One important mistake you made:
+    * Did you made a mistake planning your time? Maybe transforming a variable that wasn't useful? Accidentally dropping one that was?
