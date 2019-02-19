@@ -1,10 +1,12 @@
 ![IronHack Logo](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_d5c5793015fec3be28a63c4fa3dd4d55.png)
 
-# Advanced Topic: Network Analysis
+# Lab: Network Analysis
 
-## Overview
+## Introduction
 
-### Objectives
+TBD
+
+## Objectives
 
 - Understand the basics of network/graph analysis
 - Build graphs from scratch using the Python Networkx library
@@ -13,15 +15,6 @@
 - Create data visualizations from network data
 - Perform deeper analysis of network graphs
 - Understand how to incorporate network analysis in your final project
-
-### Ingredients
-
-* Data Analysis - 100%
-* Data Engineering - 0%
-
-### Difficulty Level
-
-★★★★ Intermediate
 
 ## Graph Theory and Network Composition
 
