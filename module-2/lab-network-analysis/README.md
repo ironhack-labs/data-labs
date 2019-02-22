@@ -4,7 +4,9 @@
 
 ## Introduction
 
-TBD
+Network analysis (also called graph analysis) is a very important, very useful, but often underrated part of data analytics. Its primary purpose is to examine relationships between entities. One of the most obvious targets for network analysis are social networks, where the entities are people and the relationships between them are based on whether someone is friends with (or has followed) someone else.
+
+However, only applying network analysis to social networks is limiting and merely scratches the surface of what you can do with it. Networks are actually ubiquitous: they are everywhere. Look around you. Every object you see is an entity, and they can be connected to each other as part of a network based on anything they have in common - whether or not they belong to you, they are electronic, they are writing instruments, they are furniture, they are located in the same room, etc. When you practice thinking about connections in this way, then you start to see networks everywhere. This is the type of thinking you should utilize when analyzing networks.
 
 ## Objectives
 
@@ -17,10 +19,6 @@ TBD
 - Understand how to incorporate network analysis in your final project
 
 ## Graph Theory and Network Composition
-
-Network analysis (also called graph analysis) is a very important, very useful, but often underrated part of data analytics. Its primary purpose is to examine relationships between entities. One of the most obvious targets for network analysis are social networks, where the entities are people and the relationships between them are based on whether someone is friends with (or has followed) someone else.
-
-However, only applying network analysis to social networks is limiting and merely scratches the surface of what you can do with it. Networks are actually ubiquitous: they are everywhere. Look around you. Every object you see is an entity, and they can be connected to each other as part of a network based on anything they have in common - whether or not they belong to you, they are electronic, they are writing instruments, they are furniture, they are located in the same room, etc. When you practice thinking about connections in this way, then you start to see networks everywhere. This is the type of thinking you should utilize when analyzing networks.
 
 [Graph theory](https://en.wikipedia.org/wiki/Graph_theory) is the study of mathematical structures called graphs which model the pairwise relationships between entities. Graph theory provides us with a mathematical foundation and tools with which we can analyze networks, since networks are essentially constructed from relationships between pairs of entities.
 
@@ -136,32 +134,15 @@ When data is structured in a tabular format, the rows typically represent either
 
 When rows represent transactions or interactions, they often have both parties of the transaction identified, so we can derive relationships directly from those. Examples of these types of data sets can include communication records, marketplace transactions, social media interactions, and other types of records where there are two parties. The relationships attributes for these records are the transaction attributes and they are sometimes directed (one party calls another, a seller sells something to a buyer, etc.), but they don't have to be.
 
-When our rows represent transactions or interactions, we can transform our tabular data to a graph structure by aggregating the data, grouping by the fields containing the two parties, and counting the number of transactions or interactions.
-
-The `us_womens_gymnastics.csv` data set is a good example of this type of data. The data set contains pairs of U.S. gymnasts that competed in the same Olympic games and events together. In other words, each row represents an interaction between the gymnasts. Use your Python skills, use Pandas to read and aggregate the data by the *Name_x* and *Name_y* fields and count the number of events in which they have an interaction. Once you have done this, sort descending by the number of pairwise interactions. Which pair of gymnasts have competed in the most events together?
-
-Now that we have a data frame in this format, Networkx provides us with an easy way to turn it into a graph via the `from_pandas_edgelist` method.
+When our rows represent transactions or interactions, we can transform our tabular data to a graph structure by aggregating the data, grouping by the fields containing the two parties, and counting the number of transactions or interactions. Once we have a data frame in this format, Networkx provides us with an easy way to turn it into a graph via the `from_pandas_edgelist` method.
 
 ```python
 G = nx.from_pandas_edgelist(df, source, target)
 ```
 
-Use this method to turn the data frame into a graph and then practice computing the graph statistics and centrality measures we covered in the previous section. Below are some questions to answer about this graph.
-
-- How many gymnasts (nodes) are in the graph?
-- How many edges are in the graph?
-- What is the average degree?
-- What is the density of the graph?
-- Is this graph fully-connected? How do you know?
-- What gymnast has the highest betweenness centrality?
-- What gymnast has the highest Eigenvector centrality?
-- What gymnast has the highest degree centrality?
-
 ### Rows Represent Entities
 
 When we have a data set where the rows represent entities, we need to infer relationships based on attributes that different rows have in common. These relationships can be constructed based on entities belonging to the same group (same categorical variable values) or from having similar numeric variable values. These relationships are typically undirected.
-
-The `us_mens_basketball.csv` data set is a good example of this. Each row represents an single basketball player's participation in a single event at a single Olympics.
 
 Below is a `df_to_graph` function that creates pairwise relationships from data sets where rows represent entities. It creates a copy of the data set and then leverages the Pandas `merge` method to join the two copies together via whatever categorical column or list of columns you choose to define the edges of the network.
 
@@ -179,20 +160,6 @@ def df_to_graph(df, entity, edge):
     
     return graph_df
 ```
-
-Use the function above to structure the basketball data set as a data frame of pairwise connections. You can use the *Name* field to create your entities and the *Games* field to base your edges on. Once you have the data in this format, sort descending by the number of Olympic games the players have played in together. Which players have played together in the Olympics the most number of times?
-
-Now that you have a data frame of pairwise connections, use the `from_pandas_edgelist` method to convert it into a graph. Compute the statistics of this graph and answer the following questions.
-
-- How many basketball players (nodes) are in the graph?
-- How many edges are in the graph?
-- What is the average degree?
-- What is the density of the graph?
-- Is this graph fully-connected? How do you know?
-- What player has the highest betweenness centrality?
-- What player has the highest Eigenvector centrality?
-- What player has the highest degree centrality?
-- What are some notable differences between this graph and the gymnastics graph you analyzed earlier?
 
 ## Visualization of Network Data
 
@@ -255,23 +222,19 @@ In addition to the variety of layouts you can use to visualize networks, it's im
 
 ### Bar Charts
 
-For example, you can aggregate your data by entity, count the number of connections or the total number of interactions, sort them, filter to get just the top 20, and visualize it as a horizontal bar chart. By this point in the program, you should have all the tools in your arsenal to be able to do this. Try it for the basketball data set and see who are the top 20 players in the network that have played alongside the most number of other players.
+For example, you can aggregate your data by entity, count the number of connections or the total number of interactions, sort them, filter to get just the top 20, and visualize it as a horizontal bar chart. By this point in the program, you should have all the tools in your arsenal to be able to do this.
 
 ### Scatter Plots
 
-With the same aggregated data, you can also generate a scatter plot that shows the relationship that exists between the number of connections and the number of interactions in the data set. Try doing this for the gymnastics data set.
-
-What other ways can you think of to visualize these data sets? Let your creativity run wild and show us what you've got!
+Another thing you can do is generate a scatter plot that shows the relationship that exists between the number of connections and the number of interactions in the data set.
 
 ## Deeper Analysis of Networks
 
 ### Subgraphs
 
-Up until this point, we have been calculating statistics and visualizing entire networks, or at least what we thought were entire networks. In reality, both the gymnastics and the basketball data sets came from a larger Olympics data set that contains the athletes that participated in all Olympic events.
+Up until this point, we have been calculating statistics and visualizing entire networks, or at least what we thought were entire networks. In reality, all graphs can be viewed as part of larger graphs. Therefore, what we have been analyzing are essentially *subgraphs*. Analyzing subgraphs is useful because full graphs have a tendency to get extremely large and complex. Subgraphs allow you to focus and really be able to examine the connections in a graph without getting overwhelmed with too much information. They also usually produce much more coherent network visualizations, whereas full graph visualization tends to suffer from the "hairball effect."
 
-Therefore, what we have been analyzing are essentially subgraphs for the domains of gymnastics and basketball. Analyzing subgraphs is useful because full graphs have a tendency to get extremely large and complex. Subgraphs allow you to focus and really be able to examine the connections in a graph without getting overwhelmed with too much information. They also usually produce much more coherent network visualizations, whereas full graph visualization tends to suffer from the hairball effect.
-
-One way to analyze a subgraph is the way we did it - by filtering a data set before converting it to a graph and then creating a Networkx graph object from the data. Another way to create a subgraph is to zoom in and look at an ego graph, which is a subgraph that focuses on one node and its connections in the network. Networkx has a handy `ego_graph` method that will create a ego graph from a node that we specify.
+One way to analyze a subgraph is  by filtering a data set before converting it to a graph and then creating a Networkx graph object from the data. Another way to create a subgraph is to zoom in and look at an ego graph, which is a subgraph that focuses on one node and its connections in the network. Networkx has a handy `ego_graph` method that will create a ego graph from a node that we specify.
 
 ```python
 ego = nx.ego_graph(G, 'NodeName', radius=1)
@@ -279,7 +242,7 @@ ego = nx.ego_graph(G, 'NodeName', radius=1)
 
 The `radius` parameter specifies how many degrees away from the node to create the ego graph. The default radius is 1, which means that only nodes that are directly connected to the node you specify will be included in the ego graph. If you were to set the radius to 2, it would include all nodes connected to your node's first degree connections, and so forth.
 
-Which nodes does it make the most sense to analyze ego graphs for? A good place to start would be with the nodes that have the highest centrality metrics. Practice creating and visualizing ego graphs from both the gymnastics and basketball graphs we have created. When visualizing them, you can add a `with_labels=True` parameter to any of the Networkx `draw` methods to show athlete names next to each node.
+Which nodes does it make the most sense to analyze ego graphs for? A good place to start would be with the nodes that have the highest centrality metrics. When visualizing ego graphs, you can add a `with_labels=True` parameter to any of the Networkx `draw` methods to show the entity names next to each node.
 
 ### Community Detection
 
@@ -303,30 +266,6 @@ This produces a dictionary containing the name of each node and which community 
 values = list(parts.values())
 nx.draw_kamada_kawai(G, node_size=20, node_color=values)
 ```
-
-### Hierarchical Graphs
-
-Thus far, we have analyzed graphs where the nodes represented individual athletes and the edges represented Olympic games or specific events that they have competed in together. We didn't call attention to it at the time, but we essentially analyzed data at two different hierarchical levels, as there can be several events within a particular year's Olympic games.
-
-We can continue going up the hierarchy if we wanted to, strip out the athletes as entities, and analyze the data at the Games level. To do this, we would need to designate the Games field as the entities and then use the athlete names as the edge criteria so that there would be an edge between two Olympic games if an athlete played in both of them.
-
-You already have the tools in your toolbox to be able to do this, so give it a try using the basketball data set. Create a graph with Games as the entities and then produce a visualization showing the network.
-
-- Are there any years connected that you weren't expecting? 
-- Are there any years you were expecting to be connected that are not?
-- Dig into the underlying data and see if you can find out which players are driving the connection between years.
-
-## Bonus: More Complex Networks
-
-Now that we have analyzed networks at multiple hierarchical levels individually, we can try to include nodes at different levels of the hierarchy *within the same graph*. For example, you can create a graph that matches basketball players to the Olympic games they participated in and then combine that graph with the player graph you created previously to form a new graph that has both games, players, and all the relationships between them captured.
-
-To do this, you would select the *Games* and *Name* field from the original basketball data set and create a graph (H) using the `from_pandas_edgelist` method. You would then combine this new graph with your player graph (G) using the `nx.compose` method into a new graph (F) as follows.
-
-```python
-F = nx.compose(G,H)
-```
-
-You should now be able to generate sub/ego graphs from this new graph and run all the statistics and analytics we've covered.
 
 ## Resources
 
