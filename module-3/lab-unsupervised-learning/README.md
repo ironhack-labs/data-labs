@@ -1,6 +1,6 @@
 ![Ironhack logo](https://i.imgur.com/1QgrNNw.png)
 
-# Lab | Introduction to Machine Learning and ML Workflow
+# Lab | Unsupervised Learning
 
 
 ## Introduction

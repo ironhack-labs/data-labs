@@ -6,13 +6,14 @@
 
 The goal of this project is to practice creating and interpreting different types of visualizations using real world data.
 
-<b>You will be working individually for this project</b>, but we'll be guiding you along the process and helping you as you go. 
+**You will be working individually for this project**, but we'll be guiding you along the process and helping you as you go. 
 
 ---
 
 ## Technical Requirements
 
 The technical requirements for this project are as follows:
+
  - Select a dataset from a public source.
  - Create a Jupyter noteboosk to analyze the data
  - Using your data, create a minimum of one scatter plot, one histogram, one box plot and one bar graph (you can add more than one visualization of each type of you choose). Graphs should contain the proper labeling of the x and y axis when appropriate as well as a title for the graph.
@@ -22,8 +23,8 @@ The technical requirements for this project are as follows:
 
 The following deliverables should be pushed to your Github repo for this chapter.
 
-- <b>A Jupyter notebook</b> containing your analysis and the code you used to obtain this analysis.
-- <b>A data folder</b> containing your data set.
+- **A Jupyter notebook** containing your analysis and the code you used to obtain this analysis.
+- **A data folder** containing your data set.
 
 ## Suggested Ways to Get Started
 

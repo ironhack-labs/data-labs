@@ -1,10 +1,12 @@
 ![Ironhack logo](https://i.imgur.com/1QgrNNw.png)
 
-# Lab | Machine Learning Pipelines
+# Lab | Supervised Learning Model Evaluation
 
 ## Introduction
 
-In fact you have already been familiar with the complete ML pipelines by conducting the supervised and unsupervised learning labs in the past week. However, every dataset has different characteristics from others and it's important for you to practice the workflow with different types of datasets in order to remember the corresponding solutions in different contexts. In this lab, we will present you with a supervised learning problem for which linear regression analysis is not appropriate. We will show you why and how to analyze this kind of datasets by using other ML algorithms such as Random Forest.
+You have already been familiar with the complete ML pipelines (both supervised and unsupervised) by conducting past labs. However, every dataset is different and as your experience grows you are able to choose better solutions in different scenarios. Therefore, keep practicing with all the datasets you can find as much as you can.
+
+Linear regression model is not the silver bullet for all supervised learning analysis. In this lab we will present you a problem scenario where different supervised learning models are more appropriate. You will conduct a complete supervised learning analysis, apply different models, and compare their performances.
 
 ## Getting Started
 

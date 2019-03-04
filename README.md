@@ -44,61 +44,108 @@ The instructional team will review your branch and provide feedback.
 
 ## Module 1
 
-[Project | Merge Resolving Conflicts](module-1/resolving-merge-conflicts)
+[lab-advanced-mysql](module-1/lab-advanced-mysql)
 
-[Lab | Entity Relationship Diagram](module-1/lab-erd)
+[lab-advanced-regex](module-1/lab-advanced-regex)
 
-[Project | MySQL](module-1/mysql-project)
+[lab-advanced-web-scraping](module-1/lab-advanced-web-scraping)
 
-[Lab | Numpy Deep Dive](module-1/lab-numpy)
+[lab-api-scavenger-game](module-1/lab-api-scavenger-game)
 
-[Lab | Pandas Deep Dive](module-1/lab-pandas)
+[lab-bag-of-words](module-1/lab-bag-of-words)
 
-[Lab | Data Cleaning](module-1/lab-data_cleaning)
+[lab-code-simplicity-efficiency](module-1/lab-code-simplicity-efficiency)
 
-[Project | Pandas Project](module-1/pandas-project)
+[lab-data_cleaning](module-1/lab-data_cleaning)
 
-[Lab | Python List Comprehension & Error Handling](module-1/lab-errhand_listcomp)
+[lab-errhand_listcomp](module-1/lab-errhand_listcomp)
 
-[Lab | Python String Operations & Functional Programming](module-1/lab-functional-programming)
+[lab-error-handling](module-1/lab-error-handling)
 
-[Project | Web Data Pipeline](module-1/pipelines-project)
+[lab-functional-programming](module-1/lab-functional-programming)
 
-[Lab | API Scavenger Game](module-1/lab-api-scavenger-game)
+[lab-import-export](module-1/lab-import-export)
 
-[Lab | Web Scraping](module-1/lab-web-scraping)
+[lab-intro-pandas](module-1/lab-intro-pandas)
 
-[Project | API and Web Data Scraping](module-1/web-project)
+[lab-lambda-functions](module-1/lab-lambda-functions)
+
+[lab-list-comprehensions](module-1/lab-list-comprehensions)
+
+[lab-map-reduce-filter](module-1/lab-map-reduce-filter)
+
+[lab-mysql](module-1/lab-mysql)
+
+[lab-mysql-select](module-1/lab-mysql-select)
+
+[lab-numpy](module-1/lab-numpy)
+
+[lab-object-oriented-programming](module-1/lab-object-oriented-programming)
+
+[lab-parallelization](module-1/lab-parallelization)
+
+[lab-resolving-git-conflicts](module-1/lab-resolving-git-conflicts)
+
+[lab-rss](module-1/lab-rss)
+
+[lab-string-operations](module-1/lab-string-operations)
+
+[lab-tuple-set-dict](module-1/lab-tuple-set-dict)
+
+[lab-web-scraping](module-1/lab-web-scraping)
+
+[pandas-project](module-1/pandas-project)
+
+[pipelines-project](module-1/pipelines-project)
+
+[web-project](module-1/web-project)
 
 ## Module 2
 
-[Lab | Subsetting and descriptive stats](module-2/lab-subsetting-and-descriptive-stats)
+[lab-advanced-pandas](module-2/lab-advanced-pandas)
 
-[Lab | Dataframe Calculation and Transformation](module-2/lab-df-calculation-and-transformation)
+[lab-bayesian-statistics](module-2/lab-bayesian-statistics)
 
-[Lab | Pivot Table and Correlations](module-2/lab-pivot-table-and-correlation)
+[lab-bi-analysis-with-tableau](module-2/lab-bi-analysis-with-tableau)
 
-[Project | Data Analysis with Pandas](module-2/data-analysis-with-pandas)
+[lab-correlation-tests-with-scipy](module-2/lab-correlation-tests-with-scipy)
 
-[Lab | DataViz with Seaborn & Matplotlib](module-2/lab-matplotlib-seaborn)
+[lab-df-calculation-and-transformation](module-2/lab-df-calculation-and-transformation)
 
-[Project | Visualizing Real World Data](module-2/visualizing-real-world-data-project)
+[lab-hypothesis-testing](module-2/lab-hypothesis-testing)
 
-[Project | Storytelling with Data Visualizations](module-2/storytelling-with-data-visualizations)
+[lab-interactive-visualization](module-2/lab-interactive-visualization)
 
-[Lab | Probability Distribution](module-2/lab-probability-distribution)
+[lab-intro-to-bi-and-tableau](module-2/lab-intro-to-bi-and-tableau)
 
-[Lab | Hypothesis Testing](module-2/lab-hypothesis-testing)
+[lab-intro-to-scipy](module-2/lab-intro-to-scipy)
 
-[Project | Calculating Game of Chances](module-2/calculating-games-of-chance)
+[lab-matplotlib-seaborn](module-2/lab-matplotlib-seaborn)
 
-[Lab | Introduction to BI and Tableau](module-2/lab-intro-to-bi-and-tableau)
+[lab-pandas-deep-dive](module-2/lab-pandas-deep-dive)
 
-[Lab | DataViz with Tableau](module-2/lab-tableau-data-visualization)
+[lab-pivot-table-and-correlation](module-2/lab-pivot-table-and-correlation)
 
-[Lab | BI with Tableau](module-2/lab-bi-analysis-with-tableau)
+[lab-plotting-multiple-data-series](module-2/lab-plotting-multiple-data-series)
 
-[Project | Tableau Project](module-2/tableau-project)
+[lab-poker-master](module-2/lab-poker-master)
+
+[lab-probability-distribution](module-2/lab-probability-distribution)
+
+[lab-storytelling-data-visualization](module-2/lab-storytelling-data-visualization)
+
+[lab-subsetting-and-descriptive-stats](module-2/lab-subsetting-and-descriptive-stats)
+
+[lab-tableau-data-visualization](module-2/lab-tableau-data-visualization)
+
+[lab-two-sample-hypothesis-tests](module-2/lab-two-sample-hypothesis-tests)
+
+[statistical-analysis-project](module-2/statistical-analysis-project)
+
+[tableau-project](module-2/tableau-project)
+
+[visualizing-real-world-data-project](module-2/visualizing-real-world-data-project)
+
 
 ## Module 3
 
