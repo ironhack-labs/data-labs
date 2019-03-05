@@ -22,12 +22,14 @@ Upon completion, add your deliverables to git. Then commit git and push your bra
 
 [pandas.get_dummies](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.get_dummies.html)
 
-[Support vector machine](https://en.wikipedia.org/wiki/Support_vector_machine)
+[sklearn.linear_model.LogisticRegression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html)
 
-[sklearn.svm: Support Vector Machines](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.svm)
+[sklearn.neighbors.KNeighborsClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html)
 
 [Feature scaling](https://en.wikipedia.org/wiki/Feature_scaling)
 
 [Why, How and When to Scale your Features](https://medium.com/greyatom/why-how-and-when-to-scale-your-features-4b30ab09db5e)
 
 [sklearn.preprocessing.RobustScaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.RobustScaler.html)
+
+[sklearn.metrics](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.metrics)
