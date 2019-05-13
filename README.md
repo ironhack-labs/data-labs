@@ -8,6 +8,7 @@
 
 2. Start local Markdown server:
 
+
 ```
 $ grip -b README.md 8080 --user <your-github-username> --pass <your-github-password>
 ```
