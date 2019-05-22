@@ -4,11 +4,12 @@
 
 ## Introduction
 
-In this lab we'll learn more about hypothesis testing and expand to 2 sample hypothesis tests. 
+In `main.ipynb` we'll learn more about hypothesis testing and expand to 2 sample hypothesis tests. If you want to dig deeper you can take `bonus.ipynb` where you'll learn about ANOVA - statistical tests for 3 or more groups.
 
 ## Deliverables
 
-- `main.ipynb`.
+- `main.ipynb` (required)
+- `bonus.ipynb` (optional)
 
 ## Submission
 
