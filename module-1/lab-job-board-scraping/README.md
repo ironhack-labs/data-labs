@@ -4,19 +4,17 @@
 
 ## Introduction
 
-As you have learned in the lesson, Web "scraping" (also called "web harvesting", "web data extraction" or even "web data mining"), can be defined as "the construction of an agent to download, parse, and organize data from the web in an automated manner". Or, in other words: instead of a human end-user clicking away in their web browser and copy-pasting interesting parts into, say, a spreadsheet, web scraping offloads this task to a computer program which can execute it much faster, and more correctly, than a human can. 
+As you have learned in the lesson, *web scraping* (a.k.a. *web harvesting*, *web data extraction*, and *web data mining*) can be defined as "the construction of an agent to download, parse, and organize data from the web in an automated manner". In other words, instead of a human end-user clicking away in the web browser and copy-pasting interesting numbers into spreadsheet, web scraping offloads this task to a computer program which can execute those repetitive procedures in higher precision and efficiency than human beings. Human beings will be freed up so as to focus on data interpretation, research, strategic decision making, and other higher-order tasks that computers cannot accomplish.
 
-Data scientists have often found web scraping to be a powerful tool to have in their arsenal, as many data science projects starts with the first step of obtaining an appropiate data set, so why not utilize the information the web provides?
-
-In this lab, you will practice a series of exercises to test your web scraping skills. You will work on your own but remember the teaching staff is at your service whenever you encounter problems.
+Data scientists often find web scraping an extremely powerful skill to have in their arsenal because Internet is the most available and abundant data source so far. Many data science projects start from obtaining an appropriate dataset. In this lab, you will practice a series of exercises to test your web scraping skills. The obtained data from these exercises may also be helpful for you later when you look for career opportunities.
 
 ## Getting Started
 
-Open the `lab-code-web-scraping-linkedIn.ipynb` file in the `your-code` directory. This is a guided lesson where we will scrape some information such as company name, position/title, salary offering, and description.  
+Open the `main.ipynb` file in the `your-code` directory. This is a guided lesson where we will scrape some information such as company name, position/title, salary offering, and description.  
 
 ## Deliverables
 
-- `lab-code-web-scraping-linkedIn.ipynb` with your responses. 
+- `main.ipynb` with your responses. 
 
 ## Submission
 
