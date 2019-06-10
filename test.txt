@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 test, oh wait you have an error, YES !!!!!
+=======
+test1
+>>>>>>> 6364fe4ad481d31108b721f90a6a288613e397ef
