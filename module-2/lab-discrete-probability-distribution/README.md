@@ -6,18 +6,21 @@
 
 ## Introduction
 
-As a data analyst, you might need to use probability distribution for several reasons: 
-- To analyze data to find useful patterns
-- To make better data-driven decisions by answering questions like 'how likely it is that an observation of a random variable occurs'
+As a data analyst, you might need to use probability distribution for several reasons:
+
+- To discover meaningful relationships between events.
+
+- To make better data-driven decisions by answering questions like 'how likely something has happened out of pure coincidence'.
 
 ## Getting Started
 
-Open the `Lab Discrete Probability Distribution.ipynb` file in the `your-code` directory. There are exercises on Bernoulli's, binomial, and poisson distributions. In each exercise please read the question carefully and provide your solutions below the question. All the calculations must be performed using Python. Also please keep in mind that you might also need to use some of the functions you saw in the previous lessons. Please refer the notes. 
+Open `main.ipynb` in the `your-code` directory. There are exercises on Bernoulli's, binomial, and poisson distributions. In each exercise please read the question carefully and provide your solutions below the question. All the calculations must be performed using Python. Also please keep in mind that you might also need to use some of the functions you saw in the previous lessons. Please refer the notes. 
+
 Happy Learning!!
 
 ## Deliverables
 
-- `Lab Discrete Probability Distribution.ipynbb` with your responses.
+- `main.ipynbb` with your responses.
 
 ## Submission
 
