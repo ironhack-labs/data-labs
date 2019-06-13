@@ -1,6 +1,6 @@
 ![IronHack Logo](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_d5c5793015fec3be28a63c4fa3dd4d55.png)
 
-# Guided Project: Demonstration of Data Cleaning and Manipulation with Pandas
+# Project: Data Cleaning and Manipulation with Pandas
 
 ## Overview
 
@@ -45,62 +45,3 @@ The following deliverables should be pushed to your Github repo for this chapter
 * [StackOverflow Pandas Questions](https://stackoverflow.com/questions/tagged/pandas)
 * [Awesome Public Data Sets](https://github.com/awesomedata/awesome-public-datasets)
 * [Kaggle Data Sets](https://www.kaggle.com/datasets)
-
-## Project Feedback + Evaluation
-
-* __Technical Requirements__: Did you deliver a project that met all the technical requirements? Given what the class has covered so far, did you build something that was reasonably complex?
-
-* __Creativity__: Did you add a personal spin or creative element into your project submission? Did you incorporate domain knowledge or unique perspective into your analysis.
-
-* __Code Quality__: Did you follow code style guidance and best practices covered in class?
-
-* __Total__: Your instructors will give you a total score on your project between:
-
-    **Score**|**Expectations**
-    -----|-----
-    0|Does not meet expectations
-    1|Meets expectactions, good job!
-    2|Exceeds expectations, you wonderful creature, you!
-
-This will be useful as an overall gauge of whether you met the project goals, but __the more important scores are described in the specs above__, which can help you identify where to focus your efforts for the next project!
-
-## Presentation Guideline and Criteria
-
-### Format
-
-* Presentation Time: 6 minutes
-* Q & A: 3 minutes
-* **Total Time:** 9 minutes
-
-### Attire
-
-* DRESS TO IMPRESS: [Smart casual](https://en.wikipedia.org/wiki/Smart_casual) would be great
-
-### Outputs
-
-* A presentation in [slides.com](https://slides.com/)
-* A demo deployed on GitHub Pages
-* The presentation and demo will be executed on a class computer (instead of your own)
-* Get ready to explain some of your code in GitHub
-
-### Things you might want to talk about
-
-* Short presentation of yourself:
-	* Who are you?
-	* A hobby you have.
-  * __Note: we are getting you ready for final presentation!__
-* Elevator pitch:
-  * Data set you chose.
-  * Why did you chose that data set?
-  * The most important thing you learned.
-* One technical challenge you faced:
-  * Explain the challenge.
-  * Explain how and what you did to overcome it.
-  * Show and explain code snippets in your presentation slides.
-* Git:
-  * Display an screenshot of your GitHub graphs to show your commit frequency and how much work you did.
-* Pandas Data Wrangling Walkthrough:
-  * Walk the audience through the data set you chose, providing an overview of some of the fields and other information contained in the data.
-  * Walk the audience through your data wrangling workflow including what initial problems you identified in the data, what cleaning and manipulation techniques you employed, what avenues you decided to pursue and why, and what lessons you learned.
-* One important mistake you made:
-  * Did you made a mistake planning your time? Maybe transforming a variable that wasn't useful? Accidentally dropping one that was?

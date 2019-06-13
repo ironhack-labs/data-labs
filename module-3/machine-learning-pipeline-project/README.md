@@ -1,14 +1,14 @@
 ![IronHack Logo](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_d5c5793015fec3be28a63c4fa3dd4d55.png)
 
-# Guided Project: Machine Learning Pipeline
+# Project: Machine Learning Pipeline
 
 ## Overview
 
 In the past lesson, you learned about Machine Learning pipelines and how to implement a typical Machine Learning pipeline in Scikit-learn. The current lesson does not present any new content, it is only intended to put to work the knowledge you acquired in the previous lessons, while constructing a solution to a real world problem based on Machine Learning pipelines implemented with Scikit-learn.
 
-We recommend you follow the process exemplified in the previous lesson "Machine Learning Pipelines", which consists of 8 clearly defined phases. If you get stuck at any point, you can always go back to the lesson "Machine Learning Pipelines" and re-read the material presented there on the particular phase where you got stuck. Everything you need to know to succeed in this Guided Project has already been presented on the previous lesson, so going back to review the material presented there is always a good idea.
+We recommend you follow the process exemplified in the previous lesson "Machine Learning Pipelines", which consists of 8 clearly defined phases. If you get stuck at any point, you can always go back to the lesson "Machine Learning Pipelines" and re-read the material presented there on the particular phase where you got stuck. Everything you need to know to succeed in this project has already been presented on the previous lesson, so going back to review the material presented there is always a good idea.
 
-In the previous lessons you "learned by being told", the current Guided Project is a great complement to that because now you "learn by doing." In this Guided Project, you are asked to choose a challenging Machine Learning problem that motivates you, to devise a Machine Learning solution following the phases presented in the previous lesson "Machine Learning Pipelines," and to implement the solution in Python using the Scikit-learn libraries. Next, we present the requirements your application must comply with.
+In the previous lessons you "learned by being told", the current project is a great complement to that because now you "learn by doing." In this project, you are asked to choose a challenging Machine Learning problem that motivates you, to devise a Machine Learning solution following the phases presented in the previous lesson "Machine Learning Pipelines," and to implement the solution in Python using the Scikit-learn libraries. Next, we present the requirements your application must comply with.
 
 ## External Interface Requirements
 

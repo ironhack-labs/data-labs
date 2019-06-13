@@ -1,6 +1,6 @@
 ![IronHack Logo](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_d5c5793015fec3be28a63c4fa3dd4d55.png)
 
-# Guided Project: Escape Room Python Game
+# Project: Escape Room Python Game
 
 ## Overview
 
@@ -121,3 +121,15 @@ The provided example is just a Minimal Viable Product (MVP). It is fully functio
 The following deliverables should be pushed to your Github repo.
 
 * `main.ipynb` that contains your solution.
+
+## Suggested Ways to Get Started
+
+1. Start Jupyter Notebook from this lab directory.
+
+1. Launch `sample-code.ipynb` and read through the file. Also execute the code and play the game. Make sure you understand what each line of the codes does.
+
+1. Create `main.ipynb` and copy the codes from `sample-code.ipynb`. Expand the code following the example to create Bedroom 1.
+
+1. Test the game with Game Room and Bedroom 1. Make sure everything works then work on Bedroom 2 then Living Room.
+
+1. Test the whole game. Try to make all kinds of inputs to make sure your game is rock solid and will not break.

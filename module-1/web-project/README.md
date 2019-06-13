@@ -1,6 +1,6 @@
 ![IronHack Logo](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_d5c5793015fec3be28a63c4fa3dd4d55.png)
 
-# Guided Project: API and Web Data Scraping
+# Project: API and Web Data Scraping
 
 ## Overview
 
@@ -44,63 +44,3 @@ The following deliverables should be pushed to your Github repo for this chapter
 * [BeautifulSoup Documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 * [Stack Overflow Python Requests Questions](https://stackoverflow.com/questions/tagged/python-requests)
 * [StackOverflow BeautifulSoup Questions](https://stackoverflow.com/questions/tagged/beautifulsoup)
-
-## Project Feedback + Evaluation
-
-* __Technical Requirements__: Did you deliver a project that met all the technical requirements? Given what the class has covered so far, did you build something that was reasonably complex?
-
-* __Creativity__: Did you add a personal spin or creative element into your project submission? Did you incorporate domain knowledge or unique perspective into your analysis.
-
-* __Code Quality__: Did you follow code style guidance and best practices covered in class?
-
-* __Total__: Your instructors will give you a total score on your project between:
-
-    **Score**|**Expectations**
-    -----|-----
-    0|Does not meet expectations
-    1|Meets expectactions, good job!
-    2|Exceeds expectations, you wonderful creature, you!
-
-This will be useful as an overall gauge of whether you met the project goals, but __the more important scores are described in the specs above__, which can help you identify where to focus your efforts for the next project!
-
-## Presentation Guideline and Criteria
-
-### Format
-
-* Presentation Time: 6 minutes
-* Q & A: 3 minutes
-* **Total Time:** 9 minutes
-
-### Attire
-
-* DRESS TO IMPRESS: [Smart casual](https://en.wikipedia.org/wiki/Smart_casual) would be great
-
-### Outputs
-
-* A presentation in [slides.com](https://slides.com/)
-* A demo deployed on GitHub Pages
-* The presentation and demo will be executed on a class computer (instead of your own)
-* Get ready to explain some of your code in GitHub
-
-### Things you might want to talk about
-
-* Short presentation of yourself:
-	* Who are you?
-	* A hobby you have.
-  * __Note: we are getting you ready for final presentation!__
-* Elevator pitch:
-  * The API and web page your chose.
-  * Why did you chose that API and web page?
-  * The most important thing you learned.
-* One technical challenge you faced:
-  * Explain the challenge.
-  * Explain how and what you did to overcome it.
-  * Show and explain code snippets in your presentation slides.
-* Git:
-  * Display an screenshot of your GitHub graphs to show your commit frequency and how much work you did.
-* API Walkthrough:
-  * Walk the audience through the API you chose, the type of data you decided to obtain from it, and how you went about calling the API, obtaining that data, and structuring it.
-* Web Scraping Walkthrough:
-  * Walk the audience through the web page you chose, the type of data you decided to obtain from it, and how you went about scraping the page, parsing the HTML, and cleaning the data.
-* One important mistake you made:
-  * Did you call the API incorrectly? Did you make some errors while scraping the web page?
