@@ -4,11 +4,14 @@
 
 ## Introduction
 
-In this lab we'll familiarize you with one sample hypothesis tests. You will also write Python code to conduct one sample hypothesis tests as well as construct confidence intervals.
+In `main.ipynb` we'll familiarize you with one sample hypothesis tests. You will write Python code to conduct one sample hypothesis tests as well as construct confidence intervals.
+
+If you are interested in dive deeper into hypothesis tests, you can complete `bonus.ipynb` where you will learn about two types of t-tests: Student's t- and Paired t- tests. We touched t-tests in the Hypothesis Testing and Statistical Significance lesson but did not go into details. You'll learn about t-test in the upcoming lesson Two Sample Hypothesis Tests with Scipy.
 
 ## Deliverables
 
-- `main.ipynb`.
+- `main.ipynb` (required)
+- `bonus.ipynb` (optional)
 
 ## Submission
 
