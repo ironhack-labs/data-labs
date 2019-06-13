@@ -6,27 +6,25 @@
 
 ## Introduction
 
-As a data analyst, regression analysis is one of the most fundamental and very powerful prediction and classification techniques that can be used. Multiple linear regression is widely used for prediction problems while logistic regression is a very important classification technique. In this exercise we will use both these techniques along with learning how to manage numerical and categorical variables to get more accurate predictions. 
+In data analytics, regression analysis is one of the most fundamental and powerful techniques for prediction and classification. For example, multiple linear regression is widely used to explain the relationship between one continuous dependent variable and two or more independent variables. Logistic regression is used to describe data and to explain the relationship between one dependent binary variable and one or more nominal, ordinal, interval or ratio-level independent variables.
 
-This lab has two challenges, namely:
-Challenge 1 : Multiple Linear Regression
-Challenge 2 : Logistic Regression
+In this exercise you will use both techniques. In addition, you will also learn how to manage numerical and categorical variables so as to obtain more accurate predictions. You will work on two challenges:
+
+* Challenge 1 : Multiple Linear Regression
+* Challenge 2 : Logistic Regression
 
 ## Getting Started
 
-Go to the folder lab-regression-analysis in the GitHub repo. Open the files `lab-regression-analysis-Challenge 1.ipynb` and `lab-regression-analysis-Challenge 2.ipynb` in the `your-code` directory. In each challenge, please read the question carefully and provide your solutions below the question. The dataset to be used in the exercises has been provided on GitHub here.
+Open the files `challenge-1.ipynb` and `challenge-2.ipynb` in the `your-code` directory. In each challenge, please read the question carefully and provide your solutions below the question. The dataset to be used in the exercises is included in this lab called `vehicles.csv` and `Customer-Churn.csv`.
 
-Please refer the notes. 
-
-Happy Learning!!
+Happy coding!
 
 ## Deliverables
 
-- 'lab-regression-analysis-Challenge 1.ipynb' with your responses
+- 'challenge-1.ipynb' with your responses
 
-- 'lab-regression-analysis-Challenge 2.ipynb' with your responses
+- 'challenge-2.ipynb' with your responses
 
 ## Submission
 
 Upon completion, add your deliverables to git. Then commit git and push your branch to the remote.
-
