@@ -17,11 +17,12 @@ Finally, using what you have learned, try tuning the hyperparameters for the spi
 ![spiral output](challenge-2.png)
 
 After you're done, submit a screenshot of your Playground including the following information:
-    * Epoch
-    * Learning rate
-    * Activation function
-    * Features included
-    * Hidden layers and neurons
-    * Test and training loss
+
+* Epoch
+* Learning rate
+* Activation function
+* Features included
+* Hidden layers and neurons
+* Test and training loss
 
 **Do not google for the end solution!**
