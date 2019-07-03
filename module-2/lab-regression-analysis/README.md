@@ -26,7 +26,7 @@ Happy Learning!
 
 ## Deliverables
 
-- 'lab-regression-analysis.ipynb' with your responses
+- 'your-code.ipynb' with your responses
 
 
 ## Submission
