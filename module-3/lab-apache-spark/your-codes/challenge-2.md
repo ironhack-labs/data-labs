@@ -1,10 +1,8 @@
 ![Ironhack logo](https://i.imgur.com/1QgrNNw.png)
 
-# Challenge 4: Deploy Spark in Databricks Community Edition
+# Challenge 2: Deploy Spark in Databricks Community Edition
 
 In this challenge you will create an account at [Databricks](https://databricks.com/) and deploy an Apache Spark instance in cluster mode. Databricks was founded by the same team who created Apache Spark. They provide a series of solutions to satisfy the data needs by businesses, data scientists, data engineers, and education. Their [SparkHub](https://sparkhub.databricks.com) is a cool community that provides various resources for Spark developers and data engineers.
-
-**Suggested time on this challenge: 90-120m min**
 
 ## Objectives
 
@@ -43,9 +41,9 @@ In order to use the Databricks service, you need to create a community account. 
 
 1. You will see a very familiar web interface that is identical to the vanilla Jupyter Notebook we installed from open source. However, there are slight differences than the vanilla Jupyter Notebook.
 
-1. Let's benchmark the `estimate_pi` function we used in Challenge 3. See how many seconds does Databricks Notebook take to complete.
+1. Let's benchmark the `estimate_pi` function we used in Challenge 1. See how many seconds does Databricks Notebook take to complete.
 
-	```
+	```python
 	import numpy as np
 	from timeit import default_timer as timer
 
@@ -80,7 +78,7 @@ In order to use the Databricks service, you need to create a community account. 
     estimate_pi(5000000)
     ```
 
-1. Now let's benchmark the `estimate_pi_parallel` function you wrote in Challenge 3. Note that in the Databricks Notebook, `SparkContext` class is not available. However, there is a `SparkSession` instance called `spark` you can use. `spark.sparkContext.parallelize` is the way you can do parallel programming.
+1. Now let's benchmark the `estimate_pi_parallel` function you wrote in Challenge 1. Note that in the Databricks Notebook, `SparkContext` class is not available. However, there is a `SparkSession` instance called `spark` you can use. `spark.sparkContext.parallelize` is the way you can do parallel programming.
 
 1. After you're done, you can publish your Databricks notebook by clicking the *Publish* button on the top right.
 Here is an [example of the published notebook on Estimate Pi Test](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/1703412207731938/2169070836696660/7635369984325857/latest.html) published on Databricks.
