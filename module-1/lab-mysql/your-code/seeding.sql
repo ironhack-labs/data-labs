@@ -13,9 +13,9 @@ INSERT INTO Customers VALUES ('10001','Pablo Picasso','+34 636 17 63 82','','Pas
 INSERT INTO Customers VALUES ('20001','Abraham Lincoln','+1 305 907 7086','','120 SW 8th St','United States');
 INSERT INTO Customers VALUES ('30001','Napoléon Bonaparte','+33 1 79 75 40 00','','-	40 Rue du Colisée','France');
 
-SELECT * FROM Salesperson;
+SalespersonSalespersonSELECT * FROM Salesperson;
 
-INSERT INTO Salesperson VALUES ('0','00001','Petey Cruiser','Madrid');
+INSERT INTO Salesperson VALUES ('0','00001','Petey Cruiser','Madri');
 INSERT INTO Salesperson VALUES ('1','00002','Anna Sthesia','Barcelona');
 INSERT INTO Salesperson VALUES ('2','00003','Paul Molive','Berlin');
 INSERT INTO Salesperson VALUES ('3	','00004','Gail Forcewind','Paris');
