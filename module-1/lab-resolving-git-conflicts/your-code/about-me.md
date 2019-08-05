@@ -1,9 +1,3 @@
-# Who am I
-
-* Where are you from?
-* What do you do?
-* Do you have previous experience with technology/data?
-
 # Why am I here
 
 * What has brought you to Ironhack?
