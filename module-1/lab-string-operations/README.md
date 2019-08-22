@@ -8,7 +8,6 @@ In this lab, we will learn how to manipulate strings. There are two challenges: 
 
 ### Getting Started
 
-
 In your Terminal, navigate into the directory `your-code` of this lab that contains `challenge-1.ipynb`, `challenge-2.ipynb`, `doc1.txt`, `doc2.txt`, and `doc3.txt`. Start Jupyter Notebook by executing `jupyter notebook`. A webpage should automatically open for you but in case not, go to [http://localhost:8888](http://localhost:8888). Then click the link to each ipynb file to complete the challenges.
 
 ## Deliverables
