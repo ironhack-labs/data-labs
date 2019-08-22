@@ -1,4 +1,4 @@
-#Who am I?
+#Who am i?
 I'm Jose Ramon Matos
 I work as procurement manager in bookxchange
 I don't have previous experience with technology
