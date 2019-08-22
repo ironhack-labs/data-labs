@@ -1,16 +1,6 @@
-# Who am I
-I'm Skye Yang from China, a young professional working in Supply Chain, with no prior tech/data/coding experience.
-* Where are you from?
-* What do you do?
-* Do you have previous experience with technology/data?
 
-# Why am I here
-The desire wanting to pivot into a more data-driven career trajectory brought me to Ironhack. I intend to grow to be a Data Analyst prepared to grow into a Data Scientist by the time of graduation.
-* What has brought you to Ironhack?
-* What knowledge/skills do you expect to learn in this bootcamp?
+Suspendisse ut malesuada ex. Nulla ultricies nisl et nisi rhoncus sollicitudin. Vestibulum maximus iaculis ligula, nec commodo nunc ullamcorper nec. Duis quis condimentum sapien. Cras vestibulum interdum felis eu auctor. Quisque semper, magna at dapibus faucibus, felis risus semper ligula, id aliquam lectus ligula vel nisi. In hac habitasse platea dictumst. Donec arcu sapien, suscipit ac dictum et, imperdiet id tortor. Maecenas ornare sodales interdum. Mauris dictum felis eu eros vestibulum cursus. Phasellus accumsan, turpis ut malesuada sollicitudin, augue leo venenatis ante, vel convallis tellus diam sit amet lacus. Aenean eu mauris eros. Praesent ante lacus, gravida sit amet tellus nec, laoreet ultrices lacus. Integer commodo semper vestibulum. Fusce felis massa, consectetur facilisis rutrum nec, pulvinar et nisi.
 
-# What will I do after the bootcamp?
-I would like to stay within the Supply Chain filed but to take on a more data-manipulating role and eventually pivot to be a Data Scientist.
-* Which industry will you seek employment in?
-* What will your future role look like?
-* What is your career goal?
+Morbi fermentum ultricies tortor, vehicula ultrices eros elementum a. Duis ornare aliquam facilisis. Proin aliquam tincidunt odio vitae dignissim. Sed malesuada lacinia massa, nec blandit urna auctor elementum. Duis auctor non tortor in consequat. Mauris id vestibulum risus. In eget erat sed lacus efficitur viverra sed eu est. Aliquam interdum consequat molestie. Aliquam metus nisi, blandit non semper ut, blandit vel leo. Cras dictum turpis erat, sed iaculis ligula facilisis dapibus. Aliquam posuere dignissim fermentum. Praesent at neque sit amet lectus ornare iaculis. Curabitur id urna quis lorem varius ultrices eu sit amet sapien. Curabitur maximus volutpat suscipit. Proin imperdiet elementum lacus a eleifend. Sed tempor lacus posuere diam vehicula iaculis.
+dddddd
+>>>>>>> ca374493f4e058471605d2624eb5dcd47a865924
