@@ -18,7 +18,7 @@ select title_id, au_id, au_lname, au_fname, advance, sum(ROYALTIES) as ROYALTIES
 	inner join titleauthor ta on ta.title_id = s.title_id
 	inner join authors a on a.au_id = ta.au_id
 ) as tmp
-group by au_id, title_id
+group by au_id, title_id;
 
 -- Step 3
 
@@ -34,7 +34,7 @@ select au_id as "AUTHOR ID", au_lname as "LAST NAME", au_fname as "FIRST NAME", 
 ) as tmp2
 group by au_id
 order by PROFITS desc
-limit 3
+limit 3;
 
 
 -- Challenge 2
