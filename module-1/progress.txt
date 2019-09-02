@@ -3,7 +3,6 @@ Module-1
 Resolving Git Conflicts
 Deliverage: your-code/about-me.md DONE
 
-
 List Comprehensions
 Deliverable: main.ipynb LOST START OVER
 
@@ -17,7 +16,6 @@ String Operations
 Deliverable:
 Challenge-1.ipynb DONE
 Challenge-2.ipynb (I have questions about the bonus)
-
 
 Advanced Regular Expressions
 Deliverable: DONE
