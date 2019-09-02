@@ -4,7 +4,7 @@ Resolving Git Conflicts
 Deliverage: your-code/about-me.md DONE
 
 List Comprehensions
-Deliverable: main.ipynb LOST START OVER
+Deliverable: main.ipynb DONE
 
 Dicts-Sets-Tuples
 Deliverables:
