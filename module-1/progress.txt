@@ -11,7 +11,7 @@ Dicts-Sets-Tuples
 Deliverables:
 Challenge-1.ipynb DONE
 Challenge-2.ipynb DONE
-Challenge-3.ipynb IN PROGRESS
+Challenge-3.ipynb DONE
 
 String Operations
 Deliverable:
