@@ -15,12 +15,18 @@ Challenge-3.ipynb DONE
 String Operations
 Deliverable:
 Challenge-1.ipynb DONE
-Challenge-2.ipynb (I have questions about the bonus)
+Challenge-2.ipynb (Need to redo this bonus with what you learned from lab-functional-programming/Q1.ipynb about stop_words)
 
 Advanced Regular Expressions
 Deliverable: DONE
 
 Functional Programming
 Deliverable: main.ipynb (I have questions about the bonus)
+Q1.ipynb (? Did I finish this in class?)
+Q2 - extra (haven't started)
+Q3 - extra (haven't started)
+
+Error Handling
+Deliverable: main.ipynb DONE
 
 
