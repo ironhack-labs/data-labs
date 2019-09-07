@@ -5,6 +5,16 @@
 # keys have a lowercase letter matching the door they unlock
 # rooms have a number
 
+'''
+Possible Improvements
+---------------------
+1. display current location at the top and current inventory (collected keys)
+2. import os, os.system("clear") to get rid of the long lines in the terminal (do this last, will make it more difficult to debug) (throw that right into the startGame function for immersion)
+startGame = press enter to start, wait for input() with no argument
+
+3. add a call for help
+4. organize the furniture, doors, and keys together for defining (make it easier to add new rooms and objects)
+
 # define rooms and items (organized by which room they are found in)
 
 couch = {
@@ -158,7 +168,7 @@ def startGame(): # initialize the game
     print("You wake up on a couch and find yourself in a strange house with no windows which you have never been to before. You don't remember why you are here and what had happened before. You feel some unknown danger is approaching and you must get out of the house, NOW!")
     playRoom(game_state["current_room"])
 
-def playRoom(room):
+def playRoom(room, optional_msg = None): # look at DJK's code for the "if optional_msg: print(optional_msg)"
     """
     Play a room. First check if the room being played is the target room.
     If it is, the game will end with success. Otherwise, let player either 
