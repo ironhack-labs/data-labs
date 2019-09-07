@@ -29,4 +29,11 @@ Q3 - stumped by reduce combined with lambda
 Error Handling
 Deliverable: main.ipynb DONE
 
+Lambda Functions
+Deliverable: main.ipynb DONE
+
+Python Project
+Deliverable: main.ipynb DONE
+Separate work for fun to be done, label as side_project_python_room.py
+
 
