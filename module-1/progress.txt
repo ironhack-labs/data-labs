@@ -15,7 +15,7 @@ Challenge-3.ipynb DONE
 String Operations
 Deliverable:
 Challenge-1.ipynb DONE
-Challenge-2.ipynb (Need to redo this bonus with what you learned from lab-functional-programming/Q1.ipynb about stop_words - doesn't work, its still finding 'is' within 'this')
+Challenge-2.ipynb (Need to redo this bonus with what you learned from lab-functional-programming/Q1.ipynb about stop_words - doesn't work, its still finding 'is' within 'this' - sent error to Tom)
 
 Advanced Regular Expressions
 Deliverable: DONE
