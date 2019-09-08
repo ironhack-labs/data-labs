@@ -14,6 +14,7 @@ startGame = press enter to start, wait for input() with no argument
 
 3. add a call for help
 4. organize the furniture, doors, and keys together for defining (make it easier to add new rooms and objects)
+'''
 
 # define rooms and items (organized by which room they are found in)
 
