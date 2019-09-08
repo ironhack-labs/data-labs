@@ -177,7 +177,7 @@ def playRoom(room, optional_msg = None): # look at DJK's code for the "if option
     """
     game_state["current_room"] = room
     if(game_state["current_room"] == game_state["target_room"]):
-        print("Congrats! You escaped the room!")
+        print("Sunlight bursts in through the open door! \n Congrats! You escaped the murder-house!")
     else:
         print("You are now in " + room["name"])
         intended_action = input("What would you like to do? Type 'explore' or 'examine'?").strip()
@@ -196,7 +196,7 @@ def exploreRoom(room):
     Explore a room. List all items belonging to this room.
     """
     items = [i["name"] for i in object_relations[room["name"]]]
-    print("You explore the room. This is " + room["name"] + ". You find " + ", ".join(items))
+    print("You explore the room. This is the " + room["name"] + ". You find " + ", ".join(items))
 
 def getNextConnectedRoom(door, current_room):
     """
