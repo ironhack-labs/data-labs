@@ -40,4 +40,4 @@ def pickStudent(i):
         return names[i]
     except Exception as err:
         return err
-print(pickStudent(3))
+print(pickStudent(3))p
