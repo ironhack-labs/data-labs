@@ -8,6 +8,10 @@
 '''
 Possible Improvements
 ---------------------
+adjust the game so that it takes place on an alien craft, renaming rooms to things like "MedBay, Hatchery, Hangar, Bridge, Engine room, CrewDeck(floors 1-3)". Keys become KeyCards,
+ and the escape pod must be reached before the creature finds you. every room you go into the alien gets one step closer. 
+ have to solve it in "under" a certain amount of rooms? let's say 6 "turns"? and after a few print("you hear noises") then print("your hear the alien approaching", )
+ 
 1. display current location at the top and current inventory (collected keys)
 2. import os, os.system("clear") to get rid of the long lines in the terminal (do this last, will make it more difficult to debug) (throw that right into the startGame function for immersion)
 startGame = press enter to start, wait for input() with no argument
@@ -142,8 +146,8 @@ object_relations = {
     "door a": [game_room, bedroom1],
     "bedroom 1": [queen_bed, door_a, door_b, door_c],
     "queen bed": [key_b],
-    "door b": [bedroom1, bedroom2], # temporarily assign this to outside, don't forget to come back and fix!
-    "bedroom 2": [double_bed, dresser, door_b], # whats in this room?
+    "door b": [bedroom1, bedroom2],
+    "bedroom 2": [double_bed, dresser, door_b],
     "double bed": [key_c],
     "dresser": [key_d],
     "door c": [bedroom1, living_room],
