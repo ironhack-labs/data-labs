@@ -37,5 +37,8 @@ Deliverable: main.ipynb DONE
 Separate work for fun to be done, label as side_project_python_room.py
 
 Object Oriented Programming
-Deliverable: main.ipynb IN PROGRESS
+Deliverable: main.ipynb DONE
+
+MySQL
+
 
