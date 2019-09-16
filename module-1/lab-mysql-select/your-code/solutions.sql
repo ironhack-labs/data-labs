@@ -51,8 +51,8 @@ SELECT authors.au_id AS 'AUTHOR ID', authors.au_lname AS 'LAST NAME', authors.au
 	;
 
 
--- BONUS - STILL IN PROGRESS
-/* SELECT authors.au_id, authors.au_lname, authors.au_fname, SUM(sales.qty)
+-- BONUS - STILL IN PROGRESS, currently the author's profits are still split by title? 
+SELECT authors.au_id AS 'AUTHOR ID', authors.au_lname AS 'LAST NAME', authors.au_fname AS 'FIRST NAME', (titles.price * sales.qty * (titles.royalty / 100) * (titleauthor.royaltyper / 100) ) + (titles.advance * (titleauthor.royaltyper / 100)) AS 'Profit' 
 	FROM authors
 	JOIN titleauthor
 	ON authors.au_id = titleauthor.au_id
@@ -60,7 +60,7 @@ SELECT authors.au_id AS 'AUTHOR ID', authors.au_lname AS 'LAST NAME', authors.au
 	ON titleauthor.title_id = titles.title_id
 	JOIN sales
 	ON titles.title_id = sales.title_id
-	GROUP BY authors.au_id
-	ORDER BY SUM(sales.qty) DESC
+	GROUP BY authors.au_id, Profit
+	ORDER BY Profit DESC
+	LIMIT 3
 	;
-*/ 
