@@ -1,37 +1,52 @@
 #1. Import the NUMPY package under the name np.
 
-
+import numpy as np
 
 #2. Print the NUMPY version and the configuration.
 
-
+print(np.__version__)
+print(np.show_config())
 
 #3. Generate a 2x3x5 3-dimensional array with random values. Assign the array to variable "a"
 # Challenge: there are at least three easy ways that use numpy to generate random arrays. How many ways can you find?
 
+a = np.random.random((2,3,5))
 
 
 #4. Print a.
 
-
+print(a)
 
 #5. Create a 5x2x3 3-dimensional array with all values equaling 1.
 #Assign the array to variable "b"
 
+lst_lst = [[[1,1,1],[1,1,1],[1,1,1],[1,1,1],[1,1,1]]]
+b = np.array(lst_lst)
 
 
 #6. Print b.
 
-
+print(b)
 
 #7. Do a and b have the same size? How do you prove that in Python code?
 
-
-
+if len(a) == len(b);
+   print("They are the same size")
+else;
+   print("They are not the same size")
+  
 
 #8. Are you able to add a and b? Why or why not?
 
 
+
+for i in range(len(a)):
+   # iterate through columns
+   for j in range(len(a[0])):
+       result[i][j] = a[i][j] + b[i][j]
+
+for r in result:
+   print(r)
 
 #9. Transpose b so that it has the same structure of a (i.e. become a 2x3x5 array). Assign the transposed array to varialbe "c".
 
