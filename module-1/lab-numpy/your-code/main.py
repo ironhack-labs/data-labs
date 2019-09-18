@@ -42,8 +42,10 @@ else:
 
 
 #8. Are you able to add a and b? Why or why not?
-# print(a + b)
-# No, they have different SHAPES
+try:
+        print(a + b)
+except ValueError as err:
+        print("No, they have different shapes, so we get the following error: " + str(err))
 
 
 
@@ -66,10 +68,8 @@ print(d)
 Matrix d is exactly matrix a plus the value of one to each element.
 """
 
-
 #12. Multiply a and c. Assign the result to e.
 e = (a * c)
-
 
 #13. Does e equal to a? Why or why not?
 if np.array_equal(e, a):
@@ -77,22 +77,14 @@ if np.array_equal(e, a):
 else:
         print("Guess not?")
 
-
-
-
 #14. Identify the max, min, and mean values in d. Assign those values to variables "d_max", "d_min", and "d_mean"
 d_max = np.amax(d)
 d_min = np.amin(d)
 d_mean = np.mean(d)
 
 
-
-
-
 #15. Now we want to label the values in d. First create an empty array "f" with the same shape (i.e. 2x3x5) as d using `np.empty`.
 f = np.empty((2,3,5)) # something weird, it keeps populating f with the exact values as d?
-
-
 
 """
 #16. Populate the values in f. For each value in d, if it's larger than d_min but smaller than d_mean, assign 25 to the corresponding value in f.
@@ -189,3 +181,4 @@ print("Matrix h is")
 # print(h)
 print(np.char.array(h)) # to convert my nested list back into a string array
 # all things considered though, how was I to complete this without using Numpy? 
+
