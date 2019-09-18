@@ -163,7 +163,29 @@ array([[[ 'D',  'D',  'D',  'B',  'D'],
 Again, you don't need Numpy in this question.
 """
 
-# recreate d as g
-# recreate f as h
-# and solve this bonus the same way
+g = d
+h = np.ndarray.tolist((np.empty((2,3,5))))
 
+for x in range(len(g)):
+        for y in range(len(g[x])):
+                for z in range(len(g[x][y])):
+                        if g[x][y][z] == np.amax(g):
+                                h[x][y][z] = 'E'
+                        elif g[x][y][z] == np.mean(g):
+                                h[x][y][z] = 'C'
+                        elif g[x][y][z] == np.mean(g):
+                                h[x][y][z] = 'A'
+                        elif g[x][y][z] < np.amax(g) and g[x][y][z] > np.mean(g):
+                                h[x][y][z] = 'D'
+                        else:
+                                h[x][y][z] = 'B'
+
+print("Matrix g is")
+print(g)
+print("The Max value is " + str(np.amax(g)))
+print("The Mean value is " + str(np.mean(g)))
+print("The Min value is " + str(np.amin(g)))
+print("Matrix h is")
+# print(h)
+print(np.char.array(h)) # to convert my nested list back into a string array
+# all things considered though, how was I to complete this without using Numpy? 
