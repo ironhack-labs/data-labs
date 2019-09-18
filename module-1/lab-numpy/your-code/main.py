@@ -54,8 +54,8 @@ No, they are built differently (2,3,5) and (5,2,3)
 #9. Transpose b so that it has the same structure of a (i.e. become a 2x3x5 array). Assign the transposed array to varialbe "c".
 
 
-b = np.array([a])
-c = b
+c = np.array([a])
+
 print(c)
 
 
@@ -99,7 +99,8 @@ In the end, f should have only the following values: 0, 25, 50, 75, and 100.
 Note: you don't have to use Numpy in this question.
 """
 
-
+for i in d:
+   if i[0] > d_min or i[0] < d_min
 
 
 """
