@@ -20,8 +20,8 @@ print(a)
 #5. Create a 5x2x3 3-dimensional array with all values equaling 1.
 #Assign the array to variable "b"
 
-lst_lst = [[[1,1,1],[1,1,1],[1,1,1],[1,1,1],[1,1,1]]]
-b = np.array(lst_lst)
+
+b = np.tile(1, (5,2,3))
 
 
 #6. Print b.
@@ -30,31 +30,38 @@ print(b)
 
 #7. Do a and b have the same size? How do you prove that in Python code?
 
-if len(a) == len(b);
+print(a.size)
+print(b.size)
+
+if a.size == b.size:
    print("They are the same size")
-else;
+else:
    print("They are not the same size")
   
 
 #8. Are you able to add a and b? Why or why not?
 
+No, they are built differently (2,3,5) and (5,2,3)
 
+# for i in range(len(a)):
+#    # iterate through columns
+#    for j in range(len(a[0])):
+#        result[i][j] = a[i][j] + b[i][j]
 
-for i in range(len(a)):
-   # iterate through columns
-   for j in range(len(a[0])):
-       result[i][j] = a[i][j] + b[i][j]
-
-for r in result:
-   print(r)
+# for r in result:
+#    print(r)
 
 #9. Transpose b so that it has the same structure of a (i.e. become a 2x3x5 array). Assign the transposed array to varialbe "c".
 
 
+b = np.array([a])
+c = b
+print(c)
+
 
 #10. Try to add a and c. Now it should work. Assign the sum to varialbe "d". But why does it work now?
 
-
+d = np.add(a, c)
 
 #11. Print a and d. Notice the difference and relation of the two array in terms of the values? Explain.
 
@@ -63,7 +70,7 @@ for r in result:
 
 #12. Multiply a and c. Assign the result to e.
 
-
+e = np.multiply(a, c)
 
 #13. Does e equal to a? Why or why not?
 
@@ -71,13 +78,15 @@ for r in result:
 
 
 #14. Identify the max, min, and mean values in d. Assign those values to variables "d_max", "d_min", and "d_mean"
-
+d_mean = (np.mean(d))
+d_max = (np.amax(d))
+d_min = (np.amin(d))
 
 
 
 #15. Now we want to label the values in d. First create an empty array "f" with the same shape (i.e. 2x3x5) as d using `np.empty`.
 
-
+f = np.empty((2,3,5))
 
 
 """
