@@ -18,6 +18,11 @@ while someone suggested changing the optional argument engine= from 'c' to 'pyth
 
 But after other efforts proved fruitless. I ran it and it worked.
 
+### Step 1 - Examine data for potential issues
+used .head() to visually inspect an extremely small subset of the data
+used .describe() method to get the column names and their datatypes
+used .isnull().sum() to review how many columns have null values (that pandas recognizes on first pass), and how many null values are present in those columns
+
 Curiously, the CSV file was only supposed to include 20 columns, and my raw_data dataframe had 24 columns. 
 The extras were ['original order', 'Unnamed: 22', 'Unnamed: 23']
 dropped these columns as a list of column names
@@ -26,3 +31,19 @@ dropped these columns as a list of column names
 Investigated to confirm.
 All have a length of 5,992 rows.
 They all three have exactly zero Null values (at least on initial pass, Nulls that pandas recognizes as Nulls)
+
+
+I noticed during Exploratory Data Analysis (EDA) that the Date series contained some incongruent reported values, 
+showing "Reported dd-Mon-yyyy" as opposed to "dd-Mon-yy"
+I want to convert all of those.
+They are an object, hopefully a string object. so replace with stripping non-numeric characters from the beginning. basically, only look within each cell's string until you hit a number, and then ignore the rest. 
+Regex will be my focus. couldn't figure it out, had to move on to more important issues with the data set, come back to that later.
+
+Dropped columns that did not add relevant data.
+
+First pass - clean up the 'Type' column. ['Provoked', 'Unprovoked', 'Invalid']
+will need to use .loc[] to replace the values within the 'Type' column. Also, do .lower() to ask if the type is in the list, so that a capitalization error does not remove a confirmed shark attack.
+then drop the rows with invalid - if we can't confirm a shark was involved, the data can be removed.
+
+
+
