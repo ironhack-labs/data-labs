@@ -15,7 +15,7 @@
 
 
 
-#5. Create a 5x3x2 3-dimensional array with all values equaling 1.
+#5. Create a 5x2x3 3-dimensional array with all values equaling 1.
 #Assign the array to variable "b"
 
 
