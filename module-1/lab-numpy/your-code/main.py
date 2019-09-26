@@ -41,6 +41,7 @@ else:
 
 #8. Are you able to add a and b? Why or why not?
 
+<<<<<<< HEAD
 # No, they are built differently (2,3,5) and (5,2,3)
 
 # for i in range(len(a)):
@@ -48,22 +49,41 @@ else:
 #    for j in range(len(a[0])):
 #        result[i][j] = a[i][j] + b[i][j]
 
+=======
+No, they are built differently (2,3,5) and (5,2,3)
+
+# for i in range(len(a)):
+#    # iterate through columns
+#    for j in range(len(a[0])):
+#        result[i][j] = a[i][j] + b[i][j]
+
+>>>>>>> 7aeca6f9a14270920cb9be040638975adc82e7ec
 # for r in result:
 #    print(r)
 
 #9. Transpose b so that it has the same structure of a (i.e. become a 2x3x5 array). Assign the transposed array to varialbe "c".
 
 
+<<<<<<< HEAD
 c = b.reshape(2,3,5)
 
 print(c)
 
+=======
+c = np.array([a])
+>>>>>>> 7aeca6f9a14270920cb9be040638975adc82e7ec
 
-#10. Try to add a and c. Now it should work. Assign the sum to varialbe "d". But why does it work now?
+print(c)
 
 d = np.add(a, c)
 
+<<<<<<< HEAD
 print(d)
+=======
+#10. Try to add a and c. Now it should work. Assign the sum to varialbe "d". But why does it work now?
+
+d = np.add(a, c)
+>>>>>>> 7aeca6f9a14270920cb9be040638975adc82e7ec
 
 #11. Print a and d. Notice the difference and relation of the two array in terms of the values? Explain.
 
@@ -86,7 +106,11 @@ d_mean = (np.mean(d))
 d_max = (np.amax(d))
 d_min = (np.amin(d))
 
+<<<<<<< HEAD
 print(d_mean)
+=======
+
+>>>>>>> 7aeca6f9a14270920cb9be040638975adc82e7ec
 
 #15. Now we want to label the values in d. First create an empty array "f" with the same shape (i.e. 2x3x5) as d using `np.empty`.
 
@@ -102,6 +126,7 @@ Assign 100 to the corresponding value(s) in f for d_max in d.
 In the end, f should have only the following values: 0, 25, 50, 75, and 100.
 Note: you don't have to use Numpy in this question.
 """
+<<<<<<< HEAD
 for i in range(len(d)):
     for y in range(len(d[i])):
         for z in range(len(d[i][y])):
@@ -116,6 +141,12 @@ for i in range(len(d)):
             elif d[i][y][z] == d_max:
                 f[i][y][z] = 100
 ​
+=======
+
+for i in d:
+   if i[0] > d_min or i[0] < d_min
+
+>>>>>>> 7aeca6f9a14270920cb9be040638975adc82e7ec
 
 """
 #17. Print d and f. Do you have your expected f?
