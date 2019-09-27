@@ -46,4 +46,39 @@ will need to use .loc[] to replace the values within the 'Type' column. Also, do
 then drop the rows with invalid - if we can't confirm a shark was involved, the data can be removed.
 
 
+## Start over
+#### Question to answer:
+Given in the US, and given that the victom is Female, is a shark attack more likely to be reported as Provoked or Unprovoked? 
+Does age of victim have anything to do with it? 
+
+### Step 1 - Examine data for potential issues
+used .head() to visually inspect an extremely small subset of the data
+used .describe() method to get the column names and their datatypes
+used .isnull().sum() to review how many columns have null values (that pandas recognizes on first pass), and how many null values are present in those columns
+
+Curiously, the CSV file was only supposed to include 20 columns, and my raw_data dataframe had 24 columns. 
+The extras were ['original order', 'Unnamed: 22', 'Unnamed: 23']
+dropped these columns as a list of column names
+
+Dropped the following columns that did not add relevant data
+['Case Number.1', 'Case Number.2', 'pdf', 'href formula', 'href']
+
+
+Bin the ages into Adolescent/Child, Adult, Senior at 0-18, 19-54, 55+
+I should do this AFTER I have dropped data
+
+### Step 2 - Subset the data by a condition
+
+I want to drop the rows that do not have either "provoked" or "unprovoked" as the Type of attack.
+Easier than dropping the rows, just filter/subset the data into a new dataframe!
+That dropped ~1,050 rows! 
+
+Checking the null values following this subset: 
+I see that Country still has 30 null values. will need to drop those.
+Sex has 227 Null values. drop those.
+Age has 1928 null values. drop the nulls before Binning them with pd.cut (wonder if the victim age is normally distributed. if not, possible reasons - age of victim not reported for the elderly? (that's my assumption/bias, check the DATA first). perhaps certain age ranges are more likely to be in areas where shark attacks are possible?)
+
+
+
+
 
