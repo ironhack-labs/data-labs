@@ -80,5 +80,10 @@ Age has 1928 null values. drop the nulls before Binning them with pd.cut (wonder
 
 
 
+Fred had some great suggestions for me
+Use the .unique() method on a column to return only the unique values within
+If a Series (a column of a dataframe) is numeric, use .hist() method to plot it on a histogram
+Since I have the Age column that is an object datatype, use regular expressions and a lambda function to iterate through and extract the numberic values
+
 
 
