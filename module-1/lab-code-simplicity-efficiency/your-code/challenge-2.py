@@ -7,7 +7,10 @@ The code is functional but has a lot of room for improvement. Use what you have 
 about simple and efficient code, refactor the code.
 """
 
-def RandomStringGenerator(l=12, a=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','0','1','2','3','4','5','6','7','8','9']):
+import random # build dependency at the start instead
+
+# drop the default arguments, changed l argument to "length", much easier to differentiate
+def RandomStringGenerator(length=12, a=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','0','1','2','3','4','5','6','7','8','9']):
     p = 0
     s = ''
     while p<l:
@@ -36,3 +39,16 @@ b = input('Enter maximum string length: ')
 n = input('How many random strings to generate? ')
 
 print(BatchStringGenerator(int(n), int(a), int(b)))
+
+
+# =====MY REFACTOR========
+import random, string
+
+options = string.ascii_letters + string.digits
+def generateBatchOfStrings(num_str, min_str, max_str):
+    return [[random.choice(options) for number in range(random.choice(range(min_str, max_str + 1)))] for i in range(1, num_str + 1)]
+a = int(input('Enter minimum string length: ')) # ask for minimum value, immediately convert to an integer
+b = int(input('Enter maximum string length: ')) # ask for maximum value, immediately convert to an integer
+n = int(input('How many random strings to generate? ')) # ask for how many strings you want returned, immediately convert to an integer
+
+print(generateBatchOfStrings(n, a, b))
