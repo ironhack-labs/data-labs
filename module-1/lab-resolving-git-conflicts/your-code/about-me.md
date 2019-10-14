@@ -6,6 +6,7 @@
 
 # Why am I here
 
+<<<<<<< HEAD
 * What has brought you to Ironhack?
 * What knowledge/skills do you expect to learn in this bootcamp?
 
@@ -13,4 +14,5 @@
 
 * Which industry will you seek employment in?
 * What will your future role look like?
-* What is your career goal? x
+* What is your career goal? 
+
