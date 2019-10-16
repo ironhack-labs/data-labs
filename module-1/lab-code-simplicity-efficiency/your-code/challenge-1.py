@@ -9,11 +9,45 @@ The code is very long and messy. Refactor it according to what you have learned 
 code simplicity and efficiency.
 """
 
+from word2number import w2n
+from num2words import num2words
+
 print('Welcome to this calculator!')
 print('It can add and subtract whole numbers from zero to five')
-a = input('Please choose your first number (zero to five): ')
-b = input('What do you want to do? plus or minus: ')
-c = input('Please choose your second number (zero to five): ')
+a = w2n.word_to_num(input('Please choose your first number (zero to five): '))
+b = w2n.word_to_num(input('What do you want to do? plus or minus: '))
+c = w2n.word_to_num(input('Please choose your second number (zero to five): '))
+
+
+
+choices = [a,b,c]
+
+# rev_d_num = { d_num[key] : key for key in d_num.keys()}
+
+rev_d = {
+    "one" : 1,
+    "two" : 2,
+    "three" : 3,
+    "four" : 4,
+    "five" : 5,
+    "six" : 6,
+    "seven" : 7,
+    "eight" : 8,
+    "nine" : 9,
+    "ten" : 10,
+}
+
+num = []
+
+for val in choices:
+    num.append(d_num[val])
+
+if num[1] == "plus":
+    answer = num[0] + num[2]
+else num[1] == "minus":
+    answer = num[0] - num[2]
+
+
 
 if a == 'zero' and b == 'plus'  and c == 'zero':
     print("zero plus zero equals zero")
