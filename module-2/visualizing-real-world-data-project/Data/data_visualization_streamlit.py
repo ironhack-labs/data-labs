@@ -36,7 +36,7 @@ if st.checkbox('Show raw data'):
 
 
 
-st.subheader("Mean of Prices")
+st.subheader("Mean of Prices based on Points")
 
 mean_prices = data.groupby('price')['points'].mean().reset_index()
 
@@ -54,7 +54,27 @@ province = alt.Chart(data[:1000]).mark_bar(opacity=0.2).encode(x='province', y='
 
 st.write(province)
 
-# st.subheader("Best Wineries")
+st.subheader("Best Wineries")
+
+best_wineries = data.groupby(['winery', 'country'])['points'].mean().nlargest(10).reset_index()
+
+st.bar_chart(best_wineries)
+
+# st.deck_gl_chart(
+#     viewport={
+#         'latitude': 37.76,
+#         'longitude': -122.4,
+#         'zoom': 11,
+#         'pitch': 50,
+#         }, 
+#         layers=[{
+#             'type': 'HexagonLayer',
+#             'data': data,
+#             'radius': 200,
+#             'elevationScale': 4,
+#             'elevationRange': [0, 1000],
+#             'pickable': True,
+#             'extruded': True,}, {'type': 'ScatterplotLayer', 'data': data,}])
 
 # def main():
 #     df = data
