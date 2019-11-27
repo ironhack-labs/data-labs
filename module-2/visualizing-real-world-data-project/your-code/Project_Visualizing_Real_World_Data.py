@@ -6,6 +6,7 @@ import plotly.figure_factory as ff
 import matplotlib.pyplot as plt
 import altair as alt
 from scipy import stats
+import plotly.express as px
 
 #Title
 st.markdown('# Visualizing Real World Data')
@@ -165,17 +166,127 @@ fig.savefig('demo2.png', pad_inches = 100)
 
 st.pyplot()
 
+
+
 st.markdown("## From the graph above, one can see that the distribution % did not remain the same. Out of the survivors, there was a dicrease in distribution % for most but mostly for those between the age of 60 to 80 and an increase in distribution % for those between the age of 0 to 20.")
 
 st.markdown("## I would interpret this as passengers were prioritizing saving kids and young adults as they are the future. Although since elderly passengers make up less of in % of the survivors (which means the group had the least amount of surivors as a percentage of its on group), one can tell that the majority of the casualties were of those between the age of 20 to 30.")
 
+#Creating an interactive version with Box Plot
+
+fig_2 = px.histogram(
+    titanic[titanic['Survived'] == 1], 
+    x="Age", 
+    # y="tip",
+    color="Sex", marginal="box",
+    hover_data=titanic[titanic['Survived'] == 1].columns,
+    nbins = 4
+    )
+
+fig_3 = px.histogram(
+    titanic[titanic['Survived'] == 0], 
+    x="Age", 
+    # y="tip",
+    color="Sex", marginal="box",
+    hover_data=titanic[titanic['Survived'] == 1].columns,
+    nbins = 4
+    )
+
+fig_2.update_layout(
+    title="Distribution Of Survivors By Sex",
+    # xaxis_title="x Axis Title",
+    # yaxis_title="y Axis Title",
+    font=dict(
+        family="Courier New, monospace",
+        size=18,
+        color="#7f7f7f"
+    )
+)
+
+fig_3.update_layout(
+    title="Distribution Of Non-Survivors By Sex",
+    # xaxis_title="x Axis Title",
+    # yaxis_title="y Axis Title",
+    font=dict(
+        family="Courier New, monospace",
+        size=18,
+        color="#7f7f7f"
+    )
+)
+
+st.plotly_chart(fig_2)
+st.plotly_chart(fig_3)
+
+st.markdown("## In the graphs above, one can see the difference between the distribution of survivors vs. non-survivors. Additionally, these graphs can be filtered by sex.")
+
+st.markdown("## We can clearly see that, most survivors are females, but the age distribution remains. We can notice with the help of the box plot correlated to the histogram, that the mean and quartiles are similar between females and males.")
+
+st.markdown("## Now if we take a look at the non-survivors, the story is different. Most non-survivorswere male, and the distribution is not similar. We can see the difference with help of the box plot where most female non-survivors were younger compared to male non-survivors.")
+
+
+
 st.markdown("# Now for something ~~completely~~ different...")
-st.markdown("## I will now show the average age of passengers divided by pclass, sex, and survival")
+st.markdown("## We will now look the age vs. fare of passengers divided by passenger class, and sex.")
 
 age_by_pc_sex_sur = round(pd.pivot_table(titanic, values = 'Age', index = ['Pclass','Sex', 'Survived']))
 
-c = alt.Chart(age_by_pc_sex_sur).mark_circle().encode(x='Pclass', y='Age')
+fig_4 = px.scatter(
+    titanic, 
+    x="Age", 
+    y="Fare", 
+    color="Sex", 
+    facet_col="Pclass")
 
-st.altair_chart(c, width=-1)
+fig_4.update_layout(
+    title="Age vs. Fare",
+    # xaxis_title="x Axis Title",
+    # yaxis_title="y Axis Title",
+    font=dict(
+        family="Courier New, monospace",
+        size=18,
+        color="#7f7f7f"
+    )
+)
 
-#  , size=[''], color='c'
+st.plotly_chart(fig_4)
+
+st.markdown("## We can clearly see thanks to the scatter plot that passenger classes were divided as passenger class 1 being the luxury one since it is more expensive, and the rest were usually much cheaper.")
+
+st.markdown("## Let's see if passenger class affected the chances of survival.")
+
+age_by_pc_sex_sur = round(pd.pivot_table(titanic, values = 'Age', index = ['Pclass','Sex', 'Survived'], aggfunc = ['mean', 'count']))
+
+age_by_pc_sex_sur.columns = ['_'.join(col) for col in age_by_pc_sex_sur.columns]
+
+age_by_pc_sex_sur.reset_index(inplace = True)
+
+age_by_pc_sex_sur["Survived"] = age_by_pc_sex_sur["Survived"].replace([0, 1], ['No', 'Yes'])
+
+fig_5 = px.bar(
+    age_by_pc_sex_sur,
+    x='Pclass',
+    y='count_Age',
+    hover_data=['Sex'],
+    color='Survived',
+    labels={
+        'Pclass':'Passenger Class',
+        'count_Age' : 'Count of Passengers'
+        }
+) 
+
+fig_4.update_layout(
+    title="Passenger Class divded primarily by Survival, and secondly by Sex",
+    # xaxis_title="x Axis Title",
+    # yaxis_title="y Axis Title",
+    font=dict(
+        family="Courier New, monospace",
+        size=18,
+        color="#7f7f7f"
+    )
+)
+
+st.plotly_chart(fig_5)
+
+st.markdown("## This last graph shows us a lot of information. The first insight that jumps out is that most of the ones that did not survive were part of class 3, although class 2 and class 3 fare was relatively similar.")
+
+st.markdown("## The second insight that we can see is that a larger percentage of males in class 1 survived, compared to those in class 2 and 3. This is even more pronounced when one can see that almost the same amount of males survived in class 1 and 3, but there was substatially more males in class 3 compared to any of the classes at the beginning of the trip.")
