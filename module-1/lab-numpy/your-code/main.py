@@ -1,68 +1,74 @@
-#1. Import the NUMPY package under the name np.
+# 1. Import the NUMPY package under the name np.
+
+import numpy as np
+
+# 2. Print the NUMPY version and the configuration.
 
 
-
-#2. Print the NUMPY version and the configuration.
-
-
-
-#3. Generate a 2x3x5 3-dimensional array with random values. Assign the array to variable "a"
+# 3. Generate a 2x3x5 3-dimensional array with random values. Assign the array to variable "a"
 # Challenge: there are at least three easy ways that use numpy to generate random arrays. How many ways can you find?
 
+a = np.random.random((2, 3, 5))
+
+# 4. Print a.
+
+# print(a)
+
+# 5. Create a 5x2x3 3-dimensional array with all values equaling 1.
+# Assign the array to variable "b"
+
+b = np.ones((5, 2, 3))
+
+# 6. Print b.
+
+# print(b)
+
+# 7. Do a and b have the same size? How do you prove that in Python code?
+
+print(a != b)
+# This prints True, meaning a is different from b
 
 
-#4. Print a.
+# 8. Are you able to add a and b? Why or why not?
+
+# NO. You can only add two arrays if they have the same dimensions, which is not the case the operation a+b will throw an error
+
+# 9. Transpose b so that it has the same structure of a (i.e. become a 2x3x5 array). Assign the transposed array to varialbe "c".
+
+c = np.transpose(b)
+print(c)
+a_tranposed = np.transpose(a)
 
 
+# 10. Try to add a and c. Now it should work. Assign the sum to varialbe "d". But why does it work now?
 
-#5. Create a 5x2x3 3-dimensional array with all values equaling 1.
-#Assign the array to variable "b"
-
-
-
-#6. Print b.
+d = a + c
+print(d)
+# Yes because now the dimensions match
 
 
-
-#7. Do a and b have the same size? How do you prove that in Python code?
-
+# 11. Print a and d. Notice the difference and relation of the two array in terms of the values? Explain.
 
 
-
-#8. Are you able to add a and b? Why or why not?
-
+# all the values are summed toggether individually
 
 
-#9. Transpose b so that it has the same structure of a (i.e. become a 2x3x5 array). Assign the transposed array to varialbe "c".
+# 12. Multiply a and c. Assign the result to e.
 
 
+# 13. Does e equal to a? Why or why not?
 
-#10. Try to add a and c. Now it should work. Assign the sum to varialbe "d". But why does it work now?
-
-
-
-#11. Print a and d. Notice the difference and relation of the two array in terms of the values? Explain.
+# yes but only because it is multiplying all the values for one which doesn't provoke any change
 
 
+# 14. Identify the max, min, and mean values in d. Assign those values to variables "d_max", "d_min", and "d_mean"
+
+# d_max =
+# d_min =
+# d_mean =
 
 
-#12. Multiply a and c. Assign the result to e.
-
-
-
-#13. Does e equal to a? Why or why not?
-
-
-
-
-#14. Identify the max, min, and mean values in d. Assign those values to variables "d_max", "d_min", and "d_mean"
-
-
-
-
-#15. Now we want to label the values in d. First create an empty array "f" with the same shape (i.e. 2x3x5) as d using `np.empty`.
-
-
+# 15. Now we want to label the values in d. First create an empty array "f" with the same shape (i.e. 2x3x5) as d using `np.empty`.
 
 
 """
@@ -74,8 +80,6 @@ Assign 100 to the corresponding value(s) in f for d_max in d.
 In the end, f should have only the following values: 0, 25, 50, 75, and 100.
 Note: you don't have to use Numpy in this question.
 """
-
-
 
 
 """
