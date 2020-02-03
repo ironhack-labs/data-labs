@@ -1,0 +1,2 @@
+Link to Tableau Public file: https://public.tableau.com/profile/sam.poad#!/vizhome/Poad_Ironhack_Intro_to_Tableau_Lab/Sheet13
+NOTE: some of the Sheets were not done as Tabular views, to get practice creating visualization

@@ -1,0 +1,44 @@
+Module-1
+
+Resolving Git Conflicts
+Deliverage: your-code/about-me.md DONE
+
+List Comprehensions
+Deliverable: main.ipynb DONE
+
+Dicts-Sets-Tuples
+Deliverables:
+Challenge-1.ipynb DONE
+Challenge-2.ipynb DONE
+Challenge-3.ipynb DONE
+
+String Operations
+Deliverable:
+Challenge-1.ipynb DONE
+Challenge-2.ipynb DONE
+
+Advanced Regular Expressions
+Deliverable: DONE
+
+Functional Programming
+Deliverable: main.ipynb (I have questions about the bonus)
+Q1.ipynb DONE
+Q2 - anybody else try this one? Tips/notes on sanitizing the data
+Q3 - stumped by reduce combined with lambda
+
+Error Handling
+Deliverable: main.ipynb DONE
+
+Lambda Functions
+Deliverable: main.ipynb DONE
+
+Python Project
+Deliverable: main.ipynb DONE
+Separate work for fun to be done, label as side_project_python_room.py
+
+Object Oriented Programming
+Deliverable: main.ipynb DONE
+
+MySQL
+
+
