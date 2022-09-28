@@ -1,0 +1,2 @@
+Guia y Analisis :
+Lo primero fue limpiar mi dataframe y una vez hecho eso me puse a verificar la distribucion que tenian mis datos con respecto al precio y un PCA, hice un clustering de todos los datos lo que me genero 5 grupos, de los cuales los tsns mas estables fueron los del cluster 1 por lo que los ordene por precio, y de esta manera de 1400 datos baje a 400, de estas casas pase a cuales tenian un OverallQual arriba de 8, para tener las mejores del cluster y obtube 21 casas ordenadas por precio, solo queda evaluar el presupuesto que se tiene.
